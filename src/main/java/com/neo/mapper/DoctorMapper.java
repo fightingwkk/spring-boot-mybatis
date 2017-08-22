@@ -34,12 +34,13 @@ public interface DoctorMapper {
 	List<DoctorEntity> findAllDoctor();
 
 	// 返回所有的服务包
-	@Select("select * from service")
+	@Select("select * from service order by time asc")
 	List<ServiceEntity> findAllService();
 	//存头像
 	@Select("update doctor_info set head_pic = #{head_pic} where phone = #{phone}")
 	void updateHead(@Param("head_pic")String head_pic, @Param("phone")String phone);
-
+	//更新擅长和经验
+//	@Select({"update doctor_info set adept = #{adept},experience = #{experience} where phone =#}")
 	
 	
 	

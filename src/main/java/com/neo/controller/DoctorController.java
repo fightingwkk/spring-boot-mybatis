@@ -39,32 +39,31 @@ public class DoctorController {
 	// 根据电话返回医生的信息
 	// @Cacheable(key="#phone")
 	@RequestMapping("/findbyphone")
-	DoctorEntity selectByPhone(@RequestParam String phone) {
-		DoctorEntity doctor = dm.selectByPhone(phone);
-		return doctor;
+	public DoctorEntity selectByPhone(@RequestParam String phone) {
+		return dm.selectByPhone(phone);
 	}
 
 	// 插入医生信息
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	String register(@RequestParam String phone, @RequestParam String password) {
+	public String register(@RequestParam String phone, @RequestParam String password) {
 		dm.insertDoctor(phone, password);
 		return "success";
 	}
 
 	// 返回所有医生信息
 	@RequestMapping("/findall")
-	List<DoctorEntity> findAllDoctor() {
+	public List<DoctorEntity> findAllDoctor() {
 		return dm.findAllDoctor();
 	}
 
 	// 返回所有服务包
 	@RequestMapping("/service")
-	List<ServiceEntity> findAllService() {
+	public List<ServiceEntity> findAllService() {
 		return dm.findAllService();
 	}
 	//存头像
 	@RequestMapping(value="/updatehead",method=RequestMethod.POST)
-	void updateHead(@RequestParam String head_pic,@RequestParam String phone){
+	public void updateHead(@RequestParam String head_pic,@RequestParam String phone){
 		dm.updateHead(head_pic, phone);
 	}
 	
@@ -73,7 +72,7 @@ public class DoctorController {
 	// 插入手机和token
 	@CachePut(value = "token", key = "#token")
 	@RequestMapping(value = "/savephonetoken")
-	String savePhonetoken(@RequestParam("phone") String phone, @RequestParam("token") String token) {
+	public String savePhonetoken(@RequestParam("phone") String phone, @RequestParam("token") String token) {
 		dm.savePhonetoken(phone, token);
 		return token;
 	}
@@ -81,35 +80,34 @@ public class DoctorController {
 	// 查找token
 	@Cacheable(value = "token", key = "#token")
 	@RequestMapping(value = "/selecttoken")
-	String selectToken(@RequestParam String token) {
+	public String selectToken(@RequestParam String token) {
 		return dm.selectToken(token);
 	}
 
 	// 根据手机查找token
-	@Cacheable(value = "token", key = "#token")
 	@RequestMapping(value = "/selectphonetoken")
-	String selectPhonetoken(@RequestParam("phone") String phone) {
-		String token = dm.selectPhonetoken(phone);
-		return token;
+	public String selectPhonetoken(@RequestParam("phone") String phone) {
+		return dm.selectPhonetoken(phone);
 	}
 
 	// 删除token
 	@CacheEvict(value = "token", key = "#token")
 	@RequestMapping(value = "/deletetoken")
-	void deleteToken(@RequestParam String token) {
+	public void deleteToken(@RequestParam String token) {
 		dm.deleteToken(token);
 	}
 	//根据手机号删除token
-	@CacheEvict(value = "token", key = "#token")
 	@RequestMapping(value = "/deletephonetoken")
-	void deletephonetoken(@RequestParam String phone) {
+	public void deletephonetoken(@RequestParam String phone) {
 		dm.deletePhonetoken(phone);
 	}
 	//根据电话更新token
 	@CachePut(value = "token", key = "#token")
 	@RequestMapping(value = "/updatetoken")
-	String updateToken(@RequestParam String token,@RequestParam String phone){
+	public String updateToken(@RequestParam String token,@RequestParam String phone){
 		dm.updateToken(token, phone);
 		return token;
 	}
+
+
 }

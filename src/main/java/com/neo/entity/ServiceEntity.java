@@ -11,6 +11,7 @@ count int  not null,
 duration varchar(20) not null,
 content varchar(300),
 kind varchar(20),
+time timestamp not null default current_timestamp on update current_timestamp,
 primary key(id)
 )engine=INNODB default charset=utf8;
 
@@ -19,7 +20,7 @@ create table purchased_service(
 wechat_id varchar(300) not null,
 serviceid int not null,
 count int not null,
-purchased_time datetime not null,
+purchased_time  timestamp not null default current_timestamp,
 primary key(wechat_id,serviceid),
 constraint fk_patient foreign key (wechat_id) references patient_info (wechat_id),
 constraint fk_service foreign key (serviceid) references service (id)
@@ -33,12 +34,13 @@ public class ServiceEntity {
 	private String duration;//期限
 	private String content;//内容
 	private String kind;//适用人群
+	private String time;//更新时间
 	
 	public ServiceEntity() {
 
 	}
-	public ServiceEntity(int id, String name, String price, int count, String duration, String content, String kind) {
-		super();
+
+	public ServiceEntity(int id, String name, String price, int count, String duration, String content, String kind, String time) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
@@ -46,7 +48,9 @@ public class ServiceEntity {
 		this.duration = duration;
 		this.content = content;
 		this.kind = kind;
+		this.time = time;
 	}
+
 	public int getId() {
 		return id;
 	}
@@ -89,6 +93,12 @@ public class ServiceEntity {
 	public void setKind(String kind) {
 		this.kind = kind;
 	}
-	
 
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
+	}
 }

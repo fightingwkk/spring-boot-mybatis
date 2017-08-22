@@ -1,5 +1,6 @@
 package com.neo.controller;
 
+import com.neo.entity.ServiceEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
@@ -13,6 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.neo.entity.PatientEntity;
 import com.neo.mapper.PatientMapper;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 @CacheConfig(cacheNames = "patientcache")
 @RestController
@@ -39,10 +44,11 @@ public class PatientController {
 	
 	//更改信息
 	@CachePut(key="#patient.getWechat_id()")
+	//@CacheEvict(allEntries=true, beforeInvocation=true)
 	@RequestMapping(value="/updatepatient", method=RequestMethod.POST)
 	public PatientEntity update(@RequestBody PatientEntity patient){
 		//PatientEntity p=new PatientEntity("kkw","www","man",17,"18888888888","halg","c12","231","no");
-		pm.update(patient);
+			pm.update(patient);
 		return patient;
 	}
 	
@@ -58,5 +64,16 @@ public class PatientController {
 	@RequestMapping("/findmydoctor")
 	public String findmydoctor(@RequestBody String wechat_id){
 		return pm.selectDoctorByPatient(wechat_id);
+	}
+
+	////通过患者微信号查找购买的服务
+	@RequestMapping(value = "/findmyservice")
+	public List<ServiceEntity> findMyService(@RequestBody String wechat_id){
+		List<String> serviceid = pm.selectServiceid(wechat_id);
+		List<ServiceEntity> list = new ArrayList<>();
+		for (Iterator<String> it=serviceid.iterator();it.hasNext();){
+			list.add(pm.selectServiceById(it.next()));
+		}
+		return list;
 	}
 }

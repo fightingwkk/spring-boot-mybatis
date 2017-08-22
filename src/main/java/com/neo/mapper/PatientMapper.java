@@ -1,15 +1,13 @@
 package com.neo.mapper;
 
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectProvider;
+import com.neo.entity.ServiceEntity;
+import org.apache.ibatis.annotations.*;
 
 import com.neo.entity.PatientEntity;
 import com.neo.mapper.provider.PatientProvider;
+import org.apache.ibatis.mapping.FetchType;
 
+import java.util.List;
 
 public interface PatientMapper {
 	// 插入一条患者信息
@@ -45,6 +43,13 @@ public interface PatientMapper {
 		@Result(column="phone", property="phone")
 	})
 	String selectDoctorByPatient(String wechat_id);
-	
-	
+	//根据id号查找服务包
+	@Select("select * from service where id =#{id}")
+	ServiceEntity selectServiceById(String id);
+	//通过患者微信号查找购买的服务
+	@Select("select serviceid from purchased_service where wechat_id = #{wechat_id}")
+	@Results({
+			@Result(column="serviceid",property="serviceid")
+	})
+	List<String> selectServiceid(String wechat_id);
 }
