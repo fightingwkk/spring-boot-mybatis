@@ -45,11 +45,14 @@ public interface PatientMapper {
 	String selectDoctorByPatient(String wechat_id);
 	//根据id号查找服务包
 	@Select("select * from service where id =#{id}")
-	ServiceEntity selectServiceById(String id);
-	//通过患者微信号查找购买的服务
+	ServiceEntity selectServiceById(Integer id);
+	//通过患者微信号查找购买的服务id列表
 	@Select("select serviceid from purchased_service where wechat_id = #{wechat_id}")
 	@Results({
 			@Result(column="serviceid",property="serviceid")
 	})
-	List<String> selectServiceid(String wechat_id);
+	List<Integer> selectServiceid(String wechat_id);
+	//传入患者的openid和值为service主键id及服务包次数
+	@Insert("insert into  purchased_service (wechat_id,serviceid,count) values(#{wechat_id},#{serviceid},#{count})")
+	void insertPurchasedService(@Param("wechat_id")String wechat_id,@Param("serviceid")Integer serviceid,@Param("count")Integer count);
 }

@@ -1,6 +1,5 @@
 package com.neo.controller;
 
-import java.lang.reflect.Method;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,12 +21,12 @@ import com.neo.mapper.DoctorMapper;
 @RequestMapping("/doctor")
 public class DoctorController {
 	@Autowired
-	private DoctorMapper dm;
+	private DoctorMapper doctorMapper;
 
 	// 根据电话和密码查询账号是否存在
 	@RequestMapping("/loginverify")
-	Boolean loginVerify(@RequestParam String phone, @RequestParam String password) {
-		DoctorEntity doctor = dm.selectByPhoneAndPassword(phone, password);
+	public Boolean loginVerify(@RequestParam String phone, @RequestParam String password) {
+		DoctorEntity doctor = doctorMapper.selectByPhoneAndPassword(phone, password);
 		if (doctor != null) {
 			return true;
 		} else {
@@ -40,40 +38,46 @@ public class DoctorController {
 	// @Cacheable(key="#phone")
 	@RequestMapping("/findbyphone")
 	public DoctorEntity selectByPhone(@RequestParam String phone) {
-		return dm.selectByPhone(phone);
+		return doctorMapper.selectByPhone(phone);
 	}
 
 	// 插入医生信息
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String register(@RequestParam String phone, @RequestParam String password) {
-		dm.insertDoctor(phone, password);
+		doctorMapper.insertDoctor(phone, password);
 		return "success";
 	}
 
 	// 返回所有医生信息
 	@RequestMapping("/findall")
 	public List<DoctorEntity> findAllDoctor() {
-		return dm.findAllDoctor();
+		return doctorMapper.findAllDoctor();
 	}
 
 	// 返回所有服务包
 	@RequestMapping("/service")
 	public List<ServiceEntity> findAllService() {
-		return dm.findAllService();
+		return doctorMapper.findAllService();
 	}
 	//存头像
 	@RequestMapping(value="/updatehead",method=RequestMethod.POST)
 	public void updateHead(@RequestParam String head_pic,@RequestParam String phone){
-		dm.updateHead(head_pic, phone);
+		doctorMapper.updateHead(head_pic, phone);
 	}
-	
-	
-	
+
+	//更新擅长和经验
+	@RequestMapping(value = "/updateintroduction",method = RequestMethod.POST)
+	public void updateIntroduction(@RequestParam("phone")String phone,@RequestParam("adept")String adept,@RequestParam("experience")String experience){
+		doctorMapper.updateAdeptExperience(phone,adept,experience);
+	}
+
+
+
 	// 插入手机和token
 	@CachePut(value = "token", key = "#token")
 	@RequestMapping(value = "/savephonetoken")
 	public String savePhonetoken(@RequestParam("phone") String phone, @RequestParam("token") String token) {
-		dm.savePhonetoken(phone, token);
+		doctorMapper.savePhonetoken(phone, token);
 		return token;
 	}
 
@@ -81,31 +85,27 @@ public class DoctorController {
 	@Cacheable(value = "token", key = "#token")
 	@RequestMapping(value = "/selecttoken")
 	public String selectToken(@RequestParam String token) {
-		return dm.selectToken(token);
+		return doctorMapper.selectToken(token);
 	}
 
 	// 根据手机查找token
 	@RequestMapping(value = "/selectphonetoken")
 	public String selectPhonetoken(@RequestParam("phone") String phone) {
-		return dm.selectPhonetoken(phone);
+		return doctorMapper.selectPhonetoken(phone);
 	}
 
 	// 删除token
 	@CacheEvict(value = "token", key = "#token")
 	@RequestMapping(value = "/deletetoken")
 	public void deleteToken(@RequestParam String token) {
-		dm.deleteToken(token);
+		doctorMapper.deleteToken(token);
 	}
-	//根据手机号删除token
-	@RequestMapping(value = "/deletephonetoken")
-	public void deletephonetoken(@RequestParam String phone) {
-		dm.deletePhonetoken(phone);
-	}
+
 	//根据电话更新token
 	@CachePut(value = "token", key = "#token")
 	@RequestMapping(value = "/updatetoken")
 	public String updateToken(@RequestParam String token,@RequestParam String phone){
-		dm.updateToken(token, phone);
+		doctorMapper.updateToken(token, phone);
 		return token;
 	}
 

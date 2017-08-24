@@ -3,7 +3,6 @@ package com.neo.controller;
 import com.neo.entity.ServiceEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,13 +23,13 @@ import java.util.List;
 @RequestMapping("/patient")
 public class PatientController {
 	@Autowired
-	private PatientMapper pm;
+	private PatientMapper patientMapper;
 	
 	//存入患者信息
 	@CachePut(key="#patient.getWechat_id()")
 	@RequestMapping(value="/savedetail",method=RequestMethod.POST)
 	public PatientEntity savePatient(@RequestBody PatientEntity patient ){
-		pm.savePatient(patient);
+		patientMapper.savePatient(patient);
 		return patient;
 	}
 	
@@ -39,7 +38,7 @@ public class PatientController {
 	//@CacheEvict(allEntries=true, beforeInvocation=true)
 	@RequestMapping("/findbywechatid")
 	public PatientEntity selectById(@RequestBody String wechat_id ){
-		return pm.selectById(wechat_id);
+		return patientMapper.selectById(wechat_id);
 	}
 	
 	//更改信息
@@ -48,32 +47,47 @@ public class PatientController {
 	@RequestMapping(value="/updatepatient", method=RequestMethod.POST)
 	public PatientEntity update(@RequestBody PatientEntity patient){
 		//PatientEntity p=new PatientEntity("kkw","www","man",17,"18888888888","halg","c12","231","no");
-			pm.update(patient);
+			patientMapper.update(patient);
 		return patient;
 	}
 	
 	//患者关注医生
 	@RequestMapping(value="/watchdoctor", method=RequestMethod.POST)
 	public String watchDoctor(@RequestParam String wechat_id, @RequestParam String phone){
-		pm.updateAttention(wechat_id, phone); 
+		patientMapper.updateAttention(wechat_id, phone);
 		return "success";
 	}
 	
-	//根据患者ID返回他关注的医生的ID 
+	//根据患者ID返回他关注的医生的ID
 	@Cacheable(key="'findmydoctor'+#wechat_id")
 	@RequestMapping("/findmydoctor")
 	public String findmydoctor(@RequestBody String wechat_id){
-		return pm.selectDoctorByPatient(wechat_id);
+		return patientMapper.selectDoctorByPatient(wechat_id);
 	}
 
-	////通过患者微信号查找购买的服务
+	////通过患者微信号查找购买的服务实体列表
 	@RequestMapping(value = "/findmyservice")
 	public List<ServiceEntity> findMyService(@RequestBody String wechat_id){
-		List<String> serviceid = pm.selectServiceid(wechat_id);
+		List<Integer> serviceid = patientMapper.selectServiceid(wechat_id);
 		List<ServiceEntity> list = new ArrayList<>();
-		for (Iterator<String> it=serviceid.iterator();it.hasNext();){
-			list.add(pm.selectServiceById(it.next()));
+		for (Iterator<Integer> it=serviceid.iterator();it.hasNext();){
+			list.add(patientMapper.selectServiceById(it.next()));
 		}
 		return list;
 	}
+	//调用远程服务下的购买服务接口,传入患者的openid和值为service主键id的list
+	@RequestMapping(value="/buyservice")
+	String buyService(@RequestParam("wechat_id") String wechat_id, @RequestParam("servicelist") List<Integer> servicelist){
+		try{
+			for (Integer id:servicelist) {
+				Integer count = patientMapper.selectServiceById(id).getCount();
+				patientMapper.insertPurchasedService(wechat_id,id,count);
+			}
+		}catch (Exception e){
+			return "error";
+		}
+		return "success";
+
+	}
+
 }
