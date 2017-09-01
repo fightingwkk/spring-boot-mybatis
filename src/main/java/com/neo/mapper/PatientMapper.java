@@ -1,5 +1,6 @@
 package com.neo.mapper;
 
+import com.neo.entity.PurchasedServiceEntity;
 import com.neo.entity.ServiceEntity;
 import org.apache.ibatis.annotations.*;
 
@@ -43,16 +44,20 @@ public interface PatientMapper {
 		@Result(column="phone", property="phone")
 	})
 	String selectDoctorByPatient(String wechat_id);
+	//根据微信id号查找已购买的服务包列表
+	@Select("select * from purchased_service where wechat_id =#{wechat_id}")
+	List<PurchasedServiceEntity> selectPurchasedServiceByWechatId(String  wechat_id);
 	//根据id号查找服务包
 	@Select("select * from service where id =#{id}")
-	ServiceEntity selectServiceById(Integer id);
+	ServiceEntity selectServiceById(Integer  id);
 	//通过患者微信号查找购买的服务id列表
 	@Select("select serviceid from purchased_service where wechat_id = #{wechat_id}")
 	@Results({
 			@Result(column="serviceid",property="serviceid")
 	})
 	List<Integer> selectServiceid(String wechat_id);
+
 	//传入患者的openid和值为service主键id及服务包次数
-	@Insert("insert into  purchased_service (wechat_id,serviceid,count) values(#{wechat_id},#{serviceid},#{count})")
-	void insertPurchasedService(@Param("wechat_id")String wechat_id,@Param("serviceid")Integer serviceid,@Param("count")Integer count);
+	@Insert("insert into  purchased_service (wechat_id,serviceid,sum_count,left_count,name,price,duration,content,kind) values(#{0},#{1},#{2},#{3},#{4},#{5},#{6},#{7},#{8})")
+	void insertPurchasedService(String wechat_id,Integer serviceid,Integer sum_count,Integer left_count,String name,String price,String duration,String content,String kind);
 }

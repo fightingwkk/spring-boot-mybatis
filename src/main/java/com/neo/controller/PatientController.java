@@ -1,5 +1,6 @@
 package com.neo.controller;
 
+import com.neo.entity.PurchasedServiceEntity;
 import com.neo.entity.ServiceEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
@@ -67,21 +68,16 @@ public class PatientController {
 
 	////通过患者微信号查找购买的服务实体列表
 	@RequestMapping(value = "/findmyservice")
-	public List<ServiceEntity> findMyService(@RequestBody String wechat_id){
-		List<Integer> serviceid = patientMapper.selectServiceid(wechat_id);
-		List<ServiceEntity> list = new ArrayList<>();
-		for (Iterator<Integer> it=serviceid.iterator();it.hasNext();){
-			list.add(patientMapper.selectServiceById(it.next()));
-		}
-		return list;
+	public List<PurchasedServiceEntity> findMyService(@RequestBody String wechat_id){
+		return patientMapper.selectPurchasedServiceByWechatId(wechat_id);
 	}
 	//调用远程服务下的购买服务接口,传入患者的openid和值为service主键id的list
 	@RequestMapping(value="/buyservice")
 	String buyService(@RequestParam("wechat_id") String wechat_id, @RequestParam("servicelist") List<Integer> servicelist){
 		try{
 			for (Integer id:servicelist) {
-				Integer count = patientMapper.selectServiceById(id).getCount();
-				patientMapper.insertPurchasedService(wechat_id,id,count);
+				ServiceEntity se = patientMapper.selectServiceById(id);
+				patientMapper.insertPurchasedService(wechat_id,id,se.getCount(),se.getCount(),se.getName(),se.getPrice(),se.getDuration(),se.getContent(),se.getKind());
 			}
 		}catch (Exception e){
 			return "error";

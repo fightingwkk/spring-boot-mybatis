@@ -15,16 +15,7 @@ time timestamp not null default current_timestamp on update current_timestamp,
 primary key(id)
 )engine=INNODB default charset=utf8;
 
-购买的服务包
-create table purchased_service(
-wechat_id varchar(300) not null,
-serviceid int not null,
-count int not null,
-purchased_time  timestamp not null default current_timestamp,
-primary key(wechat_id,serviceid),
-constraint fk_patient foreign key (wechat_id) references patient_info (wechat_id),
-constraint fk_service foreign key (serviceid) references service (id)
-)engine=INNODB default charset=utf8;
+
  */
 public class ServiceEntity {
 	private int id;
