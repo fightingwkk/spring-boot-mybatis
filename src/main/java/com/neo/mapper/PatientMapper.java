@@ -1,5 +1,6 @@
 package com.neo.mapper;
 
+import com.neo.entity.EvaluationEntity;
 import com.neo.entity.PurchasedServiceEntity;
 import com.neo.entity.ServiceEntity;
 import org.apache.ibatis.annotations.*;
@@ -60,4 +61,15 @@ public interface PatientMapper {
 	//传入患者的openid和值为service主键id及服务包次数
 	@Insert("insert into  purchased_service (wechat_id,serviceid,sum_count,left_count,name,price,duration,content,kind) values(#{0},#{1},#{2},#{3},#{4},#{5},#{6},#{7},#{8})")
 	void insertPurchasedService(String wechat_id,Integer serviceid,Integer sum_count,Integer left_count,String name,String price,String duration,String content,String kind);
+
+	//购买服务接口,传入患者的openid和值为service主键id
+	@Update("update purchased_service set sum_count=#{0}, left_count=#{1}, name=#{2}, price=#{3}, duration=#{4}, content=#{5}, kind=#{6} where wechat_id=#{7} and serviceid=#{8} ")
+	void updatePurchasedService(Integer sum_count,Integer left_count,String name,String price,String duration,String content,String kind,String wechat_id,Integer serviceid);
+
+	//患者评价医生
+	@Insert("insert into evaluation  values(#{0},#{1},#{2},#{3},#{4},#{5},#{6},#{7},#{8})")
+	void insertEvaluation(EvaluationEntity evaluationEntity);
+	//查找评价
+	@Select("select * from evaluation where wecaht_id=#{wechat_id} and phone=#{phone}")
+	EvaluationEntity selectEvaLuation(@Param("wechat_id") String wechat_id, @Param("phone") String phone);
 }

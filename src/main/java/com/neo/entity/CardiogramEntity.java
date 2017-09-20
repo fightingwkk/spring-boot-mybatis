@@ -1,14 +1,17 @@
 package com.neo.entity;
 /**
  create table cardiogram(
+ id int auto_increment,
  wechat_id varchar(300) not null,
  cardiogram varchar(300) not null,
  date date not null,
  remark varchar(300) not null,
- primary key(wechat_id)
+ primary key(id),
+ foreign key (wechat_id) references patient_info (wechat_id)
  )engine=INNODB default charset=utf8;
  */
 public class CardiogramEntity {
+    private int id;
     private String wechat_id;//患者微信号id
     private String cardiogram;//心电图URL
     private String date;//测量日期
@@ -17,11 +20,20 @@ public class CardiogramEntity {
     public CardiogramEntity() {
     }
 
-    public CardiogramEntity(String wechat_id, String cardiogram, String date, String remark) {
+    public CardiogramEntity(int id, String wechat_id, String cardiogram, String date, String remark) {
+        this.id = id;
         this.wechat_id = wechat_id;
         this.cardiogram = cardiogram;
         this.date = date;
         this.remark = remark;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getWechat_id() {

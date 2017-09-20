@@ -1,4 +1,4 @@
-package com.neo;
+package com.neo.config;
 
 import javax.servlet.annotation.WebFilter;  
 import javax.servlet.annotation.WebInitParam;  

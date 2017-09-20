@@ -1,14 +1,12 @@
 package com.neo.mapper;
 
 import java.util.List;
+import java.util.Map;
 
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import com.neo.entity.AttentionEntity;
+import com.neo.entity.PatientEntity;
+import com.neo.mapper.provider.DoctorProvider;
+import org.apache.ibatis.annotations.*;
 
 import com.neo.entity.DoctorEntity;
 import com.neo.entity.ServiceEntity;
@@ -26,12 +24,21 @@ public interface DoctorMapper {
 	@Select("select * from doctor_info where phone = #{phone} ")
 	DoctorEntity selectByPhone(String phone);
 
+	////根据电话更新密码
+	@Update("update doctor_info set password = #{password} where phone = #{phone}")
+	void updatePassword(@Param("password") String password, @Param("phone") String phone);
+
+	//新增一条医生数据
 	@Insert("insert into doctor_info (phone,password) values (#{0},#{1})")
 	void insertDoctor(String phone, String password);
 
 	// 返回所有医生数据
 	@Select("select * from doctor_info ")
 	List<DoctorEntity> findAllDoctor();
+
+	//更新医生数据
+	@SelectProvider(type = DoctorProvider.class, method = "updateDoctor")
+	void updateDoctor(DoctorEntity doctorEntity);
 
 	// 返回所有的服务包
 	@Select("select * from service order by time asc")
@@ -42,9 +49,31 @@ public interface DoctorMapper {
 	//更新擅长和经验
 	@Update("update doctor_info set adept = #{adept},experience = #{experience} where phone = #{phone}")
 	void updateAdeptExperience(@Param("phone") String phone,@Param("adept") String adept, @Param("experience") String experience);
-	
-	
-	
+	//获取医生自定义标签
+	@Select("select label from doctor_info where phone=#{phone}")
+	@Results({
+			@Result(column = "label", property = "label")
+	})
+	String getDoctorLabel(String phone);
+	//查找关注医生的患者
+	@Select("select * from attention where phone=#{phone}")
+	List<AttentionEntity> findMyPatients(String phone);
+	//查找患者
+	@Select("select * from patient_info where wechat_id = #{wechat_id}")
+	PatientEntity selectPatient(String wechat_id);
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	// 查找token
 	@Select("select token from token where token = #{token}")
@@ -53,17 +82,17 @@ public interface DoctorMapper {
 	// 删除token
 	@Delete("delete from token where token = #{token}")
 	void deleteToken(String token);
-	//根据手机号删除token
-	@Delete("delete from token where phone = #{phone}")
-	void deletePhonetoken(String phone);
+
 	// 插入phone和token
 	@Select("insert into token (phone,token) values (#{phone},#{token})")
 	String savePhonetoken(@Param("phone") String phone, @Param("token") String token);
 
 	// 根据phone查找token
 	@Select("select token from token where phone = #{phone}")
-	String selectPhonetoken(String phone);
-	//根据电话更新token
-	@Select("update token set token = #{token} where phone =#{phone}")
-	String updateToken(@Param("token")String token, @Param("phone")String phone);
+	String selectPhoneToken(String phone);
+	//更新token
+	@Select("update token set token = #{newToken} where token =#{token}")
+	String updateToken(@Param("newToken")String newToken, @Param("token")String token);
+
+
 }

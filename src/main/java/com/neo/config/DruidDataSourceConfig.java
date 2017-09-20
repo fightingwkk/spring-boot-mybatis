@@ -1,4 +1,4 @@
-package com.neo;
+package com.neo.config;
 
 import javax.sql.DataSource;
 
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import com.alibaba.druid.pool.DruidDataSource;
 
 @Configuration 
-public class DruidDataSourceConfiguration {
+public class DruidDataSourceConfig {
 
 	@Bean
 	@ConfigurationProperties(prefix = "spring.datasource")//把同类的配置信息自动封装成实体类

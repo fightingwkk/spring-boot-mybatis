@@ -7,7 +7,7 @@ package com.neo.entity;
  serviceid int not null,
  sum_count int not null,
  left_count int not null,
- purchased_time  timestamp not null default current_timestamp,
+ purchased_time  timestamp not null default current_timestamp on update current_timestamp,
  name varchar(100) not null,
  price varchar(20) not null,
  duration varchar(20) not null,

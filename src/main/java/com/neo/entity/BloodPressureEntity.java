@@ -1,14 +1,17 @@
 package com.neo.entity;
 
+import java.sql.Date;
+
 /**
  create table blood_pressure(
  wechat_id varchar(300) not null,
  date date not null,
  time varchar(10) not null,
- systolic_pressure int not null,
- diastolic_pressure int not null,
- rhr int not null,
- primary key(wechat_id)
+ systolic_pressure varchar(10) not null,
+ diastolic_pressure varchar(10) not null,
+ rhr varchar(10) not null,
+ primary key(wechat_id,date,time),
+ foreign key(wechat_id) references patient_info(wechat_id)
  )engine=INNODB default charset=utf8;
  */
 
@@ -16,14 +19,15 @@ public class BloodPressureEntity {
     private String wechat_id;//患者微信号id
     private String date;//日期
     private String time;//时间
-    private int systolic_pressure;//收缩压
-    private int diastolic_pressure;//舒张压
-    private int rhr;//静息心率
+    private String systolic_pressure;//收缩压
+    private String diastolic_pressure;//舒张压
+    private String rhr;//静息心率
 
     public BloodPressureEntity() {
     }
 
-    public BloodPressureEntity(String wechat_id, String date, String time, int systolic_pressure, int diastolic_pressure, int rhr) {
+
+    public BloodPressureEntity(String wechat_id, String date, String time, String systolic_pressure, String diastolic_pressure, String rhr) {
         this.wechat_id = wechat_id;
         this.date = date;
         this.time = time;
@@ -56,27 +60,27 @@ public class BloodPressureEntity {
         this.time = time;
     }
 
-    public int getSystolic_pressure() {
+    public String getSystolic_pressure() {
         return systolic_pressure;
     }
 
-    public void setSystolic_pressure(int systolic_pressure) {
+    public void setSystolic_pressure(String systolic_pressure) {
         this.systolic_pressure = systolic_pressure;
     }
 
-    public int getDiastolic_pressure() {
+    public String getDiastolic_pressure() {
         return diastolic_pressure;
     }
 
-    public void setDiastolic_pressure(int diastolic_pressure) {
+    public void setDiastolic_pressure(String diastolic_pressure) {
         this.diastolic_pressure = diastolic_pressure;
     }
 
-    public int getRhr() {
+    public String getRhr() {
         return rhr;
     }
 
-    public void setRhr(int rhr) {
+    public void setRhr(String rhr) {
         this.rhr = rhr;
     }
 }

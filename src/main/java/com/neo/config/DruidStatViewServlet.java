@@ -1,4 +1,4 @@
-package com.neo;
+package com.neo.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;  
 import javax.servlet.annotation.WebServlet;  

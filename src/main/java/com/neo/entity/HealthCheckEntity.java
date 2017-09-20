@@ -3,8 +3,8 @@ package com.neo.entity;
 /**
 create table health_info (
  wechat_id varchar(300) not null,
- height int(10) not null,
- weight float(10) not null,
+ height float not null,
+ weight float not null,
  diabetes varchar(10) not null,
  chd varchar(10) not null,
  stroke varchar(10) not null,
@@ -24,7 +24,7 @@ create table health_info (
 public class HealthCheckEntity {
 
     private String wechat_id;//患者微信id
-    private int height;//身高
+    private float height;//身高
     private float weight;//体重
     private String diabetes;//糖尿病
     private String chd;//冠心病
@@ -40,7 +40,7 @@ public class HealthCheckEntity {
     public HealthCheckEntity() {
     }
 
-    public HealthCheckEntity(String wechat_id, int height, float weight, String diabetes, String chd, String stroke, String hypertension, String other_history, String family_history, String smoke, String smoking, String drink, String drinking) {
+    public HealthCheckEntity(String wechat_id, float height, float weight, String diabetes, String chd, String stroke, String hypertension, String other_history, String family_history, String smoke, String smoking, String drink, String drinking) {
         this.wechat_id = wechat_id;
         this.height = height;
         this.weight = weight;
@@ -64,11 +64,11 @@ public class HealthCheckEntity {
         this.wechat_id = wechat_id;
     }
 
-    public int getHeight() {
+    public float getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(float height) {
         this.height = height;
     }
 
