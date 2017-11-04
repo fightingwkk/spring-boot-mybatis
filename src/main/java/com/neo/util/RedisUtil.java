@@ -117,7 +117,23 @@ public class RedisUtil {
         return result;
     }
 
+    /**
+     * 重命名key
+     * @param oldKey
+     * @param newKey
+     */
+    public void rename(String oldKey, String newKey){
+        redisTemplate.rename(oldKey,newKey);
+    }
 
-
+    /**
+     * 当newKey不存在的时候才重命名
+     * @param oldKey
+     * @param newKey
+     * @return
+     */
+    public boolean renameIfAbsent(String oldKey, String newKey){
+        return redisTemplate.renameIfAbsent(oldKey,newKey);
+    }
 
 }

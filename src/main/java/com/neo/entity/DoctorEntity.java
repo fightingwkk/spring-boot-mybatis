@@ -23,6 +23,7 @@ package com.neo.entity;
  head_pic varchar(300),
  verify varchar(10) default '未认证',
  label varchar(300),
+ datetime timestamp default current_timestamp,
  primary key (phone)
  )engine=INNODB default charset=utf8;
 
@@ -43,12 +44,12 @@ public class DoctorEntity {
 	private String head_pic;//头像
 	private String verify;//认证
 	private String label;//分组标签
-
+	private String datetime;//注册时间
 
 	public DoctorEntity() {
 	}
 
-	public DoctorEntity(String name, String phone, String password, String sex, String practice_code, String hospital, String department, String title, String practice_pic, String adept, String experience, String QRcode_pic, String head_pic, String verify, String label) {
+	public DoctorEntity(String name, String phone, String password, String sex, String practice_code, String hospital, String department, String title, String practice_pic, String adept, String experience, String QRcode_pic, String head_pic, String verify, String label, String datetime) {
 		this.name = name;
 		this.phone = phone;
 		this.password = password;
@@ -64,6 +65,7 @@ public class DoctorEntity {
 		this.head_pic = head_pic;
 		this.verify = verify;
 		this.label = label;
+		this.datetime = datetime;
 	}
 
 	public String getName() {
@@ -184,5 +186,13 @@ public class DoctorEntity {
 
 	public void setLabel(String label) {
 		this.label = label;
+	}
+
+	public String getDatetime() {
+		return datetime;
+	}
+
+	public void setDatetime(String datetime) {
+		this.datetime = datetime;
 	}
 }

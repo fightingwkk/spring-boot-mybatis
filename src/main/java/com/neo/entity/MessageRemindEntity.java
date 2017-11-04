@@ -10,16 +10,16 @@ package com.neo.entity;
 )engine=INNODB default charset=utf8;
  */
 public class MessageRemindEntity {
-    private int id;
-    private String title;
-    private String target;
-    private String remark;
-    private String period;
+    private int id;//消息id
+    private String title;//标题
+    private String target;//目标
+    private String remark;//备注
+    private int period;//周期(天)
 
     public MessageRemindEntity() {
     }
 
-    public MessageRemindEntity(int id, String title, String target, String remark, String period) {
+    public MessageRemindEntity(int id, String title, String target, String remark, int period) {
         this.id = id;
         this.title = title;
         this.target = target;
@@ -59,11 +59,11 @@ public class MessageRemindEntity {
         this.remark = remark;
     }
 
-    public String getPeriod() {
+    public int getPeriod() {
         return period;
     }
 
-    public void setPeriod(String period) {
+    public void setPeriod(int period) {
         this.period = period;
     }
 }

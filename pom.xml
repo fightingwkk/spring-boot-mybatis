@@ -70,9 +70,13 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+		<!--<dependency>  &lt;!&ndash; 添加redis支持&ndash;&gt;-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-redis</artifactId>-->
+		<!--</dependency>-->
 		<dependency>  <!-- 添加redis支持-->
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-redis</artifactId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 		<dependency><!-- 支持Spring的Cache抽象 -->
 			<groupId>org.springframework.boot</groupId>

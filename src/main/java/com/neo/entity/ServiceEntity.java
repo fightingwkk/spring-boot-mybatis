@@ -11,6 +11,8 @@ count int  not null,
 duration varchar(20) not null,
 content varchar(300),
 kind varchar(20),
+risk_level_id int default 1,
+status int not null default 1,
 time timestamp not null default current_timestamp on update current_timestamp,
 primary key(id)
 )engine=INNODB default charset=utf8;
@@ -25,13 +27,16 @@ public class ServiceEntity {
 	private String duration;//期限
 	private String content;//内容
 	private String kind;//适用人群
+	private int risk_level_id;//风险等级
 	private String time;//更新时间
-	
+	private int status;
+
+
 	public ServiceEntity() {
 
 	}
 
-	public ServiceEntity(int id, String name, String price, int count, String duration, String content, String kind, String time) {
+	public ServiceEntity(int id, String name, String price, int count, String duration, String content, String kind, int risk_levelid, String time, int status) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
@@ -39,7 +44,9 @@ public class ServiceEntity {
 		this.duration = duration;
 		this.content = content;
 		this.kind = kind;
+		this.risk_level_id = risk_levelid;
 		this.time = time;
+		this.status = status;
 	}
 
 	public int getId() {
@@ -91,5 +98,21 @@ public class ServiceEntity {
 
 	public void setTime(String time) {
 		this.time = time;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public int getRisk_levelid() {
+		return risk_level_id;
+	}
+
+	public void setRisk_levelid(int risk_levelid) {
+		this.risk_level_id = risk_levelid;
 	}
 }

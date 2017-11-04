@@ -15,7 +15,8 @@ create table health_info (
  smoking varchar(10),
  drink varchar(10) not null,
  drinking varchar(10),
- primary key (wechat_id)
+ primary key (wechat_id),
+ foreign key(wechat_id) references patient_info (wechat_id)
  )engine=INNODB default charset=utf8;
 
 

@@ -13,15 +13,13 @@ package com.neo.entity;
  profession varchar(5),
  attitude varchar(5),
  speed varchar(5),
- isread varchar(5) not null,
+ isread tinyint default 0,
  grade varchar(5),
+anonymity tinyint default 0,
  primary key(wechat_id,phone,datetime),
  foreign key (wechat_id) references patient_info (wechat_id),
  foreign key (phone) references doctor_info (phone)
  )engine=INNODB default charset=utf8;
- 
- 
- 
  */
 public class EvaluationEntity {
 
@@ -32,17 +30,19 @@ public class EvaluationEntity {
 	private String profession;//专业程度
 	private String attitude;//回复态度
 	private String speed;//回复速度
-	private String isread;//是否阅读
+	private int  isread;//是否阅读
 	private String grade;//总评分
-	
-
+	private int anonymity;//匿名
+	private String head_pic;
+	private String name;
+	private String sex;
+	private int age;
 	
 	public EvaluationEntity() {
 		
 	}
-	public EvaluationEntity(String wechat_id, String phone, String datetime, String content, String profession,
-			String attitude, String speed, String isread, String grade) {
-		super();
+
+	public EvaluationEntity(String wechat_id, String phone, String datetime, String content, String profession, String attitude, String speed, int isread, String grade, int anonymity) {
 		this.wechat_id = wechat_id;
 		this.phone = phone;
 		this.datetime = datetime;
@@ -52,7 +52,9 @@ public class EvaluationEntity {
 		this.speed = speed;
 		this.isread = isread;
 		this.grade = grade;
+		this.anonymity = anonymity;
 	}
+
 	public String getWechat_id() {
 		return wechat_id;
 	}
@@ -92,22 +94,64 @@ public class EvaluationEntity {
 	public String getSpeed() { 
 		return speed;
 	}
+
 	public void setSpeed(String speed) {
 		this.speed = speed;
 	}
-	public String getIsread() {
+
+	public int getIsread() {
 		return isread;
 	}
-	public void setIsread(String isread) {
+
+	public void setIsread(int isread) {
 		this.isread = isread;
 	}
+
 	public String getGrade() {
 		return grade;
 	}
+
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	
-	
-	
+
+	public int getAnonymity() {
+		return anonymity;
+	}
+
+	public void setAnonymity(int anonymity) {
+		this.anonymity = anonymity;
+	}
+
+	public String getHead_pic() {
+		return head_pic;
+	}
+
+	public void setHead_pic(String head_pic) {
+		this.head_pic = head_pic;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 }

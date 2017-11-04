@@ -13,8 +13,9 @@ phone char(20),
 address varchar(100),
 detailed_address varchar(100),
 head_pic varchar(300),
- kind varchar(20),
- prob float,
+ kind varchar(20) default '',
+ prob float default 200,
+ datetime timestamp default current_timestamp,
 primary key (wechat_id)
 )engine=INNODB default charset=utf8;
 */
@@ -23,29 +24,31 @@ public class PatientEntity implements java.io.Serializable{
 
 	private static final long serialVersionUID = 1572885392206876566L;
 
-	private String name;
+	private String name;//姓名
 
-    private String id_card;
+    private String id_card;//身份证号码
 
-    private String sex;
+    private String sex;//性别
 
-    private int age;
+    private int age;//年龄
 
-    private String phone;
+    private String phone;//电话
 
-    private String address;
+    private String address;//地址
 
-    private String detailed_address;
+    private String detailed_address;//详细地址
 
-    private String wechat_id;
+    private String wechat_id;//微信id
 
-    private String head_pic;
+    private String head_pic;//头像
 
-    private String kind;
+    private String kind;//人群类型
 
-    private float  prob;
+    private float  prob;//风险概率
 
- public PatientEntity(String name, String id_card, String sex, int age, String phone, String address, String detailed_address, String wechat_id, String head_pic, String kind, float prob) {
+    private String datetime;//关注时间
+
+ public PatientEntity(String name, String id_card, String sex, int age, String phone, String address, String detailed_address, String wechat_id, String head_pic, String kind, float prob, String datetime) {
   this.name = name;
   this.id_card = id_card;
   this.sex = sex;
@@ -57,6 +60,7 @@ public class PatientEntity implements java.io.Serializable{
   this.head_pic = head_pic;
   this.kind = kind;
   this.prob = prob;
+  this.datetime = datetime;
  }
 
  public PatientEntity() {
@@ -149,5 +153,13 @@ public String getName() {
 
  public void setProb(float prob) {
   this.prob = prob;
+ }
+
+ public String getDatetime() {
+  return datetime;
+ }
+
+ public void setDatetime(String datetime) {
+  this.datetime = datetime;
  }
 }
