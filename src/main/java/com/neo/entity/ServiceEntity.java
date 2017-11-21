@@ -13,7 +13,8 @@ content varchar(300),
 kind varchar(20),
 risk_level_id int default 1,
 status int not null default 1,
-time timestamp not null default current_timestamp on update current_timestamp,
+time timestamp not null default current_timestamp,
+delete_status int not null default 0,
 primary key(id)
 )engine=INNODB default charset=utf8;
 
@@ -29,7 +30,8 @@ public class ServiceEntity {
 	private String kind;//适用人群
 	private int risk_level_id;//风险等级
 	private String time;//更新时间
-	private int status;
+	private int status;//上架下架状态
+	private int delete_status;//删除状态
 
 
 	public ServiceEntity() {
@@ -114,5 +116,21 @@ public class ServiceEntity {
 
 	public void setRisk_levelid(int risk_levelid) {
 		this.risk_level_id = risk_levelid;
+	}
+
+	public int getRisk_level_id() {
+		return risk_level_id;
+	}
+
+	public void setRisk_level_id(int risk_level_id) {
+		this.risk_level_id = risk_level_id;
+	}
+
+	public int getDelete_status() {
+		return delete_status;
+	}
+
+	public void setDelete_status(int delete_status) {
+		this.delete_status = delete_status;
 	}
 }

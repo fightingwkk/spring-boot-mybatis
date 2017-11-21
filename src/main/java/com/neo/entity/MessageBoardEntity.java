@@ -11,6 +11,8 @@ package com.neo.entity;
  content varchar(256) not null,
  isread int not null default 0,
  reply_id int not null default 0,
+ patient_delete int not null default 0,
+ doctor_delete int not null default 0,
  primary key(id)
  )engine=INNODB default charset=utf8;
  */
@@ -25,6 +27,8 @@ public class MessageBoardEntity {
     private String content;//描述
     private int isread;//是否已读
     private int reply_id;//回复的留言id
+    private int patient_delete;//患者是否删除 0不删 删除
+    private int doctor_delete;//医生是否删除 0不删 删除
 
     private String name;
     private String sex;
@@ -136,5 +140,21 @@ public class MessageBoardEntity {
 
     public void setHead_pic(String head_pic) {
         this.head_pic = head_pic;
+    }
+
+    public int getPatient_delete() {
+        return patient_delete;
+    }
+
+    public void setPatient_delete(int patient_delete) {
+        this.patient_delete = patient_delete;
+    }
+
+    public int getDoctor_delete() {
+        return doctor_delete;
+    }
+
+    public void setDoctor_delete(int doctor_delete) {
+        this.doctor_delete = doctor_delete;
     }
 }

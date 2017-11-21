@@ -30,7 +30,7 @@ public class PurchasedServiceEntity {
     private int id;//订单id
     private String purchased_time;//购买时间
     private String indent_number;//订单编号
-    private int indent_status;//订单状态
+    private int indent_status;//订单状态 0未支付 1已支付 2已完成(期限内用完次数) 99已过期
     private String doctor_phone;//医生电话
     private String doctor_name;//医生姓名
     private String  wechat_id;//患者微信id

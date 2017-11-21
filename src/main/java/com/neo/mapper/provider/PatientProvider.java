@@ -1,7 +1,6 @@
 package com.neo.mapper.provider;
 
 import com.neo.entity.MessageBoardEntity;
-import com.neo.entity.MessageReplyEntity;
 import com.neo.entity.PurchasedServiceEntity;
 import org.apache.ibatis.jdbc.SQL;
 

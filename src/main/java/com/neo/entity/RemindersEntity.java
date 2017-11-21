@@ -1,26 +1,27 @@
 package com.neo.entity;
 /*
-create table definition_message(
-id int auto_increment,
-phone varchar(32) not null default '',
-wechat_id varchar(256) not null default '',
-title varchar(32) not null default '',
-content varchar(256) not null default '',
-isread int not null default 0,
+create table reminders (
+id int not null auto_increment,
+phone varchar(31) not null default '',
+title varchar(31) not null default '',
+content varchar(255) not null default '',
 datetime timestamp not null default current_timestamp,
+isread int not null default 0,
+delete_status int not null default 0,
 primary key(id)
-)engine=INNODB default charset=utf8;
+)engine = INNODB default charset=utf8;
+
  */
-public class DefinitionMessageEntity {
+public class RemindersEntity {
     private int id;
     private String phone;
-    private String wechat_id;
     private String title;
     private String content;
     private String datetime;
     private int isread;
+    private int delete_status;
 
-    public DefinitionMessageEntity() {
+    public RemindersEntity() {
     }
 
     public int getId() {
@@ -37,14 +38,6 @@ public class DefinitionMessageEntity {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public String getWechat_id() {
-        return wechat_id;
-    }
-
-    public void setWechat_id(String wechat_id) {
-        this.wechat_id = wechat_id;
     }
 
     public String getTitle() {
@@ -77,5 +70,13 @@ public class DefinitionMessageEntity {
 
     public void setIsread(int isread) {
         this.isread = isread;
+    }
+
+    public int getDelete_status() {
+        return delete_status;
+    }
+
+    public void setDelete_status(int delete_status) {
+        this.delete_status = delete_status;
     }
 }

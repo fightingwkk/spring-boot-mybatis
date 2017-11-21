@@ -6,6 +6,7 @@ package com.neo.entity;
  * @author WANGKK
  
  create table evaluation (
+id int not null auto_increment,
  wechat_id varchar(300) not null,
  phone varchar(20) not null,
  datetime timestamp not null default CURRENT_TIMESTAMP,
@@ -16,13 +17,13 @@ package com.neo.entity;
  isread tinyint default 0,
  grade varchar(5),
 anonymity tinyint default 0,
- primary key(wechat_id,phone,datetime),
- foreign key (wechat_id) references patient_info (wechat_id),
- foreign key (phone) references doctor_info (phone)
+delete_status int not null default 0,
+ primary key(id)
  )engine=INNODB default charset=utf8;
  */
 public class EvaluationEntity {
 
+	private int id;
 	private String wechat_id;//患者
 	private String phone;//医生
 	private String datetime;//评价时间
@@ -33,26 +34,31 @@ public class EvaluationEntity {
 	private int  isread;//是否阅读
 	private String grade;//总评分
 	private int anonymity;//匿名
+	private int delete_status;//删除
 	private String head_pic;
 	private String name;
 	private String sex;
 	private int age;
-	
+
+
 	public EvaluationEntity() {
 		
 	}
 
-	public EvaluationEntity(String wechat_id, String phone, String datetime, String content, String profession, String attitude, String speed, int isread, String grade, int anonymity) {
-		this.wechat_id = wechat_id;
-		this.phone = phone;
-		this.datetime = datetime;
-		this.content = content;
-		this.profession = profession;
-		this.attitude = attitude;
-		this.speed = speed;
-		this.isread = isread;
-		this.grade = grade;
-		this.anonymity = anonymity;
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getDelete_status() {
+		return delete_status;
+	}
+
+	public void setDelete_status(int delete_status) {
+		this.delete_status = delete_status;
 	}
 
 	public String getWechat_id() {

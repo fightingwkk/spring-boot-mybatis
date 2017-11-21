@@ -5,6 +5,7 @@ import com.neo.mapper.HealthMapper;
 import com.neo.mapper.PatientMapper;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -458,9 +459,9 @@ public class HealthController {
     * 将具体消息设置为已读接口
     * */
     @RequestMapping(value = "/message/setread")
-    public String setMessageRead(@RequestParam("wechat_id") String wechat_id, @RequestParam("message_id") int message_id) {
+    public String setMessageRead( @RequestParam("id") int id) {
         try {
-            healthMapper.updateMessageReaded(wechat_id, message_id);
+            healthMapper.updateMessageReaded(id);
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return "error";
@@ -468,28 +469,7 @@ public class HealthController {
         return "success";
     }
 
-    /*
-    *生成消息
-     */
-    @RequestMapping(value = "/message/generate", method = RequestMethod.POST)
-    public void generateMessage() {
-        try {
-            List<String> patientList = patientMapper.selectAllPatients();
-            List<Integer> messageList = patientMapper.selectAllMessage();
-            for (String wechat_id : patientList) {
-                if (patientMapper.selectPurchasedServiceByWechatId(wechat_id) != null) {
-                    String kind = patientMapper.selectById(wechat_id).getKind();
-                    if (kind != null && (kind.equals("高危") || kind.equals("极高危"))) {
-                        for (Integer id : messageList) {
-                            patientMapper.insertMessage(wechat_id, id);
-                        }
-                    }
-                }
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
+
 
     /*
     * 查找具体患者未读消息数量接口
@@ -503,7 +483,20 @@ public class HealthController {
     * 根据消息id获取消息内容
     * */
     @RequestMapping(value = "/message/getbyid")
-    public MessageRemindEntity messageGetById(@RequestParam int message_id) {
-        return healthMapper.selectMessageRemindById(message_id);
+    public MessageRemindEntity messageGetById(@RequestParam int id) {
+        return healthMapper.selectMessageRemindById(id);
     }
+    //自定义消息
+    @RequestMapping(value = "/definemessage", method = RequestMethod.POST)
+    public String defineMessage(@RequestBody DefinitionMessageEntity definitionMessageEntity){
+        try{
+            healthMapper.insertDefinitionMessage(definitionMessageEntity);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return "error";
+        }
+        return "success";
+    }
+
+
 }
