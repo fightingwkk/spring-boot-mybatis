@@ -1,6 +1,7 @@
 package com.neo.entity;
 
 /**
+ #健康信息表
 create table health_info (
  wechat_id varchar(300) not null,
  height float not null,
@@ -16,7 +17,6 @@ create table health_info (
  drink varchar(10) not null,
  drinking varchar(10),
  primary key (wechat_id),
- foreign key(wechat_id) references patient_info (wechat_id)
  )engine=INNODB default charset=utf8;
 
 

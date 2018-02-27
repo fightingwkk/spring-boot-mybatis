@@ -2,7 +2,7 @@ package com.neo.entity;
 
 /**
  * @author WANGKK
-服务包建表
+#服务包表
 create table service(
 id int not null auto_increment,
 name varchar(100) not null,
@@ -29,7 +29,7 @@ public class ServiceEntity {
 	private String content;//内容
 	private String kind;//适用人群
 	private int risk_level_id;//风险等级
-	private String time;//更新时间
+	private String time;//创建时间
 	private int status;//上架下架状态
 	private int delete_status;//删除状态
 

@@ -1,7 +1,7 @@
 package com.neo.entity;
 /**
 
- 购买的服务包
+ #购买的服务包表
  create table purchased_service(
  id int auto_increment,
  purchased_time  timestamp not null default current_timestamp,

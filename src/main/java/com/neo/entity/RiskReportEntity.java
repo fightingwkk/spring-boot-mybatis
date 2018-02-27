@@ -1,6 +1,7 @@
 package com.neo.entity;
 
 /**
+ #风险报告表
  create table risk_report(
  wechat_id varchar(300) not null,
  count int  not null,

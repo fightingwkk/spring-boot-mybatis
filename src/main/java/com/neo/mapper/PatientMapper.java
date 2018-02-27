@@ -87,7 +87,7 @@ public interface PatientMapper {
 	void updatePurchasedServiceExpired(@Param("id") int id);
 
 	//患者评价医生
-	@Insert("insert into evaluation  values(#{wechat_id},#{phone},#{datetime},#{content},#{profession},#{attitude},#{speed},#{isread},#{grade},#{anonymity})")
+	@Insert("insert into evaluation (wechat_id, phone, datetime, content, profession, attitude, speed, isread, grade, anonymity) values(#{wechat_id},#{phone},#{datetime},#{content},#{profession},#{attitude},#{speed},#{isread},#{grade},#{anonymity})")
 	void insertEvaluation(EvaluationEntity evaluationEntity);
 
 	//查找评价

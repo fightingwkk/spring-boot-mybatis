@@ -89,7 +89,7 @@ public interface HealthMapper {
     /*
 * 生成风险评估报告
 * */
-    @Insert("insert into risk_report values (#{wechat_id},#{count},#{time},#{prob},#{risk_level_id})")
+    @Insert("insert into risk_report (wechat_id, count, time, prob, risk_level_id) values (#{wechat_id},#{count},#{time},#{prob},#{risk_level_id})")
     void saveRiskReport(RiskReportEntity riskReportEntity);
 
     /*

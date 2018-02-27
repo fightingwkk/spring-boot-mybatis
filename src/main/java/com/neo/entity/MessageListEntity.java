@@ -1,5 +1,6 @@
 package com.neo.entity;
 /**
+ #患者消息表
  create table message_list(
  id int auto_increment,
  wechat_id varchar(300) not null,

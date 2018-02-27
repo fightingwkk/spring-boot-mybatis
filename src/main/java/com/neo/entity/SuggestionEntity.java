@@ -1,6 +1,7 @@
 package com.neo.entity;
 
 /**
+ #建议表
  create table suggestion (
  id int auto_increment,
  wechat_id varchar(256),

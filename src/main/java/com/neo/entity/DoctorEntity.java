@@ -2,14 +2,10 @@ package com.neo.entity;
 
 /**
 
-
- create database xinyijia;
- 
- use xinyijia;
- 
+ #医生信息表
  create table  doctor_info(
  name varchar(20),
- phone char(20) not null,
+ phone varchar(20) not null,
  password varchar(300) not null,
  sex char(3),
  practice_code varchar(100),

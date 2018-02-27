@@ -380,8 +380,8 @@ public class HealthController {
                         break;
                 }
             }
-
-            DateFormat format = DateFormat.getDateInstance();
+            DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+//            DateFormat format = DateFormat.getDateInstance();
             Date date = new Date();
             String dateStr = format.format(date);
             int count = 0;

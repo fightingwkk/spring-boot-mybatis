@@ -4,7 +4,7 @@ package com.neo.entity;
 
 /**
  * @author WANGKK
- 
+ #评价表
  create table evaluation (
 id int not null auto_increment,
  wechat_id varchar(300) not null,
@@ -14,9 +14,9 @@ id int not null auto_increment,
  profession varchar(5),
  attitude varchar(5),
  speed varchar(5),
- isread tinyint default 0,
+ isread int default 0,
  grade varchar(5),
-anonymity tinyint default 0,
+anonymity int default 0,
 delete_status int not null default 0,
  primary key(id)
  )engine=INNODB default charset=utf8;

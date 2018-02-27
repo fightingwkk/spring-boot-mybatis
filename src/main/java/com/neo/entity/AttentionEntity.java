@@ -1,15 +1,18 @@
 package com.neo.entity;
 /*
 
- 关注表
+ #关注表
  create table attention(
- wechat_id varchar(256),
- phone varchar(32),
- primary key(wechat_id,phone),
+ id int not null auto_increment,
+ wechat_id varchar(300),
+ phone varchar(31),
+ datetime timestamp default current_timestamp,
+ primary key(id),
   )engine=INNODB default charset=utf8;
 
 */
 public class AttentionEntity {
+    private int id;
     private String wechat_id;
     private String phone;
 
@@ -19,6 +22,14 @@ public class AttentionEntity {
     }
 
     public AttentionEntity() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getWechat_id() {

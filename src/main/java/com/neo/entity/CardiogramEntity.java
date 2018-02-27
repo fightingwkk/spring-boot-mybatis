@@ -1,5 +1,6 @@
 package com.neo.entity;
 /**
+ #心电图表
  create table cardiogram(
  id int auto_increment,
  wechat_id varchar(300) not null,
@@ -7,7 +8,6 @@ package com.neo.entity;
  date date not null,
  remark varchar(300) not null,
  primary key(id),
- foreign key (wechat_id) references patient_info (wechat_id)
  )engine=INNODB default charset=utf8;
  */
 public class CardiogramEntity {

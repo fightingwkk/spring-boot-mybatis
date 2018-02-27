@@ -1,5 +1,6 @@
 package com.neo.entity;
 /**
+ #消息模板表
  create table message_remind(
  id int not null auto_increment,
  title varchar(50) not null,

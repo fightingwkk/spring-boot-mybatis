@@ -1,10 +1,11 @@
 package com.neo.entity;
 /*
+#医生标签关系表
 create table label_relation(
 id int auto_increment,
 phone varchar(32) not null,
 label varchar(16) not null,
-wechat_id varchar(256) not null,
+wechat_id varchar(300) not null,
 primary key(id)
 )engine = INNODB default charset=utf8;
  */

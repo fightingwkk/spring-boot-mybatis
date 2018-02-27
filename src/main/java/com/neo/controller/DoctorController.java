@@ -94,9 +94,9 @@ public class DoctorController {
 
     // 插入医生信息
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String register(@RequestParam String phone, @RequestParam String password) {
+    public String register(@RequestParam String phone, @RequestParam String password,@RequestParam String QRcode_pic ) {
         try {
-            doctorMapper.insertDoctor(phone, password);
+            doctorMapper.insertDoctor(phone, password,QRcode_pic);
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return "error";

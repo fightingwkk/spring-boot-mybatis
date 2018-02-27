@@ -1,5 +1,6 @@
 package com.neo.entity;
 /*
+#风险等价表
 create table risk_level (
 id int auto_increment,
 risk_level varchar(32) not null,

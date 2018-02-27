@@ -3,6 +3,7 @@ package com.neo.entity;
 
 
 /**
+ #患者信息表
 create table patient_info(
 wechat_id varchar(300) not null,
 name varchar(20),

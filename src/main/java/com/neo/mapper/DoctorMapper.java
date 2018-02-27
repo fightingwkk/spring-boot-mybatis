@@ -50,19 +50,19 @@ public interface DoctorMapper {
     void updatePassword(@Param("password") String password, @Param("phone") String phone);
 
     //新增一条医生数据
-    @Insert("insert into doctor_info (phone,password) values (#{0},#{1})")
-    void insertDoctor(String phone, String password);
+    @Insert("insert into doctor_info (phone,password,QRcode_pic) values (#{0},#{1},#{2})")
+    void insertDoctor(String phone, String password ,String QRcode_pic);
 
     // 返回所有医生数据
     @Select("select * from doctor_info ")
     List<DoctorEntity> findAllDoctor();
 
     //更新医生数据
-    @SelectProvider(type = DoctorProvider.class, method = "updateDoctor")
+    @UpdateProvider(type = DoctorProvider.class, method = "updateDoctor")
     void updateDoctor(DoctorEntity doctorEntity);
 
     // 返回所有的服务包
-    @Select("select * from service where status=1 order by time asc")
+    @Select("select * from service where status=1 and delete_status=0 order by time asc")
     List<ServiceEntity> findAllService();
 
     //存头像
@@ -137,7 +137,7 @@ public interface DoctorMapper {
     void insertDoctorGroupSending(DoctorGroupSendingEntity doctorGroupSendingEntity);
 
     //查找医生群发消息历史
-    @Select("select * from doctor_group_sending where phone=#{phone} and delete_status=0")
+    @Select("select * from doctor_group_sending where phone=#{phone} and delete_status=0 order by datetime desc")
     List<DoctorGroupSendingEntity> selectDoctorGroupSending(@Param("phone")String phone);
 
     //删除医生群发消息历史

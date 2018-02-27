@@ -1,5 +1,6 @@
 package com.neo.entity;
 /*
+#医生与服务包关系表
 create table doctor_service(
 id int auto_increment,
 doctor_phone varchar(32) not null,

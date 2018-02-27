@@ -27,7 +27,7 @@ public class DoctorProvider {
                 if (doctorEntity.getHospital() != null && !doctorEntity.getHospital().equals("")) {
                     SET("hospital = #{hospital}");
                 }
-                if (doctorEntity.getLabel() != null && !doctorEntity.getLabel().equals("")) {
+                if (doctorEntity.getLabel() != null) {
                     SET("label = #{label}");
                 }
                 if (doctorEntity.getName() != null && !doctorEntity.getName().equals("")) {
@@ -45,13 +45,13 @@ public class DoctorProvider {
                 if (doctorEntity.getQRcode_pic() != null && !doctorEntity.getQRcode_pic().equals("")) {
                     SET("QRcode_pic = #{QRcode_pic}");
                 }
-                if (doctorEntity.getSex() != null && doctorEntity.getSex().equals("")) {
+                if (doctorEntity.getSex() != null && !doctorEntity.getSex().equals("")) {
                     SET("sex = #{sex}");
                 }
                 if (doctorEntity.getTitle() != null && !doctorEntity.getTitle().equals("")) {
                     SET("title = #{title}");
                 }
-                if (doctorEntity.getVerify() != null && doctorEntity.getVerify().equals("")) {
+                if (doctorEntity.getVerify() != null && !doctorEntity.getVerify().equals("")) {
                     SET("verify = #{verify}");
                 }
                 WHERE("phone = #{phone}");

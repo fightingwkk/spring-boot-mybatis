@@ -36,8 +36,13 @@ public class PatientController {
     @CachePut(key = "#patient.getWechat_id()")
     @RequestMapping(value = "/savedetail", method = RequestMethod.POST)
     public PatientEntity savePatient(@RequestBody PatientEntity patient) {
+        PatientEntity pa=patientMapper.selectById(patient.getWechat_id());
+        if(pa==null){
         patientMapper.savePatient(patient);
         return patient;
+        }else{
+            return pa;
+        }
     }
 
     //根据id返回患者信息
@@ -120,6 +125,10 @@ public class PatientController {
     @RequestMapping(value = "/buyservice")
     public String buyService(@RequestParam("wechat_id") String wechat_id, @RequestParam("phone") String phone, @RequestParam("servicelist") List<Integer> servicelist) {
         AttentionEntity attentionEntity = patientMapper.selectMyDoctor(wechat_id);
+        PatientEntity patientEntity = patientMapper.selectById(wechat_id);
+        if(patientEntity==null ){
+            return "info";
+        }
         if (attentionEntity != null) {
             if (attentionEntity.getPhone().equals(phone)) {
                 return buyServices(wechat_id, phone, servicelist);

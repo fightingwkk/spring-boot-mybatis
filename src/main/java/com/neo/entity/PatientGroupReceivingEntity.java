@@ -1,6 +1,7 @@
 package com.neo.entity;
 
 /*
+#患者收到的医生群发消息表
 create table patient_group_receiving(
 id int not null auto_increment,
 phone varchar(31) not null default '',

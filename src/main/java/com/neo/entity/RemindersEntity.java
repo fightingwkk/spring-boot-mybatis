@@ -1,8 +1,9 @@
 package com.neo.entity;
 /*
+#事项提醒表
 create table reminders (
 id int not null auto_increment,
-phone varchar(31) not null default '',
+phone varchar(31) not null,
 title varchar(31) not null default '',
 content varchar(255) not null default '',
 datetime timestamp not null default current_timestamp,

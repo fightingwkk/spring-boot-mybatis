@@ -1,9 +1,10 @@
 package com.neo.entity;
 /*
+#医生群发消息表
 create table doctor_group_sending(
 id int  not null auto_increment,
-phone varchar(31) not null default '',
-content varchar(255) not null default '',
+phone varchar(31) not null,
+content varchar(255) not null,
 datetime timestamp not null default current_timestamp,
 group_name varchar(31) not null default '',
 delete_status int not null default 0,

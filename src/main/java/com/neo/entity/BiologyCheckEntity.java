@@ -3,6 +3,7 @@ package com.neo.entity;
 import java.sql.Date;
 
 /**
+ #生化检查表
  create table biology_info(
  wechat_id varchar(300) not null,
  tch varchar(50) not null,

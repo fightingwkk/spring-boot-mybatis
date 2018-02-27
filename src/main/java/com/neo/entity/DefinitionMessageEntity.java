@@ -1,9 +1,10 @@
 package com.neo.entity;
 /*
+#自定义消息表
 create table definition_message(
 id int auto_increment,
-phone varchar(32) not null default '',
-wechat_id varchar(256) not null default '',
+phone varchar(32) not null,
+wechat_id varchar(256) not null,
 title varchar(32) not null default '',
 content varchar(256) not null default '',
 isread int not null default 0,

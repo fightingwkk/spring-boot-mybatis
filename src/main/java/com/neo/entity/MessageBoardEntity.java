@@ -1,9 +1,10 @@
 package com.neo.entity;
 
 /**
+ #留言板表
  create table message_board(
  id int auto_increment,
- wechat_id varchar(256) not null,
+ wechat_id varchar(300) not null,
  phone varchar(32) not null,
  sender int not null,
  picture varchar(512),

@@ -3,15 +3,16 @@ package com.neo.entity;
 import java.sql.Date;
 
 /**
+ #血压心率表
  create table blood_pressure(
+ id int not null auto_increment,
  wechat_id varchar(300) not null,
  date date not null,
  time varchar(10) not null,
  systolic_pressure varchar(10) not null,
  diastolic_pressure varchar(10) not null,
  rhr varchar(10) not null,
- primary key(wechat_id,date,time),
- foreign key(wechat_id) references patient_info(wechat_id)
+ primary key(id),
  )engine=INNODB default charset=utf8;
  */
 
