@@ -39,8 +39,8 @@ public class DoctorController {
 
     // 验证token
     @Cacheable(value = "token", key = "#token")
-    @RequestMapping(value = "/selecttoken")
-    public String selectToken(@RequestParam String token) {
+    @RequestMapping(value = "/selecttoken", method = RequestMethod.GET)
+    public String selectToken(@RequestParam("token") String token) {
         return doctorMapper.selectToken(token);
     }
 

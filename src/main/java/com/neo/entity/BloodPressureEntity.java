@@ -17,6 +17,7 @@ import java.sql.Date;
  */
 
 public class BloodPressureEntity {
+    private int id;//自动编号
     private String wechat_id;//患者微信号id
     private String date;//日期
     private String time;//时间
@@ -35,6 +36,14 @@ public class BloodPressureEntity {
         this.systolic_pressure = systolic_pressure;
         this.diastolic_pressure = diastolic_pressure;
         this.rhr = rhr;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getWechat_id() {

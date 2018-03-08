@@ -34,7 +34,6 @@ public interface HealthMapper {
     * */
     @Insert("insert into biology_info values (#{wechat_id},#{tch},#{tch_time},#{fbg},#{fbg_time},#{tg},#{tg_time},#{hdl},#{hdl_time},#{ldl},#{ldl_time})")
     void saveBiologyInfo(BiologyCheckEntity biologyCheckEntity);
-
     /*
     * 查找生化检查表
     * */
@@ -81,11 +80,15 @@ public interface HealthMapper {
     List<BloodPressureEntity> bloodPressureListByTimeArea(@Param("wechat_id") String wechat_id, @Param("timearea") int timearea);
 
     /*
-* 保存心电表
+* 保存心电图
 * */
     @Insert("insert into cardiogram (wechat_id,cardiogram,date,remark) values (#{wechat_id},#{cardiogram},#{date},#{remark})")
     void saveCardiogram(CardiogramEntity cardiogramEntity);
-
+    /*
+    * 根据患者查找心电图
+     */
+    @Select("select * from cardiogram where wechat_id = #{wechat_id}")
+    CardiogramEntity findCardiogram(String wechat_id);
     /*
 * 生成风险评估报告
 * */

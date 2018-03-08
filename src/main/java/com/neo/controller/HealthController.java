@@ -73,7 +73,7 @@ public class HealthController {
     /*
     *获得生化检查表
      */
-    @RequestMapping(value = "/getbiologyinfo", method = RequestMethod.GET)
+    @RequestMapping(value = "/getbiologyinfo")
     public BiologyCheckEntity getBiologyInfo(@RequestParam("wechat_id") String wechat_id) {
         return healthMapper.selectBiologyInfoById(wechat_id);
     }
@@ -129,7 +129,7 @@ public class HealthController {
     }
 
     /*
-    * 保存心电表
+    * 保存心电图
     * */
     @RequestMapping(value = "/savecardiogramtable")
     public String saveCardiogramTable(@RequestBody CardiogramEntity cardiogramEntity) {
@@ -142,6 +142,18 @@ public class HealthController {
         return "success";
     }
 
+    /*
+    * 根据患者查找心电图
+     */
+    @RequestMapping(value = "/findcardiogramtable")
+    public CardiogramEntity findCardiogramTable(@RequestBody String wechat_id) {
+        try {
+            return healthMapper.findCardiogram(wechat_id);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
     /*
     * 生成风险评估报告
     * */
@@ -165,13 +177,21 @@ public class HealthController {
             PatientEntity patientEntity = patientMapper.selectById(wechat_id);
             HealthCheckEntity healthCheckEntity = healthMapper.selectHealthInfoById(wechat_id);
             BiologyCheckEntity biologyCheckEntity = healthMapper.selectBiologyCheckById(wechat_id);
-            List<BloodPressureEntity> bloodPressureEntityList = healthMapper.bloodPressureListByTimeArea(wechat_id, 7);
-            if (patientEntity == null || healthCheckEntity == null || biologyCheckEntity == null || bloodPressureEntityList == null) {
-                return "data";
+            List<BloodPressureEntity> bloodPressureEntityList = healthMapper.bloodPressureListByTimeArea(wechat_id, 7);//查找最近七天的血压心率记录
+
+            if (bloodPressureEntityList.size() == 0) {
+                return "blood";
+            }
+            if (healthCheckEntity == null) {
+                return "health";
+            }
+            if (biologyCheckEntity == null) {
+                return "biology";
             }
             if (patientEntity.getAge() < 35) {
                 return "age";
             }
+            //如果有冠心病或脑卒中直接判为100%患病
             if (healthCheckEntity.getChd().equals("有") || healthCheckEntity.getStroke().equals("有")) {
                 DateFormat format = DateFormat.getDateInstance();
                 Date date = new Date();
@@ -201,11 +221,11 @@ public class HealthController {
 
             float height = healthCheckEntity.getHeight() / 100;
             float weight = healthCheckEntity.getWeight();
-            float bodyMassIndex = weight / (height * height);
+            float bodyMassIndex = weight / (height * height);//体质指数
             String sex = patientEntity.getSex();
             int age = patientEntity.getAge();
-            int score = 0;
-            double prob = 0.0;
+            int score = 0;//得分
+            double prob = 0.0;//患病概率
 
             //年龄加分
             if (age >= 35) {
@@ -219,8 +239,8 @@ public class HealthController {
                 score += 2;
             }
             //总胆固醇加分
-            int tch = Integer.parseInt(biologyCheckEntity.getTch());
-            if (tch >= 200) {
+            float tch = Float.parseFloat(biologyCheckEntity.getTch());
+            if (tch * 38.67 >= 200) { // 胆固醇换算 mmol/L×38.67→mg/dL
                 score++;
             }
 
