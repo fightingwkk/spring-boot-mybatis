@@ -16,24 +16,36 @@ import java.util.List;
 public class ScheduleController {
     @Autowired
     PatientMapper patientMapper;
+//    /*
+//  *生成消息
+//   */
+//    @Scheduled(cron="0 0 6 * * ?")
+//    public void generateMessage() {
+//        try {
+//            List<String> patientList = patientMapper.selectAllPatients();
+//            List<Integer> messageList = patientMapper.selectAllMessage();
+//            for (String wechat_id : patientList) {
+//                if (patientMapper.selectPurchasedServiceByWechatId(wechat_id) != null) {
+//                    String kind = patientMapper.selectById(wechat_id).getKind();
+//                    if (kind != null && (kind.equals("高危") || kind.equals("极高危"))) {
+//                        for (Integer id : messageList) {
+//                            patientMapper.insertMessage(wechat_id, id);
+//                        }
+//                    }
+//                }
+//            }
+//        } catch (Exception e) {
+//            System.out.println("定时生成消息发生错误:"+e.getMessage());
+//        }
+//    }
+
     /*
-  *生成消息
-   */
-    @Scheduled(cron="0 0 0 * * ?")
+*定时生成消息
+*/
+    @Scheduled(cron="0 0 6 * * ?")
     public void generateMessage() {
         try {
-            List<String> patientList = patientMapper.selectAllPatients();
-            List<Integer> messageList = patientMapper.selectAllMessage();
-            for (String wechat_id : patientList) {
-                if (patientMapper.selectPurchasedServiceByWechatId(wechat_id) != null) {
-                    String kind = patientMapper.selectById(wechat_id).getKind();
-                    if (kind != null && (kind.equals("高危") || kind.equals("极高危"))) {
-                        for (Integer id : messageList) {
-                            patientMapper.insertMessage(wechat_id, id);
-                        }
-                    }
-                }
-            }
+
         } catch (Exception e) {
             System.out.println("定时生成消息发生错误:"+e.getMessage());
         }

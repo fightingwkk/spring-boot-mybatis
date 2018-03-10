@@ -89,7 +89,7 @@ public interface DoctorMapper {
     PatientEntity selectPatient(String wechat_id);
 
     //根据医生/标签/患者查找患者所有信息
-    @Select("select label_relation.wechat_id,name,age,label_relation.phone,kind,prob,sex,head_pic,address from label_relation ,patient_info where label_relation.wechat_id=patient_info.wechat_id and label_relation.phone=#{phone} and label_relation.wechat_id=#{wechat_id} and label=#{label}")
+    @Select("select label_relation.wechat_id,name,age,patient_info.phone,kind,prob,sex,head_pic,address from label_relation ,patient_info where label_relation.wechat_id=patient_info.wechat_id and label_relation.phone=#{phone} and label_relation.wechat_id=#{wechat_id} and label=#{label}")
     PatientEntity selectPatientsByLabel(@Param("phone") String phone, @Param("wechat_id") String wechat_id, @Param("label") String label);
 
     //根据医生和自定义标签查找患者wechat_id
@@ -169,7 +169,11 @@ public interface DoctorMapper {
     @Select("select count(*) from reminders where phone=#{phone} and isread=0 and delete_status=0")
     int getRemindersUnreadByPhone(@Param("phone")String phone);
 
+    //增加医生建议
+    @Insert("insert into suggestion (content,phone,name) values (#{content},#{phone},#{name})")
+    void insertSuggestion(SuggestionEntity suggestionEntity);
 
-
-
+    //获取软件版本
+    @Select("select * from software order by datetime desc limit 1")
+    SoftwareEntity getSoftware();
 }

@@ -146,7 +146,7 @@ public class HealthController {
     * 根据患者查找心电图
      */
     @RequestMapping(value = "/findcardiogramtable")
-    public CardiogramEntity findCardiogramTable(@RequestBody String wechat_id) {
+    public List<CardiogramEntity> findCardiogramTable(@RequestBody String wechat_id) {
         try {
             return healthMapper.findCardiogram(wechat_id);
         } catch (Exception e) {
@@ -177,7 +177,7 @@ public class HealthController {
             PatientEntity patientEntity = patientMapper.selectById(wechat_id);
             HealthCheckEntity healthCheckEntity = healthMapper.selectHealthInfoById(wechat_id);
             BiologyCheckEntity biologyCheckEntity = healthMapper.selectBiologyCheckById(wechat_id);
-            List<BloodPressureEntity> bloodPressureEntityList = healthMapper.bloodPressureListByTimeArea(wechat_id, 7);//查找最近七天的血压心率记录
+            List<BloodPressureEntity> bloodPressureEntityList = healthMapper.bloodPressureListLatest(wechat_id);//查找最近的血压心率记录
 
             if (bloodPressureEntityList.size() == 0) {
                 return "blood";
@@ -467,6 +467,19 @@ public class HealthController {
         return healthMapper.getReportNumber();
     }
 
+    /*
+    *医生发送模板消息
+     */
+    @RequestMapping(value = "/savemessageremind")
+    public String saveMessageRemind(@RequestBody MessageRemindEntity messageRemindEntity){
+        try{
+            healthMapper.saveMessageRemind(messageRemindEntity);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return "error";
+        }
+        return "success";
+    }
     /*
     * 查找具体患者未读消息接口
     * */

@@ -79,6 +79,11 @@ public interface HealthMapper {
     @Select("select * from blood_pressure where date >= date_sub(curdate(),interval #{timearea} day) and wechat_id=#{wechat_id}")
     List<BloodPressureEntity> bloodPressureListByTimeArea(@Param("wechat_id") String wechat_id, @Param("timearea") int timearea);
 
+    /* 查找最近一次的血压心率记录
+ * */
+    @Select("select * from blood_pressure where  wechat_id=#{wechat_id} order by date desc limit 2")
+    List<BloodPressureEntity> bloodPressureListLatest(@Param("wechat_id") String wechat_id);
+
     /*
 * 保存心电图
 * */
@@ -87,8 +92,8 @@ public interface HealthMapper {
     /*
     * 根据患者查找心电图
      */
-    @Select("select * from cardiogram where wechat_id = #{wechat_id}")
-    CardiogramEntity findCardiogram(String wechat_id);
+    @Select("select * from cardiogram where wechat_id = #{wechat_id} order by date desc")
+    List<CardiogramEntity> findCardiogram(String wechat_id);
     /*
 * 生成风险评估报告
 * */
@@ -142,11 +147,10 @@ public interface HealthMapper {
     BiologyCheckEntity selectBiologyCheckById(String wechat_id);
 
     /*
-    查找血压心率
+    *医生发送模板消息提醒
      */
-    @Select("select * from blood_pressure where wechat_id = #{wechat_id} order by time desc limit 1")
-    BloodPressureEntity selectBloodPressureById(String wechat_id);
-
+    @Insert("insert into message_remind (phone,wechat_id,title,target,remark,period) values (#{phone},#{wechat_id},#{title},#{target},#{remark},#{period})")
+    void saveMessageRemind(MessageRemindEntity messageRemindEntity);
     /*
     * 查找具体患者未读消息接口
     * */

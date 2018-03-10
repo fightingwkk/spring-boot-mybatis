@@ -387,16 +387,30 @@ public class DoctorController {
         return doctorMapper.getRemindersUnreadByPhone(phone);
     }
 
+    /*
+    * 医生建议接口
+    * */
+    @RequestMapping(value = "/suggestion/add", method = RequestMethod.POST)
+    public String addSuggestion(@RequestBody SuggestionEntity suggestionEntity) {
+        try {
+            doctorMapper.insertSuggestion(suggestionEntity);
+            return "success";
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return "error";
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    /*
+    *获取软件版本
+     */
+    @RequestMapping(value = "/software/get", method = RequestMethod.GET)
+    public SoftwareEntity getSoftware(){
+        try{
+            return doctorMapper.getSoftware();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
 }
