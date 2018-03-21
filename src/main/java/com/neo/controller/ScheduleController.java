@@ -1,6 +1,8 @@
 package com.neo.controller;
 
+import com.neo.entity.MessageRemindEntity;
 import com.neo.entity.PurchasedServiceEntity;
+import com.neo.mapper.HealthMapper;
 import com.neo.mapper.PatientMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -16,6 +18,8 @@ import java.util.List;
 public class ScheduleController {
     @Autowired
     PatientMapper patientMapper;
+    @Autowired
+    HealthMapper healthMapper;
 //    /*
 //  *生成消息
 //   */
@@ -45,7 +49,10 @@ public class ScheduleController {
     @Scheduled(cron="0 0 6 * * ?")
     public void generateMessage() {
         try {
-
+            List<MessageRemindEntity> messageRemindEntityList = healthMapper.selectTimingMsgRemind();
+            for (MessageRemindEntity messageRemindEntity: messageRemindEntityList) {
+                healthMapper.insertMsgList(messageRemindEntity.getWechat_id(),messageRemindEntity.getId());
+            }
         } catch (Exception e) {
             System.out.println("定时生成消息发生错误:"+e.getMessage());
         }

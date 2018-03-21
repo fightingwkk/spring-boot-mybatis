@@ -146,12 +146,26 @@ public class HealthController {
     * 根据患者查找心电图
      */
     @RequestMapping(value = "/findcardiogramtable")
-    public List<CardiogramEntity> findCardiogramTable(@RequestBody String wechat_id) {
+    public List<CardiogramEntity> findCardiogramTable(@RequestParam("wechat_id") String wechat_id) {
         try {
-            return healthMapper.findCardiogram(wechat_id);
+            List<CardiogramEntity> list = healthMapper.findCardiogram(wechat_id);
+            return list;
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return null;
+        }
+    }
+    /*
+    *删除心电图
+     */
+    @RequestMapping(value = "/deletecardiogram", method = RequestMethod.POST)
+    public String deleteCardiogramById(@RequestParam("id")int id){
+        try{
+            healthMapper.deleteCardiogramById(id);
+            return "success";
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return "error";
         }
     }
     /*
@@ -481,7 +495,7 @@ public class HealthController {
         return "success";
     }
     /*
-    * 查找具体患者未读消息接口
+    * 查找具体患者未读模板消息接口
     * */
     @RequestMapping(value = "/message/getunread")
     public List<MessageListEntity> getMessageUnread(@RequestParam String wechat_id) {
@@ -489,7 +503,7 @@ public class HealthController {
     }
 
     /*
-    * 将具体消息设置为已读接口
+    * 将具体模板消息设置为已读接口
     * */
     @RequestMapping(value = "/message/setread")
     public String setMessageRead( @RequestParam("id") int id) {
@@ -501,25 +515,64 @@ public class HealthController {
         }
         return "success";
     }
-
+    /*
+    * 将具体模板消息设置为已读接口
+    * */
+    @RequestMapping(value = "/definemessage/setread")
+    public String setDefineMessageRead( @RequestParam("id") int id) {
+        try {
+            healthMapper.updateDefineMessageReaded(id);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return "error";
+        }
+        return "success";
+    }
 
 
     /*
-    * 查找具体患者未读消息数量接口
+    * 查找具体患者未读模板消息数量接口
     * */
     @RequestMapping(value = "/message/unread/getnumber")
     public int getMessageUnreadNumber(@RequestParam String wechat_id) {
         return healthMapper.selectUnreadMessageById(wechat_id);
     }
+    /*
+* 查找具体患者未读自定义消息数量接口
+* */
+    @RequestMapping(value = "/definemessage/unread/getnumber")
+    public int getDefineMsgUnreadNumber(@RequestParam String wechat_id) {
+        return healthMapper.selectUnreadDefineMessageById(wechat_id);
+    }
 
     /*
-    * 根据消息id获取消息内容
+    * 根据模板消息id获取消息内容
     * */
     @RequestMapping(value = "/message/getbyid")
     public MessageRemindEntity messageGetById(@RequestParam int id) {
         return healthMapper.selectMessageRemindById(id);
     }
-    //自定义消息
+    /*
+    * 根据自定义消息id获取消息内容
+    * */
+    @RequestMapping(value = "/definemessage/getbyid")
+    public DefinitionMessageEntity getDefineMsgGetById(@RequestParam int id) {
+        return healthMapper.selectDefineMsgById(id);
+    }
+    /*
+* 根据自定义消息id删除消息内容
+* */
+    @RequestMapping(value = "/definemessage/delete")
+    public String deleteDefineMsgById(@RequestParam int id) {
+        try{
+            healthMapper.deleteDefinitionMsgById(id);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return "error";
+        }
+        return "success";
+    }
+    //医生发送自定义消息
     @RequestMapping(value = "/definemessage", method = RequestMethod.POST)
     public String defineMessage(@RequestBody DefinitionMessageEntity definitionMessageEntity){
         try{
@@ -530,6 +583,12 @@ public class HealthController {
         }
         return "success";
     }
-
+    /*
+    * 查找具体患者自定义消息接口
+    * */
+    @RequestMapping(value = "/definemessage/get")
+    public List<DefinitionMessageEntity> getDefineMsg(@RequestParam String wechat_id) {
+        return healthMapper.selectDefineMsg(wechat_id);
+    }
 
 }

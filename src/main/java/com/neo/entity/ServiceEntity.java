@@ -14,7 +14,7 @@ kind varchar(20),
 risk_level_id int default 1,
 status int not null default 1,
 time timestamp not null default current_timestamp,
-delete_status int not null default 0,
+delete_status int not null default 1,
 primary key(id)
 )engine=INNODB default charset=utf8;
 
@@ -30,7 +30,7 @@ public class ServiceEntity {
 	private String kind;//适用人群
 	private int risk_level_id;//风险等级
 	private String time;//创建时间
-	private int status;//上架下架状态
+	private int status;//服务冻结状态 1未冻结 0冻结
 	private int delete_status;//删除状态
 
 

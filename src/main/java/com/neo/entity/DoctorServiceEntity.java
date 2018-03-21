@@ -5,27 +5,35 @@ create table doctor_service(
 id int auto_increment,
 doctor_phone varchar(32) not null,
 service_id int not null,
-service_name  varchar(128) not null,
-service_price varchar(32) not null,
-service_count int  not null,
-service_duration varchar(32) not null,
-added_time varchar(32) not null,
+added_time  varchar(36),
 added_status int default 1,
+delete_status int default 0,
 primary key (id)
 )engine=INNODB default charset=utf8;
  */
 public class DoctorServiceEntity {
     private int id;
-    private String doctor_phone;
-    private int service_id;
-    private String service_name;
-    private String service_price;
-    private int service_count;
-    private String service_duration;
-    private String added_time;
-    private int added_status;
+    private String doctor_phone;//医生电话
+    private int service_id;//服务id
+    private String name;//服务名称
+    private String price;//服务价格
+    private int count;//服务次数
+    private String duration;//服务周期（天）
+    private String kind;//服务人群
+    private String added_time;//添加时间
+    private int added_status;//上架状态 1上架 0下架
+    private int status;//冻结状态 1未冻结 0冻结
+    private int delete_status;//删除状态 1删除 0未删除
 
     public DoctorServiceEntity() {
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     public int getId() {
@@ -52,36 +60,44 @@ public class DoctorServiceEntity {
         this.service_id = service_id;
     }
 
-    public String getService_name() {
-        return service_name;
+    public String getName() {
+        return name;
     }
 
-    public void setService_name(String service_name) {
-        this.service_name = service_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getService_price() {
-        return service_price;
+    public String getPrice() {
+        return price;
     }
 
-    public void setService_price(String service_price) {
-        this.service_price = service_price;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
-    public int getService_count() {
-        return service_count;
+    public int getCount() {
+        return count;
     }
 
-    public void setService_count(int service_count) {
-        this.service_count = service_count;
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public String getService_duration() {
-        return service_duration;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setService_duration(String service_duration) {
-        this.service_duration = service_duration;
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getKind() {
+        return kind;
+    }
+
+    public void setKind(String kind) {
+        this.kind = kind;
     }
 
     public String getAdded_time() {
@@ -98,5 +114,13 @@ public class DoctorServiceEntity {
 
     public void setAdded_status(int added_status) {
         this.added_status = added_status;
+    }
+
+    public int getDelete_status() {
+        return delete_status;
+    }
+
+    public void setDelete_status(int delete_status) {
+        this.delete_status = delete_status;
     }
 }

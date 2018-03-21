@@ -95,6 +95,11 @@ public interface HealthMapper {
     @Select("select * from cardiogram where wechat_id = #{wechat_id} order by date desc")
     List<CardiogramEntity> findCardiogram(String wechat_id);
     /*
+    *删除心电图
+     */
+    @Delete("delete from cardiogram where id=#{id}")
+    void deleteCardiogramById(int id);
+    /*
 * 生成风险评估报告
 * */
     @Insert("insert into risk_report (wechat_id, count, time, prob, risk_level_id) values (#{wechat_id},#{count},#{time},#{prob},#{risk_level_id})")
@@ -152,32 +157,63 @@ public interface HealthMapper {
     @Insert("insert into message_remind (phone,wechat_id,title,target,remark,period) values (#{phone},#{wechat_id},#{title},#{target},#{remark},#{period})")
     void saveMessageRemind(MessageRemindEntity messageRemindEntity);
     /*
-    * 查找具体患者未读消息接口
+    * 查找具体患者未读模板消息接口
     * */
-    @Select("select a.id,wechat_id,message_id,isread,datetime,title,target,remark,period from message_list a left join message_remind on message_id=message_remind.id where wechat_id=#{wechat_id} and a.datetime >= date_sub(curdate(),interval 7 day) and isread=0   order by datetime desc")
+    @Select("select a.id,a.wechat_id,a.message_id,a.isread,a.datetime,b.title,b.target,b.remark,b.period from message_list a left join message_remind b on a.message_id=b.id where a.wechat_id=#{wechat_id} and a.datetime >= date_sub(curdate(),interval 7 day) and a.isread=0   order by a.datetime desc")
     List<MessageListEntity> selectNoreadMessage(String wechat_id);
 
     /*
-    *根据id查找消息
+    *根据id查找模板消息
      */
-    @Select("select a.id,wechat_id,message_id,isread,datetime,title,target,remark,period from message_list a left join message_remind on message_id=message_remind.id where a.id=#{id} ")
+    @Select("select a.id,a.wechat_id,a.message_id,a.isread,a.datetime,b.title,b.target,b.remark,b.period from message_list a left join message_remind b on a.message_id=b.id where a.id=#{id} ")
     MessageRemindEntity selectMessageRemindById(@Param("id") int id);
-
     /*
-    * 将具体消息设置为已读接口
+    *根据id查找自定义消息
+     */
+    @Select("select * from definition_message where id=#{id} ")
+    DefinitionMessageEntity selectDefineMsgById(@Param("id") int id);
+
+    @Delete("delete from definition_message where id=#{id}")
+    void deleteDefinitionMsgById(@Param("id")int id);
+    /*
+    * 将具体模板消息设置为已读接口
     * */
     @Update("update message_list set isread=1 where id=#{id}")
     void updateMessageReaded( @Param("id") int id);
-
+    /*
+    * 将具体自定义消息设置为已读接口
+    * */
+    @Update("update definition_message set isread=1 where id=#{id}")
+    void updateDefineMessageReaded( @Param("id") int id);
     /*
     *获取患者一周未读消息的数量
      */
     @Select("select count(*) from message_list where wechat_id=#{wechat_id} and datetime >= date_sub(curdate(),interval 7 day) and isread=0")
     int selectUnreadMessageById(String wechat_id);
+    /*
+    *获取患者未读自定义消息的数量
+     */
+    @Select("select count(*) from definition_message where wechat_id=#{wechat_id} and isread=0")
+    int selectUnreadDefineMessageById(String wechat_id);
+    /*
+    *插入一条定时消息
+     */
+    @Insert("insert into message_list (wechat_id,message_id) values(#{wechat_id},#{message_id})")
+    void insertMsgList(@Param("wechat_id")String wechat_id, @Param("message_id") int message_id);
 
     /*
-    *自定义消息
+    *查找需要定时发送的消息
+     */
+    @Select("select * from message_remind where curdate() <= date_add(datetime,interval period day)")
+    List<MessageRemindEntity> selectTimingMsgRemind();
+    /*
+    *插入自定义消息
      */
     @Insert("insert into definition_message (phone,wechat_id,title,content) values (#{phone},#{wechat_id},#{title},#{content})")
     void insertDefinitionMessage(DefinitionMessageEntity definitionMessageEntity);
+    /*
+    *查找自定义消息
+     */
+    @Select("select * from definition_message where wechat_id=#{wechat_id} order by datetime desc")
+    List<DefinitionMessageEntity> selectDefineMsg(String wechat_id);
 }

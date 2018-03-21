@@ -41,7 +41,7 @@ public interface DoctorMapper {
     @Update("update dactor_info set QRcode_pic = #{QRcode_pic}")
     void updateQRcode(String QRcode_pic);
 
-    // 根据电话返回所有医生数据
+    // 根据电话返回医生数据
     @Select("select * from doctor_info where phone = #{phone} ")
     DoctorEntity selectByPhone(String phone);
 
@@ -53,6 +53,10 @@ public interface DoctorMapper {
     @Insert("insert into doctor_info (phone,password,QRcode_pic) values (#{0},#{1},#{2})")
     void insertDoctor(String phone, String password ,String QRcode_pic);
 
+    //给医生添加服务包
+    @Insert("insert into doctor_service (doctor_phone,service_id,added_status,freeze_status) values (#{doctor_phone},#{service_id},#{added_status},#{freeze_status})")
+    void insertDoctorService(DoctorServiceEntity doctorServiceEntity);
+
     // 返回所有医生数据
     @Select("select * from doctor_info ")
     List<DoctorEntity> findAllDoctor();
@@ -61,9 +65,7 @@ public interface DoctorMapper {
     @UpdateProvider(type = DoctorProvider.class, method = "updateDoctor")
     void updateDoctor(DoctorEntity doctorEntity);
 
-    // 返回所有的服务包
-    @Select("select * from service where status=1 and delete_status=0 order by time asc")
-    List<ServiceEntity> findAllService();
+
 
     //存头像
     @Update("update doctor_info set head_pic = #{head_pic} where phone = #{phone}")
@@ -133,7 +135,7 @@ public interface DoctorMapper {
     void deleteEvaluationById(@Param("id") int id);
 
     //医生群发消息
-    @Insert("insert into doctor_group_sending (phone,content,group_name,type) values (#{phone},#{content},#{group_name},#{type})")
+    @Insert("insert into doctor_group_sending (phone,content,group_names,kind_names,patient_names) values (#{phone},#{content},#{group_names},#{kind_names},#{patient_names})")
     void insertDoctorGroupSending(DoctorGroupSendingEntity doctorGroupSendingEntity);
 
     //查找医生群发消息历史
@@ -145,8 +147,8 @@ public interface DoctorMapper {
     void deleteDoctorGroupSending(@Param("id") int id);
 
     //患者获得医生群发的消息
-    @Insert("insert into patient_group_receiving (phone,wechat_id,content) values (#{phone},#{wechat_id},#{content})")
-    void insertPatientGroupReceiving(@Param("phone")String phone,@Param("wechat_id")String wechat_id,@Param("content")String content );
+    @Insert("insert into patient_group_receiving (phone,doctor_name,wechat_id,patient_name,content) values (#{phone},#{doctor_name},#{wechat_id},#{patient_name},#{content})")
+    void insertPatientGroupReceiving(@Param("phone")String phone,@Param("doctor_name")String doctor_name,@Param("wechat_id")String wechat_id,@Param("patient_name")String patient_name,@Param("content")String content );
 
 
     //查找医生的事项提醒
