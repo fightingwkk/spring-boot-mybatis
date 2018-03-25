@@ -3,18 +3,20 @@ package com.neo.entity;
 /**
  #风险报告表
  create table risk_report(
+ id int not null auto_increment,
  wechat_id varchar(300) not null,
  count int  not null,
  time date not null,
  prob float not null,
  risk_level_id int not null default 1,
- primary key(wechat_id,time)
+ primary key(id)
  )engine=INNODB default charset=utf8;
 
 
  alter table risk_report add unique index index_wechat_id_count (wechat_id,count);
  */
 public class RiskReportEntity {
+    private int id;
     private String wechat_id;//患者微信号id
     private int count;//评估次数
     private String time;//评估时间
@@ -44,6 +46,14 @@ public class RiskReportEntity {
         this.time = time;
         this.prob = prob;
         this.risk_level_id = risk_level_id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getWechat_id() {

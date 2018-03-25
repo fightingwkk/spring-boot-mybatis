@@ -426,13 +426,13 @@ public class HealthController {
             }
             int risk_level_id = 0;
             if (prob < 1) {
-                risk_level_id = 1;
-            } else if (prob >= 1 && prob < 5) {
                 risk_level_id = 2;
-            } else if (prob >= 5 && prob < 10) {
+            } else if (prob >= 1 && prob < 5) {
                 risk_level_id = 3;
-            } else if (prob >= 10) {
+            } else if (prob >= 5 && prob < 10) {
                 risk_level_id = 4;
+            } else if (prob >= 10) {
+                risk_level_id = 5;
             }
             PatientEntity patientEntity1 = new PatientEntity();
             patientEntity1.setWechat_id(wechat_id);

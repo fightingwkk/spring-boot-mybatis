@@ -49,7 +49,7 @@ public interface HealthMapper {
     /*
     * 保存血压心率表
     * */
-    @Insert("insert into blood_pressure values(#{wechat_id},#{date},#{time},#{systolic_pressure},#{diastolic_pressure},#{rhr})")
+    @Insert("insert into blood_pressure (wechat_id,date,time,systolic_pressure,diastolic_pressure,rhr) values(#{wechat_id},#{date},#{time},#{systolic_pressure},#{diastolic_pressure},#{rhr})")
     void saveBloodPressure(BloodPressureEntity bloodPressureEntity);
 
     /*
@@ -186,7 +186,7 @@ public interface HealthMapper {
     @Update("update definition_message set isread=1 where id=#{id}")
     void updateDefineMessageReaded( @Param("id") int id);
     /*
-    *获取患者一周未读消息的数量
+    *获取患者一周未读模板消息的数量
      */
     @Select("select count(*) from message_list where wechat_id=#{wechat_id} and datetime >= date_sub(curdate(),interval 7 day) and isread=0")
     int selectUnreadMessageById(String wechat_id);
@@ -202,10 +202,11 @@ public interface HealthMapper {
     void insertMsgList(@Param("wechat_id")String wechat_id, @Param("message_id") int message_id);
 
     /*
-    *查找需要定时发送的消息
+    *查找需要定时发送的模板消息
      */
     @Select("select * from message_remind where curdate() <= date_add(datetime,interval period day)")
     List<MessageRemindEntity> selectTimingMsgRemind();
+
     /*
     *插入自定义消息
      */

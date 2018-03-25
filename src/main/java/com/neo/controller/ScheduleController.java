@@ -49,6 +49,7 @@ public class ScheduleController {
     @Scheduled(cron="0 0 6 * * ?")
     public void generateMessage() {
         try {
+            //发送模板消息
             List<MessageRemindEntity> messageRemindEntityList = healthMapper.selectTimingMsgRemind();
             for (MessageRemindEntity messageRemindEntity: messageRemindEntityList) {
                 healthMapper.insertMsgList(messageRemindEntity.getWechat_id(),messageRemindEntity.getId());

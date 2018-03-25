@@ -36,11 +36,11 @@ public class PatientController {
     @CachePut(key = "#patient.getWechat_id()")
     @RequestMapping(value = "/savedetail", method = RequestMethod.POST)
     public PatientEntity savePatient(@RequestBody PatientEntity patient) {
-        PatientEntity pa=patientMapper.selectById(patient.getWechat_id());
-        if(pa==null){
-        patientMapper.savePatient(patient);
-        return patient;
-        }else{
+        PatientEntity pa = patientMapper.selectById(patient.getWechat_id());
+        if (pa == null) {
+            patientMapper.savePatient(patient);
+            return patient;
+        } else {
             return pa;
         }
     }
@@ -126,7 +126,7 @@ public class PatientController {
     public String buyService(@RequestParam("wechat_id") String wechat_id, @RequestParam("phone") String phone, @RequestParam("servicelist") List<Integer> servicelist) {
         AttentionEntity attentionEntity = patientMapper.selectMyDoctor(wechat_id);
         PatientEntity patientEntity = patientMapper.selectById(wechat_id);
-        if(patientEntity==null ){
+        if (patientEntity == null) {
             return "info";
         }
         if (attentionEntity != null) {
@@ -185,13 +185,18 @@ public class PatientController {
     //患者评价医生
     @RequestMapping(value = "/evaluate")
     public String evaluateDoctor(@RequestBody EvaluationEntity evaluationEntity) {
-
-        if (patientMapper.selectEvaluation(evaluationEntity.getWechat_id(), evaluationEntity.getPhone()) == null) {
-            patientMapper.insertEvaluation(evaluationEntity);
-            return "success";
-        } else {
+        try {
+            if (patientMapper.selectEvaluation(evaluationEntity.getWechat_id(), evaluationEntity.getPhone()) == null) {
+                patientMapper.insertEvaluation(evaluationEntity);
+                return "success";
+            } else {
+                return "did";
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
             return "error";
         }
+
 
     }
 
@@ -366,13 +371,17 @@ public class PatientController {
         try {
             MessageBoardEntity messageBoardEntity = patientMapper.selectPatientMessageBoard(id);
             if (who == 0) {
-
                 patientMapper.deletePatientMessageBoard(messageBoardEntity.getId());
             } else {
                 patientMapper.deleteDoctorMessageBoard(messageBoardEntity.getId());
             }
+
             if (messageBoardEntity.getReply_id() != 0) {
-                patientMapper.deletePatientMessageBoard(messageBoardEntity.getReply_id());
+                if(who == 0){
+                    patientMapper.deletePatientMessageBoard(messageBoardEntity.getReply_id());
+                }else{
+                    patientMapper.deleteDoctorMessageBoard(messageBoardEntity.getReply_id());
+                }
                 List<MessageBoardEntity> replyList = patientMapper.selectMessageBoardReply(messageBoardEntity.getReply_id());
                 for (Iterator<MessageBoardEntity> it = replyList.iterator(); it.hasNext(); ) {
                     if (who == 0) {
@@ -419,20 +428,21 @@ public class PatientController {
      *设置患者的医生群发消息为已读
      */
     @RequestMapping(value = "/groupreceiving/setread", method = RequestMethod.POST)
-    public String setGroupReceivingRead(@RequestParam("id") int id){
-        try{
+    public String setGroupReceivingRead(@RequestParam("id") int id) {
+        try {
             patientMapper.setGroupReceivingRead(id);
-        }catch (Exception e){
-            System.out.println("设置患者的医生群发消息为已读时出错:"+e.getMessage());
+        } catch (Exception e) {
+            System.out.println("设置患者的医生群发消息为已读时出错:" + e.getMessage());
             return "error";
         }
         return "success";
     }
+
     /*
      *获取患者的一个医生群发消息的详细信息
      */
-    @RequestMapping(value = "/groupreceiving/get",method = RequestMethod.GET)
-   public  PatientGroupReceivingEntity getGroupReceiving(@RequestParam("id") int id){
+    @RequestMapping(value = "/groupreceiving/get", method = RequestMethod.GET)
+    public PatientGroupReceivingEntity getGroupReceiving(@RequestParam("id") int id) {
         return patientMapper.getGroupReceiving(id);
     }
 }

@@ -59,7 +59,7 @@ public interface PatientMapper {
 	})
 	String selectDoctorByPatient(String wechat_id);
 	//根据微信id号查找已购买的服务包列表
-	@Select("select * from purchased_service where wechat_id =#{wechat_id} order by purchased_time desc")
+	@Select("select * from purchased_service where wechat_id =#{wechat_id} order by purchased_time")
 	List<PurchasedServiceEntity> selectPurchasedServiceByWechatId(String  wechat_id);
 	//根据id号查找服务包
 	@Select("select * from service where id =#{id}")

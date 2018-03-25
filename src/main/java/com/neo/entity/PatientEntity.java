@@ -45,7 +45,7 @@ public class PatientEntity implements java.io.Serializable{
 
     private String kind;//人群类型
 
-    private float  prob;//风险概率
+    private float  prob;//风险概率 默认值200表示未评估
 
     private String datetime;//关注时间
 
