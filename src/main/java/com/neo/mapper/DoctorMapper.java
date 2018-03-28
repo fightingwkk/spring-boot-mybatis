@@ -54,7 +54,7 @@ public interface DoctorMapper {
     void insertDoctor(String phone, String password ,String QRcode_pic);
 
     //给医生添加服务包
-    @Insert("insert into doctor_service (doctor_phone,service_id,added_status,freeze_status) values (#{doctor_phone},#{service_id},#{added_status},#{freeze_status})")
+    @Insert("insert into doctor_service (doctor_phone,service_id,added_status,delete_status) values (#{doctor_phone},#{service_id},#{added_status},#{delete_status})")
     void insertDoctorService(DoctorServiceEntity doctorServiceEntity);
 
     // 返回所有医生数据
