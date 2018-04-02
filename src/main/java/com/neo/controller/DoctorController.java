@@ -8,6 +8,8 @@ import com.neo.entity.*;
 import com.neo.mapper.HealthMapper;
 import com.neo.mapper.ServiceMapper;
 import com.neo.util.RedisUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
@@ -29,15 +31,17 @@ public class DoctorController {
     @Autowired
     private RedisUtil redisUtil;
 
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     // 插入手机和token
     @CachePut(value = "token", key = "#token")
     @RequestMapping(value = "/savephonetoken")
     public String savePhonetoken(@RequestParam("phone") String phone, @RequestParam("token") String token) {
         try {
             doctorMapper.savePhonetoken(phone, token);
-
+            logger.info("成功插入手机号和token");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("插入手机和token失败:",e.getMessage());
             return "error";
         }
         return token;
@@ -47,20 +51,40 @@ public class DoctorController {
     @Cacheable(value = "token", key = "#token")
     @RequestMapping(value = "/selecttoken", method = RequestMethod.GET)
     public String selectToken(@RequestParam("token") String token) {
-        return doctorMapper.selectToken(token);
+        try{
+            String token1 = doctorMapper.selectToken(token);
+            logger.info("成功验证token");
+            return token1;
+        }catch (Exception e){
+            logger.error("验证token失败：", e.getMessage());
+            return null;
+        }
     }
 
     // 根据手机查找token
     @RequestMapping(value = "/selectphonetoken")
     public String selectPhonetoken(@RequestParam("phone") String phone) {
-        return doctorMapper.selectPhoneToken(phone);
+        try{
+
+            String token = doctorMapper.selectPhoneToken(phone);
+            logger.info("成功根据手机查找到token");
+            return token;
+        }catch (Exception e){
+            logger.error("根据手机查找token失败：",e.getMessage());
+            return null;
+        }
     }
 
     // 删除token
     @CacheEvict(value = "token", key = "#token")
     @RequestMapping(value = "/deletetoken")
     public void deleteToken(@RequestParam String token) {
+        try{
         doctorMapper.deleteToken(token);
+        logger.info("成功删除token");
+        }catch (Exception e){
+            logger.error("删除token失败：", e.getMessage());
+        }
     }
 
     //根据电话更新token
@@ -70,8 +94,9 @@ public class DoctorController {
             doctorMapper.updateToken(newToken, token);
             redisUtil.remove(token);
             redisUtil.set(newToken, newToken);
+            logger.info("成功根据电话更新token");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("根据电话更新token失败：", e.getMessage());
             return "error";
         }
         return "success";
@@ -81,10 +106,16 @@ public class DoctorController {
     // 根据电话和密码查询账号是否存在
     @RequestMapping("/loginverify")
     public Boolean loginVerify(@RequestParam String phone, @RequestParam String password) {
-        DoctorEntity doctor = doctorMapper.selectByPhoneAndPassword(phone, password);
-        if (doctor != null) {
-            return true;
-        } else {
+        try {
+            DoctorEntity doctor = doctorMapper.selectByPhoneAndPassword(phone, password);
+            logger.info("成功根据电话和密码查询账号是否存在");
+            if (doctor != null) {
+                return true;
+            } else {
+                return false;
+            }
+        }catch (Exception e){
+            logger.error("根据电话和密码查询账号是否存在失败：", e.getMessage());
             return false;
         }
     }
@@ -93,14 +124,24 @@ public class DoctorController {
     // @Cacheable(key="#phone")
     @RequestMapping("/findbyphone")
     public DoctorEntity selectByPhone(@RequestParam String phone) {
-        return doctorMapper.selectByPhone(phone);
+        try{
+
+        DoctorEntity doctorEntity = doctorMapper.selectByPhone(phone);
+        logger.info("成功根据电话返回医生的信息");
+        return doctorEntity;
+        }catch (Exception e){
+            logger.error("根据电话返回医生的信息失败：",e.getMessage());
+            return null;
+        }
     }
+
 
     // 插入医生信息
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String register(@RequestParam String phone, @RequestParam String password, @RequestParam String QRcode_pic) {
         try {
             doctorMapper.insertDoctor(phone, password, QRcode_pic);
+            logger.info("成功插入一条医生信息");
             //给医生添加服务
             List<ServiceEntity> serviceEntityList = serviceMapper.findAllService();
             for (ServiceEntity service:serviceEntityList) {
@@ -114,8 +155,9 @@ public class DoctorController {
                 doctorServiceEntity.setAdded_status(1);
                 doctorMapper.insertDoctorService(doctorServiceEntity);
             }
+            logger.info("成功给医生添加服务");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("插入医生信息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -126,8 +168,9 @@ public class DoctorController {
     public String updatePassword(@RequestParam String phone, @RequestParam String password) {
         try {
             doctorMapper.updatePassword(password, phone);
+            logger.info("成功更新密码");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("更新密码失败:",e.getMessage());
             return "error";
         }
         return "success";
@@ -139,8 +182,9 @@ public class DoctorController {
     public String updateDoctorInfoDetails(@RequestBody DoctorEntity doctorEntity) {
         try {
             doctorMapper.updateDoctor(doctorEntity);
+            logger.info("成功更新医生信息");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("更新医生医生信息失败:",e.getMessage());
             return "error";
         }
         return "success";
@@ -150,19 +194,38 @@ public class DoctorController {
     // 返回所有医生信息
     @RequestMapping("/findall")
     public List<DoctorEntity> findAllDoctor() {
-        return doctorMapper.findAllDoctor();
+        try{
+            List<DoctorEntity> list = doctorMapper.findAllDoctor();
+            logger.info("成功查找所有医生");
+            return list;
+        }catch (Exception e){
+            logger.error("查找所有医生失败:",e.getMessage());
+            return null;
+        }
     }
 
     // 返回医生所有服务包
     @RequestMapping("/service")
     public List<DoctorServiceEntity> findDoctorService(@RequestParam("phone") String phone) {
-        return serviceMapper.findDoctorService(phone);
+        try{
+        List<DoctorServiceEntity> list = serviceMapper.findDoctorService(phone);
+        logger.info("成功返回医生所有服务包");
+        return list;
+        }catch (Exception e){
+            logger.error("返回医生所有服务包失败：",e.getMessage());
+            return null;
+        }
     }
 
     //存头像
     @RequestMapping(value = "/updatehead", method = RequestMethod.POST)
     public void updateHead(@RequestParam String head_pic, @RequestParam String phone) {
+        try{
         doctorMapper.updateHead(head_pic, phone);
+        logger.info("成功存储医生头像");
+        }catch (Exception e){
+            logger.error("存储医生头像失败：",e.getMessage());
+        }
     }
 
     //更新擅长和经验
@@ -170,8 +233,9 @@ public class DoctorController {
     public String updateIntroduction(@RequestParam("phone") String phone, @RequestParam("adept") String adept, @RequestParam("experience") String experience) {
         try {
             doctorMapper.updateAdeptExperience(phone, adept, experience);
+            logger.info("成功更新擅长和经验");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("更新擅长和经验失败");
             return "error";
         }
         return "success";
@@ -180,38 +244,49 @@ public class DoctorController {
     //根据医生和类型返回患者的详细数据
     @RequestMapping(value = "/getpatientsbykind", method = RequestMethod.POST)
     public List<PatientEntity> getPatientsByKind(@RequestParam("phone") String phone, @RequestParam("kind") String kind) {
-        List<AttentionEntity> patientAttention = doctorMapper.findMyPatients(phone);
-        if (patientAttention == null) {
+        try{
+            List<AttentionEntity> patientAttention = doctorMapper.findMyPatients(phone);
+            if (patientAttention == null) {
+                return null;
+            }
+            List<PatientEntity> list = new LinkedList<>();
+            for (AttentionEntity ae : patientAttention) {
+                PatientEntity patientEntity = doctorMapper.selectPatient(ae.getWechat_id());
+                if (patientEntity.getKind() != null && patientEntity.getKind().equals(kind)) {
+                    list.add(patientEntity);
+                }
+            }
+            logger.info("成功根据医生和类型返回患者的详细数据");
+            return list;
+        }catch (Exception e){
+            logger.error("根据医生和类型返回患者的详细数据失败：",e.getMessage());
             return null;
         }
-        List<PatientEntity> list = new LinkedList<>();
-        for (AttentionEntity ae : patientAttention) {
-            PatientEntity patientEntity = doctorMapper.selectPatient(ae.getWechat_id());
-            if (patientEntity.getKind() != null && patientEntity.getKind().equals(kind)) {
-                list.add(patientEntity);
-            }
-        }
-        return list;
     }
 
     //根据医生和标签返回患者的详细数据
     @RequestMapping(value = "/getpatientbylabel", method = RequestMethod.POST)
     public List<PatientEntity> getPatientsByLabel(@RequestParam String phone, @RequestParam String label) {
-        List<AttentionEntity> patientAttention = doctorMapper.findMyPatients(phone);
-        if (patientAttention == null) {
+        try{
+            List<AttentionEntity> patientAttention = doctorMapper.findMyPatients(phone);
+            if (patientAttention == null) {
+                return null;
+            }
+            List<PatientEntity> list = new LinkedList<>();
+
+            for (AttentionEntity ae : patientAttention) {
+                PatientEntity patientEntity = doctorMapper.selectPatientsByLabel(phone, ae.getWechat_id(), label);
+                if (patientEntity != null) {
+
+                    list.add(patientEntity);
+                }
+            }
+            logger.info("成功根据医生和标签返回患者的详细数据");
+            return list;
+        }catch (Exception e){
+            logger.error("根据医生和标签返回患者的详细数据失败：", e.getMessage());
             return null;
         }
-        List<PatientEntity> list = new LinkedList<>();
-
-        for (AttentionEntity ae : patientAttention) {
-            PatientEntity patientEntity = doctorMapper.selectPatientsByLabel(phone, ae.getWechat_id(), label);
-            if (patientEntity != null) {
-
-                list.add(patientEntity);
-            }
-        }
-
-        return list;
     }
 
     //添加患者进入医生分组
@@ -219,13 +294,13 @@ public class DoctorController {
     public String addPatientLabel(@RequestParam("phone") String phone, @RequestParam("wechat_id") String wechat_id, @RequestParam("label") String label) {
         try {
             if (doctorMapper.selectPatientsByLabel(phone, wechat_id, label) == null) {
-
                 doctorMapper.insertPatientLabel(phone, wechat_id, label);
             } else {
                 return "success";
             }
+            logger.info("成功添加患者进入医生分组");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.info("根据医生和标签返回患者的详细数据失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -234,7 +309,15 @@ public class DoctorController {
     //获取医生自定义标签
     @RequestMapping(value = "/getlabel", method = RequestMethod.POST)
     public String getLabel(@RequestParam String phone) {
-        return doctorMapper.getDoctorLabel(phone);
+        try{
+
+        String label = doctorMapper.getDoctorLabel(phone);
+        logger.info("成功获取医生自定义标签");
+        return label;
+        }catch (Exception e){
+            logger.error("获取医生自定义标签失败");
+            return null;
+        }
     }
 
     //删除医生自定义标签
@@ -247,8 +330,9 @@ public class DoctorController {
             doctorEntity.setPhone(phone);
             doctorEntity.setLabel(labelStr);
             doctorMapper.updateDoctor(doctorEntity);
+            logger.info("成功删除医生自定义标签");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("删除医生自定义标签失败");
             return "error";
         }
         return "success";
@@ -259,8 +343,9 @@ public class DoctorController {
     public String deleteLabelPatient(@RequestParam("phone") String phone, @RequestParam("wechat_id") String wechat_id, @RequestParam("label") String label) {
         try {
             doctorMapper.deleteLabelPatient(phone, label, wechat_id);
+            logger.info("成功删除标签下的一个用户");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("删除标签下的一个用户失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -269,30 +354,61 @@ public class DoctorController {
     //获取患者信息
     @RequestMapping(value = "/getpatient", method = RequestMethod.GET)
     public PatientEntity getPatient(@RequestParam("wechat_id") String wechat_id) {
-        return doctorMapper.selectPatient(wechat_id);
+        try{
+
+        PatientEntity patientEntity = doctorMapper.selectPatient(wechat_id);
+        logger.info("成功获取患者信息");
+        return patientEntity;
+        }catch (Exception e){
+            logger.error("获取患者信息失败：",e.getMessage());
+            return null;
+        }
     }
 
     //获取医生未读评价的个数
     @RequestMapping(value = "/getevaluationunread")
     public int getEvaluationUnread(@RequestParam("phone") String phone) {
-        return doctorMapper.getEvaluationUnread(phone);
+        try{
+
+        int num = doctorMapper.getEvaluationUnread(phone);
+        logger.info("成功获取医生未读评价的个数");
+        return num;
+        }catch (Exception e){
+            logger.error("获取医生未读评价的个数失败");
+            return -1;
+        }
     }
 
     //获取医生的评价
     @RequestMapping(value = "/getevaluation", method = RequestMethod.GET)
     public List<EvaluationEntity> getEvaluation(@RequestParam("phone") String phone) {
-        return doctorMapper.selectEvaluationByPhone(phone);
+        try{
+
+        List<EvaluationEntity> list = doctorMapper.selectEvaluationByPhone(phone);
+        logger.info("成功获取医生的评价");
+        return list;
+        }catch (Exception e){
+            logger.error("获取医生的评价失败");
+            return null;
+        }
     }
 
     //获取评价的详细信息
     @Transactional
     @RequestMapping(value = "/getevaluationdetail", method = RequestMethod.POST)
     public EvaluationEntity getEvaluationDetail(@RequestParam("id") int id) {
-        EvaluationEntity evaluationEntity = doctorMapper.selectEvaluationById(id);
-        if (evaluationEntity != null && evaluationEntity.getIsread() == 0) {
-            doctorMapper.updateEvaluationById(id);
+        try{
+
+            EvaluationEntity evaluationEntity = doctorMapper.selectEvaluationById(id);
+            if (evaluationEntity != null && evaluationEntity.getIsread() == 0) {
+                doctorMapper.updateEvaluationById(id);
+            }
+            logger.info("成功获取评价的详细信息");
+            return evaluationEntity;
+        }catch (Exception e){
+            logger.error("获取评价的详细信息失败:",e.getMessage());
+            return null;
         }
-        return evaluationEntity;
     }
 
     //删除评价
@@ -300,8 +416,9 @@ public class DoctorController {
     public String deleteEvaluation(@RequestParam("id") int id) {
         try {
             doctorMapper.deleteEvaluationById(id);
+            logger.info("成功删除评价");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("删除评价失败");
             return "error";
         }
         return "success";
@@ -326,7 +443,15 @@ public class DoctorController {
     //获取医生群发消息历史
     @RequestMapping(value = "/groupsendinghistory")
     public List<DoctorGroupSendingEntity> groupSendingHistory(@RequestParam("phone") String phone) {
-        return doctorMapper.selectDoctorGroupSending(phone);
+        try{
+
+        List<DoctorGroupSendingEntity> doctorGroupSendingEntityList = doctorMapper.selectDoctorGroupSending(phone);
+        logger.info("成功获取医生群发消息历史");
+        return doctorGroupSendingEntityList;
+        }catch (Exception e){
+            logger.error("获取医生群发消息历史失败");
+            return null;
+        }
     }
 
     //删除医生群发历史消息
@@ -334,8 +459,9 @@ public class DoctorController {
     public String groupSendingDelete(@RequestParam("id") int id) {
         try {
             doctorMapper.deleteDoctorGroupSending(id);
+            logger.info("成功删除医生群发历史消息");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("删除医生群发历史消息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -403,9 +529,10 @@ public class DoctorController {
                 patientGroupReceivingEntityList.add(patientGroupReceivingEntity);
                 doctorMapper.insertPatientGroupReceiving(doctorGroupSendingEntity.getPhone(),doctorEntity.getName(), patient, patientEntity.getName(),doctorGroupSendingEntity.getContent());
             }
+            logger.info("成功发送医生的群发消息");
             return patientGroupReceivingEntityList;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("发送医生群发消息失败：",e.getMessage());
             return null;
         }
 
@@ -415,28 +542,42 @@ public class DoctorController {
     //查找医生的事项提醒
     @RequestMapping(value = "/geteventremind")
     public List<RemindersEntity> getEventRemind(@RequestParam("phone") String phone) {
-        return doctorMapper.selectRemindersByPhone(phone);
+        try{
+
+        List<RemindersEntity> remindersEntityList = doctorMapper.selectRemindersByPhone(phone);
+        logger.info("成功查找医生的事项提醒");
+        return remindersEntityList;
+        }catch (Exception e){
+            logger.error("查找医生的事项提醒失败：",e.getMessage());
+            return null;
+        }
     }
 
 
     //获取医生事项提醒的详细信息
     @RequestMapping(value = "/geteventreminddetail")
     public RemindersEntity getEventRemindDetail(@RequestParam("id") int id) {
-        RemindersEntity remindersEntity = doctorMapper.selectRemindersById(id);
-        if (remindersEntity != null && remindersEntity.getIsread() == 0) {
-            doctorMapper.updateRemindersById(id);
+        try {
+            RemindersEntity remindersEntity = doctorMapper.selectRemindersById(id);
+            if (remindersEntity != null && remindersEntity.getIsread() == 0) {
+                doctorMapper.updateRemindersById(id);
+            }
+            logger.info("成功获取医生事项提醒的详细信息");
+            return remindersEntity;
+        }catch (Exception e){
+            logger.error("获取医生事项提醒的详细信息失败：",e.getMessage());
+            return null;
         }
-        return remindersEntity;
     }
-
     //删除医生事项提醒
     @RequestMapping(value = "/eventreminddelete", method = RequestMethod.POST)
     public String eventRemindDelete(@RequestParam("id") int id) {
 
         try {
             doctorMapper.deleteRemindersById(id);
+            logger.info("成功删除医生事项提醒");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("删除医生事项提醒失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -445,7 +586,15 @@ public class DoctorController {
     //获取未读事项提醒的个数
     @RequestMapping(value = "/geteventremindunread")
     public int getEvenRemindUnread(@RequestParam("phone") String phone) {
-        return doctorMapper.getRemindersUnreadByPhone(phone);
+        try{
+
+        int num = doctorMapper.getRemindersUnreadByPhone(phone);
+        logger.info("成功获取未读事项提醒的个数");
+        return num;
+        }catch (Exception e){
+            logger.error("获取未读事项提醒的个数失败：",e.getMessage());
+            return -1;
+        }
     }
 
     /*
@@ -455,9 +604,10 @@ public class DoctorController {
     public String addSuggestion(@RequestBody SuggestionEntity suggestionEntity) {
         try {
             doctorMapper.insertSuggestion(suggestionEntity);
+            logger.info("成功插入医生建议");
             return "success";
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("插入医生建议失败：",e.getMessage());
             return "error";
         }
     }
@@ -468,9 +618,12 @@ public class DoctorController {
     @RequestMapping(value = "/software/get", method = RequestMethod.GET)
     public SoftwareEntity getSoftware() {
         try {
-            return doctorMapper.getSoftware();
+
+            SoftwareEntity softwareEntity = doctorMapper.getSoftware();
+            logger.info("成功获取软件");
+            return softwareEntity;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("获取软件出错：",e.getMessage());
             return null;
         }
     }

@@ -1,0 +1,1071 @@
+00:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+00:03:57.284 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:08:57.287 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:13:57.289 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:18:57.291 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:23:57.293 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:28:57.296 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:33:57.297 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:38:57.298 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:43:57.300 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:48:57.300 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:53:57.302 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:58:57.303 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:00:00.011 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+01:03:57.305 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:08:57.306 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:13:57.307 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:18:57.308 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:23:57.311 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:28:57.312 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:33:57.313 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:38:57.315 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:43:57.317 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:48:57.318 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:53:57.318 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:58:57.319 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:00:00.003 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+02:03:57.321 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:08:57.321 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:13:57.323 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:18:57.324 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:23:57.325 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:28:57.327 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:33:57.329 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:38:57.331 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:43:57.332 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:48:57.334 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:53:57.335 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+02:58:57.337 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:00:00.005 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+03:03:57.339 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:08:57.341 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:13:57.343 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:18:57.345 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:23:57.346 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:28:57.347 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:33:57.348 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:38:57.350 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:43:57.352 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:48:57.353 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:53:57.354 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+03:58:57.355 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+04:03:57.356 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:08:57.357 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:13:57.358 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:18:57.360 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:23:57.362 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:28:57.363 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:33:57.364 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:38:57.365 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:43:57.367 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:48:57.369 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:53:57.370 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+04:58:57.372 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:00:00.006 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+05:03:57.374 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:08:57.375 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:13:57.376 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:18:57.377 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:23:57.378 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:28:57.380 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:33:57.381 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:38:57.383 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:43:57.384 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:48:57.385 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:53:57.387 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+05:58:57.388 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:00:00.172 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功发送定时生成消息
+06:00:00.174 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+06:03:57.389 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:08:57.391 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:13:57.392 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:18:53.724 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:23:53.725 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:28:53.727 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:33:53.729 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:38:53.731 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:43:53.732 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:48:53.733 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:53:53.734 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:58:53.735 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+06:59:56.335 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+07:03:53.737 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:08:53.739 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:13:53.740 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:18:53.742 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:23:53.744 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:28:53.745 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:33:53.746 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:38:53.747 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:43:53.748 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:48:53.749 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:53:53.751 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:58:53.752 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+08:03:53.753 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:08:53.754 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:13:53.754 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:18:53.755 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:23:53.756 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:28:53.758 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:33:53.758 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:38:53.759 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:43:53.760 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:48:53.761 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:53:53.763 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:58:53.765 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:00:00.005 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+09:03:53.766 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:08:53.768 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:13:53.769 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:18:53.770 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:23:53.770 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:28:53.773 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:33:53.774 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:38:53.775 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:43:53.777 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:48:53.778 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:53:53.780 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:58:53.781 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+10:03:53.782 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:08:53.783 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:12:53.492 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+10:12:53.492 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+10:12:53.494 logback [http-nio-1601-exec-8] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:12:53.798 logback [http-nio-1601-exec-9] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+10:12:54.163 logback [http-nio-1601-exec-3] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:12:59.382 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:12:59.403 logback [http-nio-1601-exec-5] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:13:00.037 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:13:04.059 logback [http-nio-1601-exec-7] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:13:04.106 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+10:13:04.106 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+10:13:04.215 logback [http-nio-1601-exec-9] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+10:13:04.552 logback [http-nio-1601-exec-3] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:13:20.393 logback [http-nio-1601-exec-1] INFO  com.neo.controller.HealthController - 成功查找健康信息
+10:13:53.786 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:15:31.992 logback [http-nio-1601-exec-4] INFO  com.neo.controller.HealthController - 成功查找健康信息
+10:16:01.136 logback [http-nio-1601-exec-7] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:16:01.166 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+10:16:01.166 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+10:16:01.487 logback [http-nio-1601-exec-9] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+10:16:01.855 logback [http-nio-1601-exec-3] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:16:03.910 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:16:04.077 logback [http-nio-1601-exec-5] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:16:04.467 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:16:26.476 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:16:26.633 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:16:26.853 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:18:53.786 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:20:19.398 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:20:19.617 logback [http-nio-1601-exec-5] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:20:19.872 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:20:36.022 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:20:36.059 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:20:36.393 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:23:53.788 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:25:46.602 logback [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2238c104: startup date [Fri Mar 30 13:03:38 GMT+08:00 2018]; root of context hierarchy
+10:25:46.639 logback [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69528b8a: startup date [Fri Mar 30 13:03:40 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2238c104
+10:25:46.710 logback [Thread-4] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application microservice-jiayibilin-mySql with eureka with status DOWN
+10:25:46.711 logback [Thread-4] WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1522463146711, current=DOWN, previous=UP]
+10:25:46.718 logback [Thread-4] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+10:25:46.732 logback [Thread-4] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+10:25:46.772 logback [Thread-4] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601 - deregister  status: 200
+10:25:46.862 logback [Thread-4] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+10:25:46.879 logback [Thread-4] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+10:25:47.050 logback [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:25:47.050 logback [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+10:25:47.172 logback [Thread-4] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+10:25:51.597 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@25129a75: startup date [Sat Mar 31 10:25:51 GMT+08:00 2018]; root of context hierarchy
+10:25:51.657 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:25:51.661 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$35edc3af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:25:52.522 logback [restartedMain] INFO  com.neo.Application - No active profile set, falling back to default profiles: default
+10:25:52.537 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f515170: startup date [Sat Mar 31 10:25:52 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@25129a75
+10:25:59.748 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:26:00.435 logback [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f8a9f73-c0d6-3a21-a492-05862e7c02fe
+10:26:00.675 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:26:00.702 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [class com.neo.config.RedisCacheConfig$$EnhancerBySpringCGLIB$$bdce6949] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:26:00.706 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$19d3c0b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:26:00.710 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$62e5f6d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:26:00.724 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$35edc3af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:26:01.385 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 1601 (http)
+10:26:01.386 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+10:26:01.386 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+10:26:01.420 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:26:01.432 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8895 ms
+10:26:01.652 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:26:01.659 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.neo.config.DruidStatViewServlet' to [/druid/*]
+10:26:01.659 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:26:01.659 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:26:01.660 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:26:01.666 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:26:01.666 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+10:26:03.640 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f515170: startup date [Sat Mar 31 10:25:52 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@25129a75
+10:26:03.682 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/register],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.register(java.lang.String,java.lang.String,java.lang.String)
+10:26:03.682 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updateintroduction],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updateIntroduction(java.lang.String,java.lang.String,java.lang.String)
+10:26:03.682 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluationunread]}" onto public int com.neo.controller.DoctorController.getEvaluationUnread(java.lang.String)
+10:26:03.695 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsendinghistory]}" onto public java.util.List<com.neo.entity.DoctorGroupSendingEntity> com.neo.controller.DoctorController.groupSendingHistory(java.lang.String)
+10:26:03.695 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatedoctorinfodetails],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updateDoctorInfoDetails(com.neo.entity.DoctorEntity)
+10:26:03.696 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatientsbykind],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientEntity> com.neo.controller.DoctorController.getPatientsByKind(java.lang.String,java.lang.String)
+10:26:03.696 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatientbylabel],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientEntity> com.neo.controller.DoctorController.getPatientsByLabel(java.lang.String,java.lang.String)
+10:26:03.696 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluationdetail],methods=[POST]}" onto public com.neo.entity.EvaluationEntity com.neo.controller.DoctorController.getEvaluationDetail(int)
+10:26:03.696 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventremindunread]}" onto public int com.neo.controller.DoctorController.getEvenRemindUnread(java.lang.String)
+10:26:03.697 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/service]}" onto public java.util.List<com.neo.entity.DoctorServiceEntity> com.neo.controller.DoctorController.findDoctorService(java.lang.String)
+10:26:03.697 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/eventreminddelete],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.eventRemindDelete(int)
+10:26:03.697 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsendingdelete]}" onto public java.lang.String com.neo.controller.DoctorController.groupSendingDelete(int)
+10:26:03.697 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventreminddetail]}" onto public com.neo.entity.RemindersEntity com.neo.controller.DoctorController.getEventRemindDetail(int)
+10:26:03.697 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletepatientlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteLabelPatient(java.lang.String,java.lang.String,java.lang.String)
+10:26:03.698 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/findall]}" onto public java.util.List<com.neo.entity.DoctorEntity> com.neo.controller.DoctorController.findAllDoctor()
+10:26:03.698 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletelabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteLabel(java.lang.String,java.lang.String,java.lang.String)
+10:26:03.698 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletetoken]}" onto public void com.neo.controller.DoctorController.deleteToken(java.lang.String)
+10:26:03.698 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/loginverify]}" onto public java.lang.Boolean com.neo.controller.DoctorController.loginVerify(java.lang.String,java.lang.String)
+10:26:03.699 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.getLabel(java.lang.String)
+10:26:03.699 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatetoken]}" onto public java.lang.String com.neo.controller.DoctorController.updateToken(java.lang.String,java.lang.String)
+10:26:03.701 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatient],methods=[GET]}" onto public com.neo.entity.PatientEntity com.neo.controller.DoctorController.getPatient(java.lang.String)
+10:26:03.701 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/selecttoken],methods=[GET]}" onto public java.lang.String com.neo.controller.DoctorController.selectToken(java.lang.String)
+10:26:03.702 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventremind]}" onto public java.util.List<com.neo.entity.RemindersEntity> com.neo.controller.DoctorController.getEventRemind(java.lang.String)
+10:26:03.702 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/selectphonetoken]}" onto public java.lang.String com.neo.controller.DoctorController.selectPhonetoken(java.lang.String)
+10:26:03.702 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/savephonetoken]}" onto public java.lang.String com.neo.controller.DoctorController.savePhonetoken(java.lang.String,java.lang.String)
+10:26:03.702 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/addpatientlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.addPatientLabel(java.lang.String,java.lang.String,java.lang.String)
+10:26:03.702 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluation],methods=[GET]}" onto public java.util.List<com.neo.entity.EvaluationEntity> com.neo.controller.DoctorController.getEvaluation(java.lang.String)
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatehead],methods=[POST]}" onto public void com.neo.controller.DoctorController.updateHead(java.lang.String,java.lang.String)
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deleteevaluation],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteEvaluation(int)
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsending],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientGroupReceivingEntity> com.neo.controller.DoctorController.groupSending(com.neo.entity.DoctorGroupSendingEntity)
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/findbyphone]}" onto public com.neo.entity.DoctorEntity com.neo.controller.DoctorController.selectByPhone(java.lang.String)
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatepwd],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updatePassword(java.lang.String,java.lang.String)
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/software/get],methods=[GET]}" onto public com.neo.entity.SoftwareEntity com.neo.controller.DoctorController.getSoftware()
+10:26:03.703 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/suggestion/add],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.addSuggestion(com.neo.entity.SuggestionEntity)
+10:26:03.708 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savebloodpressuretable]}" onto public java.lang.String com.neo.controller.HealthController.saveBloodPressureTable(com.neo.entity.BloodPressureEntity)
+10:26:03.708 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getbloodpressuretable]}" onto public java.util.List<com.neo.entity.BloodPressureEntity> com.neo.controller.HealthController.getBloodPressureTable(java.lang.String,int,java.lang.String)
+10:26:03.708 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savecardiogramtable]}" onto public java.lang.String com.neo.controller.HealthController.saveCardiogramTable(com.neo.entity.CardiogramEntity)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/findcardiogramtable]}" onto public java.util.List<com.neo.entity.CardiogramEntity> com.neo.controller.HealthController.findCardiogramTable(java.lang.String)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/deletecardiogram],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.deleteCardiogramById(int)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/setread]}" onto public java.lang.String com.neo.controller.HealthController.setDefineMessageRead(int)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/getbycount]}" onto public com.neo.entity.RiskReportEntity com.neo.controller.HealthController.getRiskReportByCount(java.lang.String,int)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savemessageremind]}" onto public java.lang.String com.neo.controller.HealthController.saveMessageRemind(com.neo.entity.MessageRemindEntity)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/getbyid]}" onto public com.neo.entity.DefinitionMessageEntity com.neo.controller.HealthController.getDefineMsgGetById(int)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/unread/getnumber]}" onto public int com.neo.controller.HealthController.getDefineMsgUnreadNumber(java.lang.String)
+10:26:03.709 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/unread/getnumber]}" onto public int com.neo.controller.HealthController.getMessageUnreadNumber(java.lang.String)
+10:26:03.710 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/delete]}" onto public java.lang.String com.neo.controller.HealthController.deleteDefineMsgById(int)
+10:26:03.710 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savehealthtable]}" onto public java.lang.String com.neo.controller.HealthController.saveHealthTable(com.neo.entity.HealthCheckEntity)
+10:26:03.710 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/generate],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.saveReport(java.lang.String)
+10:26:03.710 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/gethealthtable]}" onto public com.neo.entity.HealthCheckEntity com.neo.controller.HealthController.getHealthTable(java.lang.String)
+10:26:03.710 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savebiologytable]}" onto public java.lang.String com.neo.controller.HealthController.saveBiologyTable(com.neo.entity.BiologyCheckEntity)
+10:26:03.710 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/bloodpressuretable/find]}" onto public java.lang.String com.neo.controller.HealthController.Findbloodhistory(java.lang.String)
+10:26:03.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getbiologyinfo]}" onto public com.neo.entity.BiologyCheckEntity com.neo.controller.HealthController.getBiologyInfo(java.lang.String)
+10:26:03.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/get]}" onto public java.util.List<com.neo.entity.DefinitionMessageEntity> com.neo.controller.HealthController.getDefineMsg(java.lang.String)
+10:26:03.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getreportnumber]}" onto public java.lang.Integer com.neo.controller.HealthController.getReportNumber()
+10:26:03.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.defineMessage(com.neo.entity.DefinitionMessageEntity)
+10:26:03.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/setread]}" onto public java.lang.String com.neo.controller.HealthController.setMessageRead(int)
+10:26:03.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/getunread]}" onto public java.util.List<com.neo.entity.MessageListEntity> com.neo.controller.HealthController.getMessageUnread(java.lang.String)
+10:26:03.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getnewestreport]}" onto public com.neo.entity.RiskReportEntity com.neo.controller.HealthController.getNewestReport(java.lang.String)
+10:26:03.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/getall]}" onto public java.util.List<com.neo.entity.RiskReportEntity> com.neo.controller.HealthController.getAllReport(java.lang.String)
+10:26:03.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/getbyid]}" onto public com.neo.entity.MessageRemindEntity com.neo.controller.HealthController.messageGetById(int)
+10:26:03.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/updatepatient],methods=[POST]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.update(com.neo.entity.PatientEntity)
+10:26:03.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/unread]}" onto public int com.neo.controller.PatientController.getGroupReceivingUnread(java.lang.String)
+10:26:03.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getpatientnewestmessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getPatientNewestMessageBoards(java.lang.String)
+10:26:03.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/delete],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.deleteGroupReceiving(int)
+10:26:03.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/list]}" onto public java.util.List<com.neo.entity.PatientGroupReceivingEntity> com.neo.controller.PatientController.getPatientGroupReceiving(java.lang.String)
+10:26:03.717 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getdoctornewestmessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getNewestMessageBoards(java.lang.String)
+10:26:03.717 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/setread],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.setGroupReceivingRead(int)
+10:26:03.717 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getonemessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getOneMessageBoardAndReply(int,int)
+10:26:03.717 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/delete],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.deletePatientMessageBoard(int,int)
+10:26:03.717 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/get],methods=[GET]}" onto public com.neo.entity.PatientGroupReceivingEntity com.neo.controller.PatientController.getGroupReceiving(int)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/buyservice]}" onto public java.lang.String com.neo.controller.PatientController.buyService(java.lang.String,java.lang.String,java.util.List<java.lang.Integer>)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/evaluate]}" onto public java.lang.String com.neo.controller.PatientController.evaluateDoctor(com.neo.entity.EvaluationEntity)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findmyservice]}" onto public java.util.List<com.neo.entity.PurchasedServiceEntity> com.neo.controller.PatientController.findMyService(java.lang.String)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/savedetail],methods=[POST]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.savePatient(com.neo.entity.PatientEntity)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findmydoctor]}" onto public java.lang.String com.neo.controller.PatientController.findMyDoctor(java.lang.String)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/set],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.setMessageBoard(com.neo.entity.MessageBoardEntity)
+10:26:03.718 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/watchdoctor],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.watchDoctor(java.lang.String,java.lang.String)
+10:26:03.720 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/contact/suggest],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.suggest(com.neo.entity.SuggestionEntity)
+10:26:03.720 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findbywechatid]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.selectById(java.lang.String)
+10:26:03.721 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/service/findbyid]}" onto public com.neo.entity.ServiceEntity com.neo.controller.ServiceController.findService(java.lang.Integer)
+10:26:03.721 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/service/findbylist]}" onto public java.util.List<com.neo.entity.ServiceEntity> com.neo.controller.ServiceController.findServiceList(java.util.List<java.lang.Integer>)
+10:26:03.723 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:26:03.723 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:26:03.762 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:03.762 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:03.818 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:26:04.288 logback [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+10:26:04.364 logback [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:26:04.364 logback [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:26:04.474 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:26:04.475 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+10:26:04.478 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+10:26:04.480 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+10:26:04.481 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+10:26:04.484 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+10:26:04.488 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+10:26:04.492 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3f515170,type=ConfigurationPropertiesRebinder]
+10:26:04.498 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+10:26:05.595 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+10:26:05.598 logback [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+10:26:05.609 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+10:26:05.615 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+10:26:05.615 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+10:26:05.615 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+10:26:05.615 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+10:26:05.764 logback [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+10:26:05.823 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+10:26:05.829 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+10:26:05.830 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 10
+10:26:05.830 logback [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:26:05.833 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1522463165833 with initial instances count: 3
+10:26:05.850 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application microservice-jiayibilin-mySql with eureka with status UP
+10:26:05.850 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1522463165850, current=UP, previous=STARTING]
+10:26:05.851 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601: registering service...
+10:26:05.858 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601 - registration status: 204
+10:26:05.861 logback [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10:26:05.862 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1601"]
+10:26:05.862 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-1601]
+10:26:05.864 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:26:05.868 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 1601 (http)
+10:26:05.869 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1601
+10:26:05.871 logback [restartedMain] INFO  com.neo.Application - Started Application in 15.447 seconds (JVM running for 76955.819)
+10:31:05.826 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:33:51.126 logback [http-nio-1601-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:33:51.127 logback [http-nio-1601-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:33:51.133 logback [http-nio-1601-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+10:33:51.434 logback [http-nio-1601-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+10:33:51.511 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:33:51.525 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:33:51.933 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:33:55.204 logback [http-nio-1601-exec-5] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:34:01.921 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:34:02.089 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:34:02.292 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:34:08.854 logback [http-nio-1601-exec-10] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:34:15.699 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:34:15.852 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:34:16.070 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:34:32.036 logback [http-nio-1601-exec-5] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:34:44.977 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+10:34:45.133 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+10:34:45.407 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:34:54.083 logback [http-nio-1601-exec-3] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:34:54.189 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+10:34:54.190 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+10:34:54.795 logback [http-nio-1601-exec-4] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+10:34:55.147 logback [http-nio-1601-exec-5] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:34:57.028 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:34:59.699 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:35:38.651 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:35:41.301 logback [http-nio-1601-exec-9] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:35:50.366 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:35:52.915 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:36:05.827 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:36:07.916 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:36:10.168 logback [http-nio-1601-exec-4] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:37:21.603 logback [http-nio-1601-exec-8] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:37:21.690 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+10:37:21.690 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+10:37:22.284 logback [http-nio-1601-exec-10] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+10:37:22.633 logback [http-nio-1601-exec-2] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+10:37:24.427 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:37:32.560 logback [http-nio-1601-exec-1] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+10:41:05.828 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:46:05.831 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:47:41.162 logback [Thread-59] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@25129a75: startup date [Sat Mar 31 10:25:51 GMT+08:00 2018]; root of context hierarchy
+10:47:41.176 logback [Thread-59] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f515170: startup date [Sat Mar 31 10:25:52 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@25129a75
+10:47:41.177 logback [Thread-59] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application microservice-jiayibilin-mySql with eureka with status DOWN
+10:47:41.177 logback [Thread-59] WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1522464461177, current=DOWN, previous=UP]
+10:47:41.178 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601: registering service...
+10:47:41.178 logback [Thread-59] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+10:47:41.179 logback [Thread-59] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+10:47:41.181 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601 - registration status: 204
+10:47:41.182 logback [Thread-59] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601 - deregister  status: 200
+10:47:41.190 logback [Thread-59] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+10:47:41.192 logback [Thread-59] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+10:47:41.193 logback [Thread-59] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:47:41.193 logback [Thread-59] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+10:47:41.197 logback [Thread-59] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+10:47:43.954 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c5d7cc8: startup date [Sat Mar 31 10:47:43 GMT+08:00 2018]; root of context hierarchy
+10:47:44.051 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:47:44.053 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$35edc3af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:45.420 logback [restartedMain] INFO  com.neo.Application - No active profile set, falling back to default profiles: default
+10:47:45.430 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5474167e: startup date [Sat Mar 31 10:47:45 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c5d7cc8
+10:47:55.457 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:47:56.185 logback [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f8a9f73-c0d6-3a21-a492-05862e7c02fe
+10:47:56.633 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:47:56.689 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [class com.neo.config.RedisCacheConfig$$EnhancerBySpringCGLIB$$bdce6949] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:56.705 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$19d3c0b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:56.709 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$62e5f6d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:56.714 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$35edc3af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:57.510 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 1601 (http)
+10:47:57.510 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+10:47:57.511 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+10:47:57.559 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:47:57.559 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 12129 ms
+10:47:57.806 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:47:57.807 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.neo.config.DruidStatViewServlet' to [/druid/*]
+10:47:57.807 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:47:57.807 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:47:57.807 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:47:57.807 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:47:57.807 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+10:48:00.616 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5474167e: startup date [Sat Mar 31 10:47:45 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c5d7cc8
+10:48:00.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/register],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.register(java.lang.String,java.lang.String,java.lang.String)
+10:48:00.711 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updateintroduction],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updateIntroduction(java.lang.String,java.lang.String,java.lang.String)
+10:48:00.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluationunread]}" onto public int com.neo.controller.DoctorController.getEvaluationUnread(java.lang.String)
+10:48:00.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsendinghistory]}" onto public java.util.List<com.neo.entity.DoctorGroupSendingEntity> com.neo.controller.DoctorController.groupSendingHistory(java.lang.String)
+10:48:00.712 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatedoctorinfodetails],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updateDoctorInfoDetails(com.neo.entity.DoctorEntity)
+10:48:00.713 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatientsbykind],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientEntity> com.neo.controller.DoctorController.getPatientsByKind(java.lang.String,java.lang.String)
+10:48:00.714 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatientbylabel],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientEntity> com.neo.controller.DoctorController.getPatientsByLabel(java.lang.String,java.lang.String)
+10:48:00.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluationdetail],methods=[POST]}" onto public com.neo.entity.EvaluationEntity com.neo.controller.DoctorController.getEvaluationDetail(int)
+10:48:00.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventremindunread]}" onto public int com.neo.controller.DoctorController.getEvenRemindUnread(java.lang.String)
+10:48:00.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/service]}" onto public java.util.List<com.neo.entity.DoctorServiceEntity> com.neo.controller.DoctorController.findDoctorService(java.lang.String)
+10:48:00.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/eventreminddelete],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.eventRemindDelete(int)
+10:48:00.715 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsendingdelete]}" onto public java.lang.String com.neo.controller.DoctorController.groupSendingDelete(int)
+10:48:00.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventreminddetail]}" onto public com.neo.entity.RemindersEntity com.neo.controller.DoctorController.getEventRemindDetail(int)
+10:48:00.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletepatientlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteLabelPatient(java.lang.String,java.lang.String,java.lang.String)
+10:48:00.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/findall]}" onto public java.util.List<com.neo.entity.DoctorEntity> com.neo.controller.DoctorController.findAllDoctor()
+10:48:00.716 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletelabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteLabel(java.lang.String,java.lang.String,java.lang.String)
+10:48:00.722 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletetoken]}" onto public void com.neo.controller.DoctorController.deleteToken(java.lang.String)
+10:48:00.722 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/loginverify]}" onto public java.lang.Boolean com.neo.controller.DoctorController.loginVerify(java.lang.String,java.lang.String)
+10:48:00.722 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.getLabel(java.lang.String)
+10:48:00.722 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatetoken]}" onto public java.lang.String com.neo.controller.DoctorController.updateToken(java.lang.String,java.lang.String)
+10:48:00.722 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatient],methods=[GET]}" onto public com.neo.entity.PatientEntity com.neo.controller.DoctorController.getPatient(java.lang.String)
+10:48:00.722 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/selecttoken],methods=[GET]}" onto public java.lang.String com.neo.controller.DoctorController.selectToken(java.lang.String)
+10:48:00.723 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventremind]}" onto public java.util.List<com.neo.entity.RemindersEntity> com.neo.controller.DoctorController.getEventRemind(java.lang.String)
+10:48:00.723 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/selectphonetoken]}" onto public java.lang.String com.neo.controller.DoctorController.selectPhonetoken(java.lang.String)
+10:48:00.724 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/savephonetoken]}" onto public java.lang.String com.neo.controller.DoctorController.savePhonetoken(java.lang.String,java.lang.String)
+10:48:00.724 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/addpatientlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.addPatientLabel(java.lang.String,java.lang.String,java.lang.String)
+10:48:00.724 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluation],methods=[GET]}" onto public java.util.List<com.neo.entity.EvaluationEntity> com.neo.controller.DoctorController.getEvaluation(java.lang.String)
+10:48:00.725 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatehead],methods=[POST]}" onto public void com.neo.controller.DoctorController.updateHead(java.lang.String,java.lang.String)
+10:48:00.725 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deleteevaluation],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteEvaluation(int)
+10:48:00.725 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsending],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientGroupReceivingEntity> com.neo.controller.DoctorController.groupSending(com.neo.entity.DoctorGroupSendingEntity)
+10:48:00.725 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/findbyphone]}" onto public com.neo.entity.DoctorEntity com.neo.controller.DoctorController.selectByPhone(java.lang.String)
+10:48:00.725 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatepwd],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updatePassword(java.lang.String,java.lang.String)
+10:48:00.726 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/software/get],methods=[GET]}" onto public com.neo.entity.SoftwareEntity com.neo.controller.DoctorController.getSoftware()
+10:48:00.726 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/suggestion/add],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.addSuggestion(com.neo.entity.SuggestionEntity)
+10:48:00.735 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savebloodpressuretable]}" onto public java.lang.String com.neo.controller.HealthController.saveBloodPressureTable(com.neo.entity.BloodPressureEntity)
+10:48:00.743 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getbloodpressuretable]}" onto public java.util.List<com.neo.entity.BloodPressureEntity> com.neo.controller.HealthController.getBloodPressureTable(java.lang.String,int,java.lang.String)
+10:48:00.744 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savecardiogramtable]}" onto public java.lang.String com.neo.controller.HealthController.saveCardiogramTable(com.neo.entity.CardiogramEntity)
+10:48:00.745 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/findcardiogramtable]}" onto public java.util.List<com.neo.entity.CardiogramEntity> com.neo.controller.HealthController.findCardiogramTable(java.lang.String)
+10:48:00.746 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/deletecardiogram],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.deleteCardiogramById(int)
+10:48:00.747 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/setread]}" onto public java.lang.String com.neo.controller.HealthController.setDefineMessageRead(int)
+10:48:00.747 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/getbycount]}" onto public com.neo.entity.RiskReportEntity com.neo.controller.HealthController.getRiskReportByCount(java.lang.String,int)
+10:48:00.747 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savemessageremind]}" onto public java.lang.String com.neo.controller.HealthController.saveMessageRemind(com.neo.entity.MessageRemindEntity)
+10:48:00.747 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/getbyid]}" onto public com.neo.entity.DefinitionMessageEntity com.neo.controller.HealthController.getDefineMsgGetById(int)
+10:48:00.747 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/unread/getnumber]}" onto public int com.neo.controller.HealthController.getDefineMsgUnreadNumber(java.lang.String)
+10:48:00.747 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/unread/getnumber]}" onto public int com.neo.controller.HealthController.getMessageUnreadNumber(java.lang.String)
+10:48:00.748 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/delete]}" onto public java.lang.String com.neo.controller.HealthController.deleteDefineMsgById(int)
+10:48:00.748 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savehealthtable]}" onto public java.lang.String com.neo.controller.HealthController.saveHealthTable(com.neo.entity.HealthCheckEntity)
+10:48:00.748 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/generate],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.saveReport(java.lang.String)
+10:48:00.748 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/gethealthtable]}" onto public com.neo.entity.HealthCheckEntity com.neo.controller.HealthController.getHealthTable(java.lang.String)
+10:48:00.748 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savebiologytable]}" onto public java.lang.String com.neo.controller.HealthController.saveBiologyTable(com.neo.entity.BiologyCheckEntity)
+10:48:00.749 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/bloodpressuretable/find]}" onto public java.lang.String com.neo.controller.HealthController.Findbloodhistory(java.lang.String)
+10:48:00.749 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getbiologyinfo]}" onto public com.neo.entity.BiologyCheckEntity com.neo.controller.HealthController.getBiologyInfo(java.lang.String)
+10:48:00.749 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/get]}" onto public java.util.List<com.neo.entity.DefinitionMessageEntity> com.neo.controller.HealthController.getDefineMsg(java.lang.String)
+10:48:00.758 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getreportnumber]}" onto public java.lang.Integer com.neo.controller.HealthController.getReportNumber()
+10:48:00.758 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.defineMessage(com.neo.entity.DefinitionMessageEntity)
+10:48:00.759 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/setread]}" onto public java.lang.String com.neo.controller.HealthController.setMessageRead(int)
+10:48:00.759 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/getunread]}" onto public java.util.List<com.neo.entity.MessageListEntity> com.neo.controller.HealthController.getMessageUnread(java.lang.String)
+10:48:00.759 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getnewestreport]}" onto public com.neo.entity.RiskReportEntity com.neo.controller.HealthController.getNewestReport(java.lang.String)
+10:48:00.759 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/getall]}" onto public java.util.List<com.neo.entity.RiskReportEntity> com.neo.controller.HealthController.getAllReport(java.lang.String)
+10:48:00.759 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/getbyid]}" onto public com.neo.entity.MessageRemindEntity com.neo.controller.HealthController.messageGetById(int)
+10:48:00.773 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/updatepatient],methods=[POST]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.update(com.neo.entity.PatientEntity)
+10:48:00.773 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/unread]}" onto public int com.neo.controller.PatientController.getGroupReceivingUnread(java.lang.String)
+10:48:00.774 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getpatientnewestmessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getPatientNewestMessageBoards(java.lang.String)
+10:48:00.774 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/delete],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.deleteGroupReceiving(int)
+10:48:00.774 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/list]}" onto public java.util.List<com.neo.entity.PatientGroupReceivingEntity> com.neo.controller.PatientController.getPatientGroupReceiving(java.lang.String)
+10:48:00.775 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getdoctornewestmessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getNewestMessageBoards(java.lang.String)
+10:48:00.775 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/setread],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.setGroupReceivingRead(int)
+10:48:00.775 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getonemessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getOneMessageBoardAndReply(int,int)
+10:48:00.775 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/delete],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.deletePatientMessageBoard(int,int)
+10:48:00.798 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/get],methods=[GET]}" onto public com.neo.entity.PatientGroupReceivingEntity com.neo.controller.PatientController.getGroupReceiving(int)
+10:48:00.801 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/buyservice]}" onto public java.lang.String com.neo.controller.PatientController.buyService(java.lang.String,java.lang.String,java.util.List<java.lang.Integer>)
+10:48:00.801 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/evaluate]}" onto public java.lang.String com.neo.controller.PatientController.evaluateDoctor(com.neo.entity.EvaluationEntity)
+10:48:00.805 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findmyservice]}" onto public java.util.List<com.neo.entity.PurchasedServiceEntity> com.neo.controller.PatientController.findMyService(java.lang.String)
+10:48:00.806 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/savedetail],methods=[POST]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.savePatient(com.neo.entity.PatientEntity)
+10:48:00.806 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findmydoctor]}" onto public java.lang.String com.neo.controller.PatientController.findMyDoctor(java.lang.String)
+10:48:00.806 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/set],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.setMessageBoard(com.neo.entity.MessageBoardEntity)
+10:48:00.806 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/watchdoctor],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.watchDoctor(java.lang.String,java.lang.String)
+10:48:00.810 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/contact/suggest],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.suggest(com.neo.entity.SuggestionEntity)
+10:48:00.811 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findbywechatid]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.selectById(java.lang.String)
+10:48:00.812 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/service/findbyid]}" onto public com.neo.entity.ServiceEntity com.neo.controller.ServiceController.findService(java.lang.Integer)
+10:48:00.813 logback [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'serviceController' method 
+public com.neo.entity.PurchasedServiceEntity com.neo.controller.ServiceController.findBoughtService(java.lang.Integer)
+to {[/service/findbyid]}: There is already 'serviceController' bean method
+public com.neo.entity.ServiceEntity com.neo.controller.ServiceController.findService(java.lang.Integer) mapped.
+10:48:00.815 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+10:48:00.833 logback [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:48:00.893 logback [restartedMain] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'serviceController' method 
+public com.neo.entity.PurchasedServiceEntity com.neo.controller.ServiceController.findBoughtService(java.lang.Integer)
+to {[/service/findbyid]}: There is already 'serviceController' bean method
+public com.neo.entity.ServiceEntity com.neo.controller.ServiceController.findService(java.lang.Integer) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.neo.Application.main(Application.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'serviceController' method 
+public com.neo.entity.PurchasedServiceEntity com.neo.controller.ServiceController.findBoughtService(java.lang.Integer)
+to {[/service/findbyid]}: There is already 'serviceController' bean method
+public com.neo.entity.ServiceEntity com.neo.controller.ServiceController.findService(java.lang.Integer) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1642)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1579)
+	... 21 common frames omitted
+10:49:39.844 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@561118f9: startup date [Sat Mar 31 10:49:39 CST 2018]; root of context hierarchy
+10:49:40.148 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+10:49:40.757 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:49:40.882 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b93da07d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:49:44.152 logback [restartedMain] INFO  com.neo.Application - No active profile set, falling back to default profiles: default
+10:49:44.237 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59d8d4b7: startup date [Sat Mar 31 10:49:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@561118f9
+10:50:01.914 logback [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@65e4c252: startup date [Sat Mar 31 10:50:01 CST 2018]; root of context hierarchy
+10:50:02.088 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+10:50:02.652 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:50:02.762 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$23978a80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:50:05.026 logback [restartedMain] INFO  com.neo.Application - No active profile set, falling back to default profiles: default
+10:50:05.129 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@723ff539: startup date [Sat Mar 31 10:50:05 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65e4c252
+10:50:15.340 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:50:16.914 logback [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f8a9f73-c0d6-3a21-a492-05862e7c02fe
+10:50:17.230 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:50:17.513 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheConfig' of type [class com.neo.config.RedisCacheConfig$$EnhancerBySpringCGLIB$$ab78301a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:50:17.541 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77d8783] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:50:17.671 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$508fbda1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:50:17.846 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$23978a80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:50:19.788 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 1601 (http)
+10:50:19.833 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+10:50:19.835 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+10:50:20.284 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:50:20.285 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 15156 ms
+10:50:21.346 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:50:21.351 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.neo.config.DruidStatViewServlet' to [/druid/*]
+10:50:21.406 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:50:21.406 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:50:21.406 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:50:21.407 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:50:21.409 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+10:50:27.939 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@723ff539: startup date [Sat Mar 31 10:50:05 GMT+08:00 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65e4c252
+10:50:28.552 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/register],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.register(java.lang.String,java.lang.String,java.lang.String)
+10:50:28.555 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatientbylabel],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientEntity> com.neo.controller.DoctorController.getPatientsByLabel(java.lang.String,java.lang.String)
+10:50:28.555 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletepatientlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteLabelPatient(java.lang.String,java.lang.String,java.lang.String)
+10:50:28.556 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluationunread]}" onto public int com.neo.controller.DoctorController.getEvaluationUnread(java.lang.String)
+10:50:28.556 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updateintroduction],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updateIntroduction(java.lang.String,java.lang.String,java.lang.String)
+10:50:28.556 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventreminddetail]}" onto public com.neo.entity.RemindersEntity com.neo.controller.DoctorController.getEventRemindDetail(int)
+10:50:28.556 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventremindunread]}" onto public int com.neo.controller.DoctorController.getEvenRemindUnread(java.lang.String)
+10:50:28.557 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/service]}" onto public java.util.List<com.neo.entity.DoctorServiceEntity> com.neo.controller.DoctorController.findDoctorService(java.lang.String)
+10:50:28.559 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluationdetail],methods=[POST]}" onto public com.neo.entity.EvaluationEntity com.neo.controller.DoctorController.getEvaluationDetail(int)
+10:50:28.559 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsendingdelete]}" onto public java.lang.String com.neo.controller.DoctorController.groupSendingDelete(int)
+10:50:28.559 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatientsbykind],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientEntity> com.neo.controller.DoctorController.getPatientsByKind(java.lang.String,java.lang.String)
+10:50:28.560 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsendinghistory]}" onto public java.util.List<com.neo.entity.DoctorGroupSendingEntity> com.neo.controller.DoctorController.groupSendingHistory(java.lang.String)
+10:50:28.560 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/eventreminddelete],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.eventRemindDelete(int)
+10:50:28.561 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatedoctorinfodetails],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updateDoctorInfoDetails(com.neo.entity.DoctorEntity)
+10:50:28.561 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatepwd],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.updatePassword(java.lang.String,java.lang.String)
+10:50:28.561 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatehead],methods=[POST]}" onto public void com.neo.controller.DoctorController.updateHead(java.lang.String,java.lang.String)
+10:50:28.561 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.getLabel(java.lang.String)
+10:50:28.562 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getpatient],methods=[GET]}" onto public com.neo.entity.PatientEntity com.neo.controller.DoctorController.getPatient(java.lang.String)
+10:50:28.562 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/getevaluation],methods=[GET]}" onto public java.util.List<com.neo.entity.EvaluationEntity> com.neo.controller.DoctorController.getEvaluation(java.lang.String)
+10:50:28.562 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deleteevaluation],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteEvaluation(int)
+10:50:28.563 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/addpatientlabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.addPatientLabel(java.lang.String,java.lang.String,java.lang.String)
+10:50:28.563 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/selectphonetoken]}" onto public java.lang.String com.neo.controller.DoctorController.selectPhonetoken(java.lang.String)
+10:50:28.563 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/findbyphone]}" onto public com.neo.entity.DoctorEntity com.neo.controller.DoctorController.selectByPhone(java.lang.String)
+10:50:28.564 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/findall]}" onto public java.util.List<com.neo.entity.DoctorEntity> com.neo.controller.DoctorController.findAllDoctor()
+10:50:28.564 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/loginverify]}" onto public java.lang.Boolean com.neo.controller.DoctorController.loginVerify(java.lang.String,java.lang.String)
+10:50:28.564 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/updatetoken]}" onto public java.lang.String com.neo.controller.DoctorController.updateToken(java.lang.String,java.lang.String)
+10:50:28.565 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/groupsending],methods=[POST]}" onto public java.util.List<com.neo.entity.PatientGroupReceivingEntity> com.neo.controller.DoctorController.groupSending(com.neo.entity.DoctorGroupSendingEntity)
+10:50:28.565 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/geteventremind]}" onto public java.util.List<com.neo.entity.RemindersEntity> com.neo.controller.DoctorController.getEventRemind(java.lang.String)
+10:50:28.565 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletetoken]}" onto public void com.neo.controller.DoctorController.deleteToken(java.lang.String)
+10:50:28.565 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/savephonetoken]}" onto public java.lang.String com.neo.controller.DoctorController.savePhonetoken(java.lang.String,java.lang.String)
+10:50:28.566 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/deletelabel],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.deleteLabel(java.lang.String,java.lang.String,java.lang.String)
+10:50:28.566 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/suggestion/add],methods=[POST]}" onto public java.lang.String com.neo.controller.DoctorController.addSuggestion(com.neo.entity.SuggestionEntity)
+10:50:28.567 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/selecttoken],methods=[GET]}" onto public java.lang.String com.neo.controller.DoctorController.selectToken(java.lang.String)
+10:50:28.567 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/doctor/software/get],methods=[GET]}" onto public com.neo.entity.SoftwareEntity com.neo.controller.DoctorController.getSoftware()
+10:50:28.573 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savecardiogramtable]}" onto public java.lang.String com.neo.controller.HealthController.saveCardiogramTable(com.neo.entity.CardiogramEntity)
+10:50:28.575 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/deletecardiogram],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.deleteCardiogramById(int)
+10:50:28.575 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getbloodpressuretable]}" onto public java.util.List<com.neo.entity.BloodPressureEntity> com.neo.controller.HealthController.getBloodPressureTable(java.lang.String,int,java.lang.String)
+10:50:28.576 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/findcardiogramtable]}" onto public java.util.List<com.neo.entity.CardiogramEntity> com.neo.controller.HealthController.findCardiogramTable(java.lang.String)
+10:50:28.576 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savebloodpressuretable]}" onto public java.lang.String com.neo.controller.HealthController.saveBloodPressureTable(com.neo.entity.BloodPressureEntity)
+10:50:28.576 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/delete]}" onto public java.lang.String com.neo.controller.HealthController.deleteDefineMsgById(int)
+10:50:28.577 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savemessageremind]}" onto public java.lang.String com.neo.controller.HealthController.saveMessageRemind(com.neo.entity.MessageRemindEntity)
+10:50:28.578 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/unread/getnumber]}" onto public int com.neo.controller.HealthController.getMessageUnreadNumber(java.lang.String)
+10:50:28.578 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/getbyid]}" onto public com.neo.entity.DefinitionMessageEntity com.neo.controller.HealthController.getDefineMsgGetById(int)
+10:50:28.579 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/setread]}" onto public java.lang.String com.neo.controller.HealthController.setDefineMessageRead(int)
+10:50:28.580 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/getbycount]}" onto public com.neo.entity.RiskReportEntity com.neo.controller.HealthController.getRiskReportByCount(java.lang.String,int)
+10:50:28.598 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/unread/getnumber]}" onto public int com.neo.controller.HealthController.getDefineMsgUnreadNumber(java.lang.String)
+10:50:28.599 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/bloodpressuretable/find]}" onto public java.lang.String com.neo.controller.HealthController.Findbloodhistory(java.lang.String)
+10:50:28.599 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savebiologytable]}" onto public java.lang.String com.neo.controller.HealthController.saveBiologyTable(com.neo.entity.BiologyCheckEntity)
+10:50:28.600 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getbiologyinfo]}" onto public com.neo.entity.BiologyCheckEntity com.neo.controller.HealthController.getBiologyInfo(java.lang.String)
+10:50:28.600 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/gethealthtable]}" onto public com.neo.entity.HealthCheckEntity com.neo.controller.HealthController.getHealthTable(java.lang.String)
+10:50:28.600 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/generate],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.saveReport(java.lang.String)
+10:50:28.600 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/savehealthtable]}" onto public java.lang.String com.neo.controller.HealthController.saveHealthTable(com.neo.entity.HealthCheckEntity)
+10:50:28.600 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getnewestreport]}" onto public com.neo.entity.RiskReportEntity com.neo.controller.HealthController.getNewestReport(java.lang.String)
+10:50:28.601 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/getreportnumber]}" onto public java.lang.Integer com.neo.controller.HealthController.getReportNumber()
+10:50:28.601 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/setread]}" onto public java.lang.String com.neo.controller.HealthController.setMessageRead(int)
+10:50:28.602 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/report/getall]}" onto public java.util.List<com.neo.entity.RiskReportEntity> com.neo.controller.HealthController.getAllReport(java.lang.String)
+10:50:28.602 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage],methods=[POST]}" onto public java.lang.String com.neo.controller.HealthController.defineMessage(com.neo.entity.DefinitionMessageEntity)
+10:50:28.602 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/getunread]}" onto public java.util.List<com.neo.entity.MessageListEntity> com.neo.controller.HealthController.getMessageUnread(java.lang.String)
+10:50:28.603 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/definemessage/get]}" onto public java.util.List<com.neo.entity.DefinitionMessageEntity> com.neo.controller.HealthController.getDefineMsg(java.lang.String)
+10:50:28.603 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/healthmanage/message/getbyid]}" onto public com.neo.entity.MessageRemindEntity com.neo.controller.HealthController.messageGetById(int)
+10:50:28.608 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/updatepatient],methods=[POST]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.update(com.neo.entity.PatientEntity)
+10:50:28.609 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/unread]}" onto public int com.neo.controller.PatientController.getGroupReceivingUnread(java.lang.String)
+10:50:28.609 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getonemessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getOneMessageBoardAndReply(int,int)
+10:50:28.609 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/delete],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.deleteGroupReceiving(int)
+10:50:28.610 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/get],methods=[GET]}" onto public com.neo.entity.PatientGroupReceivingEntity com.neo.controller.PatientController.getGroupReceiving(int)
+10:50:28.610 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getdoctornewestmessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getNewestMessageBoards(java.lang.String)
+10:50:28.611 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/delete],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.deletePatientMessageBoard(int,int)
+10:50:28.611 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/getpatientnewestmessage]}" onto public java.util.List<com.neo.entity.MessageBoardEntity> com.neo.controller.PatientController.getPatientNewestMessageBoards(java.lang.String)
+10:50:28.612 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/list]}" onto public java.util.List<com.neo.entity.PatientGroupReceivingEntity> com.neo.controller.PatientController.getPatientGroupReceiving(java.lang.String)
+10:50:28.612 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/groupreceiving/setread],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.setGroupReceivingRead(int)
+10:50:28.612 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findbywechatid]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.selectById(java.lang.String)
+10:50:28.612 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/buyservice]}" onto public java.lang.String com.neo.controller.PatientController.buyService(java.lang.String,java.lang.String,java.util.List<java.lang.Integer>)
+10:50:28.613 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/contact/suggest],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.suggest(com.neo.entity.SuggestionEntity)
+10:50:28.614 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/evaluate]}" onto public java.lang.String com.neo.controller.PatientController.evaluateDoctor(com.neo.entity.EvaluationEntity)
+10:50:28.616 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findmydoctor]}" onto public java.lang.String com.neo.controller.PatientController.findMyDoctor(java.lang.String)
+10:50:28.616 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/messageboard/set],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.setMessageBoard(com.neo.entity.MessageBoardEntity)
+10:50:28.616 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/watchdoctor],methods=[POST]}" onto public java.lang.String com.neo.controller.PatientController.watchDoctor(java.lang.String,java.lang.String)
+10:50:28.617 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/savedetail],methods=[POST]}" onto public com.neo.entity.PatientEntity com.neo.controller.PatientController.savePatient(com.neo.entity.PatientEntity)
+10:50:28.617 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/patient/findmyservice]}" onto public java.util.List<com.neo.entity.PurchasedServiceEntity> com.neo.controller.PatientController.findMyService(java.lang.String)
+10:50:28.618 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/service/findboughtbyid]}" onto public com.neo.entity.PurchasedServiceEntity com.neo.controller.ServiceController.findBoughtService(java.lang.Integer)
+10:50:28.618 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/service/findbylist]}" onto public java.util.List<com.neo.entity.ServiceEntity> com.neo.controller.ServiceController.findServiceList(java.util.List<java.lang.Integer>)
+10:50:28.618 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/service/findbyid]}" onto public com.neo.entity.ServiceEntity com.neo.controller.ServiceController.findService(java.lang.Integer)
+10:50:28.621 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:50:28.621 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:50:28.932 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:50:28.934 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:50:29.196 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:50:31.416 logback [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+10:50:32.172 logback [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:50:32.172 logback [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:50:32.207 logback [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:50:32.208 logback [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:50:32.656 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:50:32.657 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+10:50:32.694 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+10:50:32.705 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+10:50:32.706 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+10:50:32.711 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+10:50:32.761 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+10:50:32.832 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=723ff539,type=ConfigurationPropertiesRebinder]
+10:50:32.856 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+10:50:34.878 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+10:50:34.901 logback [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+10:50:35.252 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+10:50:35.890 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+10:50:35.891 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+10:50:36.337 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+10:50:36.337 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+10:50:37.175 logback [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:50:37.733 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+10:50:37.734 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+10:50:37.735 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+10:50:37.735 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+10:50:37.735 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+10:50:37.735 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+10:50:37.735 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+10:50:38.538 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+10:50:38.541 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 10
+10:50:38.551 logback [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:50:38.559 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1522464638558 with initial instances count: 3
+10:50:38.667 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application microservice-jiayibilin-mySql with eureka with status UP
+10:50:38.680 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1522464638680, current=UP, previous=STARTING]
+10:50:38.729 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601: registering service...
+10:50:38.762 logback [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10:50:38.845 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MICROSERVICE-JIAYIBILIN-MYSQL/125.216.243.89:1601 - registration status: 204
+10:50:38.847 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1601"]
+10:50:38.885 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-1601]
+10:50:38.935 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:50:39.019 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 1601 (http)
+10:50:39.020 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1601
+10:50:39.033 logback [restartedMain] INFO  com.neo.Application - Started Application in 41.806 seconds (JVM running for 46.68)
+10:55:37.746 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:59:44.211 logback [http-nio-1601-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:59:44.211 logback [http-nio-1601-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:59:44.297 logback [http-nio-1601-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 86 ms
+10:59:45.622 logback [http-nio-1601-exec-1] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:59:45.878 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+10:59:54.900 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过已购买的服务id列表返回服务列表
+11:00:00.020 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+11:00:37.748 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:01:40.471 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:01:43.567 logback [http-nio-1601-exec-5] INFO  com.neo.controller.ServiceController - 成功通过已购买的服务id列表返回服务列表
+11:01:48.509 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:01:51.197 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过已购买的服务id列表返回服务列表
+11:01:55.144 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:01:57.791 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:02:01.481 logback [http-nio-1601-exec-2] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+11:02:01.561 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+11:02:01.561 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+11:02:01.908 logback [http-nio-1601-exec-4] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+11:02:02.281 logback [http-nio-1601-exec-5] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+11:02:04.511 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:02:04.603 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:02:04.905 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:02:08.084 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:02:16.656 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:02:16.813 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:02:17.032 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:02:20.761 logback [http-nio-1601-exec-5] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:02:28.890 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:02:29.057 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:02:29.280 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:05:37.749 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:10:37.751 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:15:37.752 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:20:37.754 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:25:37.756 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:30:37.757 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:34:55.006 logback [http-nio-1601-exec-7] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+11:34:55.046 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功筛选留言和回复
+11:34:55.046 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功根据患者获取留言的最新回复
+11:34:55.628 logback [http-nio-1601-exec-8] INFO  com.neo.controller.HealthController - 成功查找具体患者未读自定义消息数量
+11:34:55.964 logback [http-nio-1601-exec-9] INFO  com.neo.controller.HealthController - 成功查找具体患者未读模板消息数量
+11:34:58.474 logback [http-nio-1601-exec-10] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:34:58.631 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:34:58.857 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:35:09.507 logback [http-nio-1601-exec-4] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:35:11.717 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功购买服务
+11:35:14.731 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:35:19.127 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:35:19.271 logback [http-nio-1601-exec-9] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:35:19.500 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:35:37.759 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:35:43.210 logback [http-nio-1601-exec-10] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:35:46.858 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:35:46.974 logback [http-nio-1601-exec-4] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:35:47.543 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:35:52.765 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:37:11.518 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功购买服务
+11:37:14.260 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:37:21.597 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:37:21.745 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:37:22.287 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:37:56.084 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:37:56.251 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:37:56.457 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:38:00.931 logback [http-nio-1601-exec-9] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:38:12.342 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功购买服务
+11:38:15.102 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:38:18.164 logback [http-nio-1601-exec-3] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:40:37.761 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:42:44.173 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功购买服务
+11:42:46.796 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:42:57.283 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:42:57.442 logback [http-nio-1601-exec-9] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:42:57.648 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:43:09.621 logback [http-nio-1601-exec-10] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:43:12.258 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:43:12.477 logback [http-nio-1601-exec-4] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:43:12.637 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:43:19.486 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:45:37.762 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:50:37.763 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:51:49.155 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:51:49.331 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:51:49.515 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:51:56.651 logback [http-nio-1601-exec-3] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:52:01.345 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:52:01.563 logback [http-nio-1601-exec-5] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:52:01.710 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+11:53:13.925 logback [http-nio-1601-exec-9] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+11:55:37.765 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:59:49.930 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+11:59:50.004 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+11:59:50.307 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:00:00.006 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+12:00:04.013 logback [http-nio-1601-exec-5] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:00:12.372 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功购买服务
+12:00:15.411 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:00:18.427 logback [http-nio-1601-exec-8] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:00:22.171 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功购买服务
+12:00:37.767 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:01:07.717 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:01:12.480 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:01:12.608 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:01:12.889 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:01:31.010 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:01:31.174 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:01:31.366 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:01:39.920 logback [http-nio-1601-exec-9] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:01:47.801 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:01:47.905 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功购买服务
+12:01:50.155 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:01:52.558 logback [http-nio-1601-exec-1] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:01:54.348 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:01:54.504 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功购买服务
+12:01:57.419 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:02:02.524 logback [http-nio-1601-exec-6] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:02:27.296 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:02:27.445 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功购买服务
+12:05:37.768 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:07:16.338 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:07:28.777 logback [http-nio-1601-exec-1] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:07:33.290 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:07:33.429 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功购买服务
+12:07:36.999 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:07:40.667 logback [http-nio-1601-exec-6] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:08:15.273 logback [http-nio-1601-exec-9] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:08:15.420 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:08:15.633 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:08:52.116 logback [http-nio-1601-exec-3] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:08:52.973 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:08:53.112 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功购买服务
+12:09:00.971 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:09:04.851 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:09:07.591 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:09:07.746 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功购买服务
+12:10:06.427 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:10:37.771 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:10:37.886 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:10:41.454 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:10:41.601 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功购买服务
+12:11:21.380 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:11:28.415 logback [http-nio-1601-exec-4] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:11:35.850 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:11:35.944 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功购买服务
+12:11:38.787 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:15:37.772 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:16:27.861 logback [http-nio-1601-exec-9] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:16:31.801 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:16:34.423 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:16:34.546 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:16:35.105 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:18:06.600 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:18:06.763 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:18:06.976 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:18:15.581 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:18:17.187 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:18:17.669 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功购买服务
+12:18:20.319 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:18:24.303 logback [http-nio-1601-exec-4] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:18:25.784 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:18:29.537 logback [http-nio-1601-exec-7] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:18:29.738 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:18:29.896 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:18:55.112 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:18:55.286 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:18:55.509 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:19:01.470 logback [http-nio-1601-exec-4] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:19:23.329 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:19:26.285 logback [http-nio-1601-exec-7] INFO  com.neo.controller.PatientController - 成功购买服务
+12:19:33.836 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:19:36.687 logback [http-nio-1601-exec-8] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:19:38.346 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:20:12.109 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:20:12.269 logback [http-nio-1601-exec-1] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:20:12.482 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:20:37.773 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:21:47.078 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:21:47.245 logback [http-nio-1601-exec-8] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:21:47.436 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:21:53.065 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:21:54.805 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:21:57.426 logback [http-nio-1601-exec-3] INFO  com.neo.controller.PatientController - 成功购买服务
+12:22:14.561 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:22:18.609 logback [http-nio-1601-exec-4] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:22:20.516 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:23:16.240 logback [http-nio-1601-exec-6] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:23:16.416 logback [http-nio-1601-exec-9] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:23:16.617 logback [http-nio-1601-exec-2] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:25:37.775 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:29:56.705 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:29:56.880 logback [http-nio-1601-exec-4] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:29:57.075 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:30:01.837 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:30:02.886 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:30:08.258 logback [http-nio-1601-exec-8] INFO  com.neo.controller.PatientController - 成功购买服务
+12:30:11.948 logback [http-nio-1601-exec-9] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:30:14.057 logback [http-nio-1601-exec-2] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:30:15.892 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:30:37.777 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:30:44.559 logback [http-nio-1601-exec-3] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:30:44.734 logback [http-nio-1601-exec-4] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:30:44.921 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:33:27.338 logback [http-nio-1601-exec-9] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:33:27.350 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:33:27.748 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:33:34.109 logback [http-nio-1601-exec-3] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:33:44.990 logback [http-nio-1601-exec-1] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:33:45.508 logback [http-nio-1601-exec-4] INFO  com.neo.controller.PatientController - 成功购买服务
+12:33:47.938 logback [http-nio-1601-exec-5] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:33:49.992 logback [http-nio-1601-exec-7] INFO  com.neo.controller.ServiceController - 成功通过服务id列表返回服务列表
+12:33:52.685 logback [http-nio-1601-exec-6] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:33:59.223 logback [http-nio-1601-exec-9] INFO  com.neo.controller.DoctorController - 成功返回医生所有服务包
+12:33:59.381 logback [http-nio-1601-exec-2] INFO  com.neo.controller.DoctorController - 成功根据电话返回医生的信息
+12:33:59.848 logback [http-nio-1601-exec-10] INFO  com.neo.controller.PatientController - 成功通过患者微信号查找购买的服务实体列表
+12:35:37.779 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:40:37.780 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:45:37.783 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:50:37.784 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:55:37.786 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:00:00.005 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+13:00:37.788 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:05:37.789 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:10:37.791 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:15:37.792 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:20:37.794 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:25:37.795 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:30:37.797 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:35:37.798 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:40:37.804 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:45:37.806 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:50:37.808 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13:55:37.810 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:00:00.010 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+14:00:37.811 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:05:37.812 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:10:37.814 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:15:37.815 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:20:37.817 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:25:37.819 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:30:37.820 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:35:37.822 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:40:37.824 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:45:37.825 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:50:37.826 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:55:37.829 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+15:00:37.830 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:05:37.832 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:10:37.833 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:15:37.834 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:20:37.835 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:25:37.837 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:30:37.839 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:35:37.840 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:40:37.842 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:45:37.843 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:50:37.844 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15:55:37.845 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:00:00.005 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+16:00:37.846 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:05:37.846 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:10:37.847 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:15:37.848 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:20:37.849 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:25:37.851 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:30:37.852 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:35:37.854 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:40:37.855 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:45:37.855 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:50:37.856 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:55:37.863 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:00:00.005 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+17:00:37.864 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:05:37.866 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:10:37.868 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:15:37.869 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:20:37.870 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:25:37.872 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:30:37.873 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:35:37.873 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:40:37.874 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:45:37.875 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:50:37.876 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:55:37.876 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+18:00:37.877 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:05:37.879 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:10:37.880 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:15:37.880 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:20:37.881 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:25:37.883 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:30:37.883 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:35:37.885 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:40:37.885 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:45:37.886 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:50:37.887 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:55:37.888 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:00:00.003 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+19:00:37.888 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:05:37.890 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:10:37.891 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:15:37.892 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:20:37.892 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:25:37.893 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:30:37.895 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:35:37.896 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:40:37.898 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:45:37.898 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:50:37.900 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:55:37.900 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:00:00.002 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+20:00:37.901 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:05:37.905 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:10:37.906 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:15:37.906 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:20:37.906 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:25:37.907 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:30:37.908 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:35:37.909 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:40:37.910 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:45:37.911 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:50:37.912 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:55:37.914 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:00:00.003 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+21:00:37.914 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:05:37.915 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:10:37.917 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:15:37.917 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:20:37.919 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:25:37.923 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:30:37.924 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:35:37.925 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:40:37.926 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:45:37.927 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:50:37.928 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:55:37.928 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:00:00.004 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+22:00:37.929 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:05:37.930 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:10:37.932 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:15:37.932 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:20:37.934 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:25:37.935 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:30:37.936 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:35:37.936 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:40:37.937 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:45:37.938 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:50:37.940 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+22:55:37.941 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:00:00.002 logback [pool-8-thread-1] INFO  c.neo.controller.ScheduleController - 成功更新过期服务包
+23:00:37.942 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:05:37.943 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:10:37.944 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:15:37.945 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:20:37.946 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:25:37.958 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:30:37.959 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:35:37.959 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:40:37.960 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:45:37.961 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:50:37.961 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23:55:37.962 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

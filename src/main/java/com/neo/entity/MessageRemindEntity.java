@@ -22,7 +22,7 @@ public class MessageRemindEntity {
     private String title;//标题
     private String target;//目标
     private String remark;//备注
-    private int period;//周期(天)
+    private int period;//周期(天) -1表示每天
     private int isread;//是否已读 0未读 1已读
 
     public MessageRemindEntity() {

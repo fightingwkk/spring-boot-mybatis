@@ -206,7 +206,11 @@ public interface HealthMapper {
      */
     @Select("select * from message_remind where curdate() <= date_add(datetime,interval period day)")
     List<MessageRemindEntity> selectTimingMsgRemind();
-
+    /*
+    *查找需要定时每天发送的模板消息
+     */
+    @Select("select * from message_remind where period = -1")
+    List<MessageRemindEntity> selectDayMsgRemind();
     /*
     *插入自定义消息
      */

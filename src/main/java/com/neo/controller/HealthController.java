@@ -4,6 +4,8 @@ import com.neo.entity.*;
 import com.neo.mapper.HealthMapper;
 import com.neo.mapper.PatientMapper;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,7 +25,7 @@ public class HealthController {
     HealthMapper healthMapper;
     @Autowired
     PatientMapper patientMapper;
-
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     /*
     * 保存健康信息表接口
     * */
@@ -38,8 +40,9 @@ public class HealthController {
             } else {
                 healthMapper.saveHealthInfo(healCheckEntity);
             }
-
+            logger.info("成功保存健康信息");
         } catch (Exception e) {
+            logger.error("保存健康信息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -50,7 +53,14 @@ public class HealthController {
    * */
     @RequestMapping(value = "/gethealthtable")
     public HealthCheckEntity getHealthTable(@RequestParam("wechat_id") String wechat_id) {
-        return healthMapper.selectHealthInfoById(wechat_id);
+        try{
+            HealthCheckEntity healthCheckEntity = healthMapper.selectHealthInfoById(wechat_id);
+            logger.info("成功查找健康信息");
+            return healthCheckEntity;
+        }catch (Exception e){
+            logger.error("查找健康信息失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -64,7 +74,9 @@ public class HealthController {
             } else {
                 healthMapper.saveBiologyInfo(biologyCheckEntity);
             }
+            logger.info("成功保存和更新生化检查信息");
         } catch (Exception e) {
+            logger.error("保存和更新生化检查信息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -75,7 +87,15 @@ public class HealthController {
      */
     @RequestMapping(value = "/getbiologyinfo")
     public BiologyCheckEntity getBiologyInfo(@RequestParam("wechat_id") String wechat_id) {
-        return healthMapper.selectBiologyInfoById(wechat_id);
+        try{
+
+        BiologyCheckEntity biologyCheckEntity = healthMapper.selectBiologyInfoById(wechat_id);
+        logger.info("成功获取生化检查信息");
+        return biologyCheckEntity;
+        }catch (Exception e){
+            logger.error("获取生化检查信息失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -90,8 +110,9 @@ public class HealthController {
             } else {
                 healthMapper.saveBloodPressure(bloodPressureEntity);
             }
+            logger.info("成功保存血压心率信息");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("保存血压心率信息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -105,7 +126,14 @@ public class HealthController {
     * */
     @RequestMapping(value = "/getbloodpressuretable")
     public List<BloodPressureEntity> getBloodPressureTable(@RequestParam String wechat_id, @RequestParam int timearea, @RequestParam String time) {
-        return healthMapper.bloodPressureList(wechat_id, timearea, time);
+        try{
+            List<BloodPressureEntity> bloodPressureEntityList = healthMapper.bloodPressureList(wechat_id, timearea, time);
+            logger.info("成功查找血压心率记录");
+            return bloodPressureEntityList;
+        }catch (Exception e){
+            logger.error("查找血压心率失败：",e.getMessage());
+            return null;
+        }
     }
 
 
@@ -115,17 +143,24 @@ public class HealthController {
 * */
     @RequestMapping(value = "/bloodpressuretable/find")
     public String Findbloodhistory(@RequestParam String wechat_id) {
-        int numMorning = healthMapper.getNumberOfBloodPressure(wechat_id, "morning");
-        int numEvening = healthMapper.getNumberOfBloodPressure(wechat_id, "evening");
-        int allNum = numEvening + numMorning;
-        if (allNum == 0) {
+        try{
+            int numMorning = healthMapper.getNumberOfBloodPressure(wechat_id, "morning");
+            int numEvening = healthMapper.getNumberOfBloodPressure(wechat_id, "evening");
+            int allNum = numEvening + numMorning;
+            logger.info("成功查看患者是否有血压心率记录");
+            if (allNum == 0) {
+                return "nothing";
+            } else if (numMorning > 0) {
+                return "morning";
+            } else if (numEvening > 0) {
+                return "evening";
+            }
             return "nothing";
-        } else if (numMorning > 0) {
-            return "morning";
-        } else if (numEvening > 0) {
-            return "evening";
+        }catch (Exception e){
+            logger.error("查看患者是否有血压心率记录失败：",e.getMessage());
+            return null;
         }
-        return "nothing";
+
     }
 
     /*
@@ -135,8 +170,9 @@ public class HealthController {
     public String saveCardiogramTable(@RequestBody CardiogramEntity cardiogramEntity) {
         try {
             healthMapper.saveCardiogram(cardiogramEntity);
+            logger.info("成功保存心电图");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("查看患者是否有血压心率记录失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -149,9 +185,10 @@ public class HealthController {
     public List<CardiogramEntity> findCardiogramTable(@RequestParam("wechat_id") String wechat_id) {
         try {
             List<CardiogramEntity> list = healthMapper.findCardiogram(wechat_id);
+            logger.info("成查找心电图");
             return list;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("查找心电图失败：",e.getMessage());
             return null;
         }
     }
@@ -162,9 +199,10 @@ public class HealthController {
     public String deleteCardiogramById(@RequestParam("id")int id){
         try{
             healthMapper.deleteCardiogramById(id);
+            logger.info("成功删除心电图");
             return "success";
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            logger.error("删除心电图失败：",e.getMessage());
             return "error";
         }
     }
@@ -183,6 +221,7 @@ public class HealthController {
                 Date today = new Date();
                 day = (today.getTime() - date.getTime()) / (1000 * 60 * 60 * 24);
             } catch (Exception e) {
+                logger.error("生成风险评估报告失败：",e.getMessage());
                 return "error";
             }
         }
@@ -205,9 +244,10 @@ public class HealthController {
             if (patientEntity.getAge() < 35) {
                 return "age";
             }
-            //如果有冠心病或脑卒中直接判为100%患病
+            //如果有冠心病或脑卒中直接判为10%患病
             if (healthCheckEntity.getChd().equals("有") || healthCheckEntity.getStroke().equals("有")) {
-                DateFormat format = DateFormat.getDateInstance();
+//                DateFormat format = DateFormat.getDateInstance();
+                DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = new Date();
                 String dateStr = format.format(date);
                 int count = 0;
@@ -219,10 +259,11 @@ public class HealthController {
                 PatientEntity patientEntity1 = new PatientEntity();
                 patientEntity1.setWechat_id(wechat_id);
                 patientEntity1.setKind(healthMapper.selectRiskLevelById(5).getRisk_level());
-                patientEntity1.setProb(100);
+                patientEntity1.setProb(10);
                 patientMapper.updatePatientInfo(patientEntity1);
-                RiskReportEntity newRiskReportEntity = new RiskReportEntity(wechat_id, count, dateStr, (float) 100, 5);
+                RiskReportEntity newRiskReportEntity = new RiskReportEntity(wechat_id, count, dateStr, (float) 10, 5);
                 healthMapper.saveRiskReport(newRiskReportEntity);
+                logger.info("成功生成风险评估报告");
                 return "success";
             }
             double systolic_pressure = 0;
@@ -441,6 +482,7 @@ public class HealthController {
             patientMapper.updatePatientInfo(patientEntity1);
             RiskReportEntity newRiskReportEntity = new RiskReportEntity(wechat_id, count, dateStr, (float) prob, risk_level_id);
             healthMapper.saveRiskReport(newRiskReportEntity);
+            logger.info("成功生成风险评估报告");
             return "success";
         } else {
             return "time";
@@ -454,7 +496,15 @@ public class HealthController {
     * */
     @RequestMapping(value = "/report/getall")
     public List<RiskReportEntity> getAllReport(@RequestBody String wechat_id) {
-        return healthMapper.selectAllRiskReport(wechat_id);
+        try{
+
+        List<RiskReportEntity> riskReportEntityList = healthMapper.selectAllRiskReport(wechat_id);
+        logger.info("成功查找所有风险评估报告");
+        return riskReportEntityList;
+        }catch (Exception e){
+            logger.error("查找所有风险评估报告失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -462,7 +512,14 @@ public class HealthController {
      * */
     @RequestMapping(value = "/getnewestreport")
     public RiskReportEntity getNewestReport(@RequestBody String wechat_id) {
-        return healthMapper.selectNewestReport(wechat_id);
+        try{
+            RiskReportEntity riskReportEntity = healthMapper.selectNewestReport(wechat_id);
+            logger.info("成功查找最新的风险评估报告");
+            return riskReportEntity;
+        }catch (Exception e){
+            logger.error("查找最新的风险评估报告失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -470,7 +527,14 @@ public class HealthController {
     * */
     @RequestMapping(value = "/report/getbycount")
     public RiskReportEntity getRiskReportByCount(@RequestParam("wechat_id") String wechat_id, @RequestParam("count") int count) {
-        return healthMapper.selectRiskReportByCount(wechat_id, count);
+        try{
+        RiskReportEntity riskReportEntity = healthMapper.selectRiskReportByCount(wechat_id, count);
+        logger.info("成功根据服务次数查找风险评估报告");
+        return riskReportEntity;
+        }catch (Exception e){
+            logger.error("根据服务次数查找风险评估报告失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -478,7 +542,14 @@ public class HealthController {
     * */
     @RequestMapping(value = "/getreportnumber")
     public Integer getReportNumber() {
-        return healthMapper.getReportNumber();
+        try{
+            Integer num = healthMapper.getReportNumber();
+            logger.info("成功查找风险评估人数");
+            return num;
+        }catch (Exception e){
+            logger.error("查找风险评估人数失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -488,8 +559,9 @@ public class HealthController {
     public String saveMessageRemind(@RequestBody MessageRemindEntity messageRemindEntity){
         try{
             healthMapper.saveMessageRemind(messageRemindEntity);
+            logger.info("成功发送医生模板消息");
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            logger.error("发送医生模板消息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -499,7 +571,14 @@ public class HealthController {
     * */
     @RequestMapping(value = "/message/getunread")
     public List<MessageListEntity> getMessageUnread(@RequestParam String wechat_id) {
-        return healthMapper.selectNoreadMessage(wechat_id);
+        try{
+            List<MessageListEntity> messageListEntityList = healthMapper.selectNoreadMessage(wechat_id);
+            logger.info("成功查找具体患者未读模板消息");
+            return messageListEntityList;
+        }catch (Exception e){
+            logger.error("查找具体患者未读模板消息失败：",e.getMessage());
+            return null;
+        }
     }
 
     /*
@@ -509,8 +588,9 @@ public class HealthController {
     public String setMessageRead( @RequestParam("id") int id) {
         try {
             healthMapper.updateMessageReaded(id);
+            logger.info("成功将具体模板消息设置为已读");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("将具体模板消息设置为已读失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -522,8 +602,9 @@ public class HealthController {
     public String setDefineMessageRead( @RequestParam("id") int id) {
         try {
             healthMapper.updateDefineMessageReaded(id);
+            logger.info("成功将具体模板消息设置为已读");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error("将具体模板消息设置为已读失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -535,14 +616,28 @@ public class HealthController {
     * */
     @RequestMapping(value = "/message/unread/getnumber")
     public int getMessageUnreadNumber(@RequestParam String wechat_id) {
-        return healthMapper.selectUnreadMessageById(wechat_id);
+        try{
+            int num = healthMapper.selectUnreadMessageById(wechat_id);
+            logger.info("成功查找具体患者未读模板消息数量");
+            return num;
+        }catch (Exception e){
+            logger.error("查找具体患者未读模板消息数量失败：",e.getMessage());
+            return -1;
+        }
     }
     /*
 * 查找具体患者未读自定义消息数量接口
 * */
     @RequestMapping(value = "/definemessage/unread/getnumber")
     public int getDefineMsgUnreadNumber(@RequestParam String wechat_id) {
-        return healthMapper.selectUnreadDefineMessageById(wechat_id);
+        try{
+            int num = healthMapper.selectUnreadDefineMessageById(wechat_id);
+            logger.info("成功查找具体患者未读自定义消息数量");
+            return num;
+        }catch (Exception e){
+            logger.error("查找具体患者未读自定义消息数量失败：",e.getMessage());
+            return -1;
+        }
     }
 
     /*
@@ -550,14 +645,28 @@ public class HealthController {
     * */
     @RequestMapping(value = "/message/getbyid")
     public MessageRemindEntity messageGetById(@RequestParam int id) {
-        return healthMapper.selectMessageRemindById(id);
+        try{
+            MessageRemindEntity messageRemindEntity = healthMapper.selectMessageRemindById(id);
+            logger.info("成功根据模板消息id获取消息内容");
+            return messageRemindEntity;
+        }catch (Exception e){
+            logger.error("根据模板消息id获取消息内容失败");
+            return null;
+        }
     }
     /*
-    * 根据自定义消息id获取消息内容
+    * 根据自定义消息id获取自定义消息内容
     * */
     @RequestMapping(value = "/definemessage/getbyid")
     public DefinitionMessageEntity getDefineMsgGetById(@RequestParam int id) {
-        return healthMapper.selectDefineMsgById(id);
+        try{
+            DefinitionMessageEntity definitionMessageEntity = healthMapper.selectDefineMsgById(id);
+            logger.info("成功根据自定义消息id获取自定义消息内容");
+            return definitionMessageEntity;
+        }catch (Exception e){
+            logger.error("根据自定义消息id获取自定义消息内容失败：",e.getMessage());
+            return null;
+        }
     }
     /*
 * 根据自定义消息id删除消息内容
@@ -566,8 +675,9 @@ public class HealthController {
     public String deleteDefineMsgById(@RequestParam int id) {
         try{
             healthMapper.deleteDefinitionMsgById(id);
+            logger.info("成功根据自定义消息id删除消息内容");
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            logger.info("根据自定义消息id删除消息内容失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -577,8 +687,9 @@ public class HealthController {
     public String defineMessage(@RequestBody DefinitionMessageEntity definitionMessageEntity){
         try{
             healthMapper.insertDefinitionMessage(definitionMessageEntity);
+            logger.info("成功发送医生自定义消息");
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            logger.error("发送医生自定义消息失败：",e.getMessage());
             return "error";
         }
         return "success";
@@ -588,7 +699,14 @@ public class HealthController {
     * */
     @RequestMapping(value = "/definemessage/get")
     public List<DefinitionMessageEntity> getDefineMsg(@RequestParam String wechat_id) {
-        return healthMapper.selectDefineMsg(wechat_id);
+        try{
+            List<DefinitionMessageEntity> definitionMessageEntityList = healthMapper.selectDefineMsg(wechat_id);
+            logger.info("成功查找具体患者自定义消息");
+            return definitionMessageEntityList;
+        }catch (Exception e){
+            logger.error("查找具体患者自定义消息失败");
+            return null;
+        }
     }
 
 }

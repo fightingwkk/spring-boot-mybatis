@@ -4,6 +4,8 @@ import com.neo.entity.MessageRemindEntity;
 import com.neo.entity.PurchasedServiceEntity;
 import com.neo.mapper.HealthMapper;
 import com.neo.mapper.PatientMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -20,6 +22,7 @@ public class ScheduleController {
     PatientMapper patientMapper;
     @Autowired
     HealthMapper healthMapper;
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 //    /*
 //  *生成消息
 //   */
@@ -54,8 +57,13 @@ public class ScheduleController {
             for (MessageRemindEntity messageRemindEntity: messageRemindEntityList) {
                 healthMapper.insertMsgList(messageRemindEntity.getWechat_id(),messageRemindEntity.getId());
             }
+            List<MessageRemindEntity> messageRemindEntityList1 = healthMapper.selectDayMsgRemind();
+            for (MessageRemindEntity messageRemindEntity: messageRemindEntityList1) {
+                healthMapper.insertMsgList(messageRemindEntity.getWechat_id(),messageRemindEntity.getId());
+            }
+            logger.info("成功发送定时生成消息");
         } catch (Exception e) {
-            System.out.println("定时生成消息发生错误:"+e.getMessage());
+            logger.error("发送定时消息失败：",e.getMessage());
         }
     }
 
@@ -74,8 +82,9 @@ public class ScheduleController {
                     patientMapper.updatePurchasedServiceExpired(purchasedServiceEntity.getId());
                 }
             }
+            logger.info("成功更新过期服务包");
         } catch (Exception e) {
-            System.out.println("更新过期服务包发生错误:"+e.getMessage());
+            logger.error("更新过期服务包失败");
         }
     }
 }
