@@ -539,6 +539,37 @@ public class DoctorController {
     }
 
 
+    //医生群发消息给所有患者
+    @Transactional
+    @RequestMapping(value = "/groupsendingall", method = RequestMethod.POST)
+    public List<PatientGroupReceivingEntity> groupSendingAll(@RequestBody DoctorGroupSendingEntity doctorGroupSendingEntity) {
+        try {
+            doctorMapper.insertDoctorGroupSending(doctorGroupSendingEntity);
+            List<AttentionEntity> attentionEntityList = doctorMapper.findMyPatients(doctorGroupSendingEntity.getPhone());
+            List<PatientGroupReceivingEntity> patientGroupReceivingEntityList = new LinkedList<>();//医生群发的消息
+
+            //发送消息
+            DoctorEntity doctorEntity = doctorMapper.selectByPhone(doctorGroupSendingEntity.getPhone());
+            for (AttentionEntity attentionEntity: attentionEntityList) {
+                PatientEntity patientEntity = doctorMapper.selectPatient(attentionEntity.getWechat_id());
+                PatientGroupReceivingEntity patientGroupReceivingEntity = new PatientGroupReceivingEntity();
+                patientGroupReceivingEntity.setPhone(doctorGroupSendingEntity.getPhone());
+                patientGroupReceivingEntity.setDoctor_name(doctorEntity.getName());
+                patientGroupReceivingEntity.setWechat_id(attentionEntity.getWechat_id());
+                patientGroupReceivingEntity.setPatient_name(patientEntity.getName());
+                patientGroupReceivingEntity.setContent(doctorGroupSendingEntity.getContent());
+                patientGroupReceivingEntityList.add(patientGroupReceivingEntity);
+                doctorMapper.insertPatientGroupReceiving(doctorGroupSendingEntity.getPhone(),doctorEntity.getName(), attentionEntity.getWechat_id(), patientEntity.getName(),doctorGroupSendingEntity.getContent());
+            }
+            logger.info("成功发送医生的群发消息给所有患者");
+            return patientGroupReceivingEntityList;
+        } catch (Exception e) {
+            logger.error("发送医生群发消息给所有患者失败：",e.getMessage());
+            return null;
+        }
+    }
+
+
     //查找医生的事项提醒
     @RequestMapping(value = "/geteventremind")
     public List<RemindersEntity> getEventRemind(@RequestParam("phone") String phone) {
