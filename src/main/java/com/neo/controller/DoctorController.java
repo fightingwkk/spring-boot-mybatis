@@ -470,11 +470,11 @@ public class DoctorController {
     //医生群发消息,患者获得群发消息
     @Transactional
     @RequestMapping(value = "/groupsending", method = RequestMethod.POST)
-    public List<PatientGroupReceivingEntity> groupSending(@RequestBody DoctorGroupSendingEntity doctorGroupSendingEntity) {
+    public String groupSending(@RequestBody DoctorGroupSendingEntity doctorGroupSendingEntity) {
         try {
             doctorMapper.insertDoctorGroupSending(doctorGroupSendingEntity);
             Set<String> send_patients = new HashSet<>();//用于去重
-            List<PatientGroupReceivingEntity> patientGroupReceivingEntityList = new LinkedList<>();//医生群发的消息
+//            List<PatientGroupReceivingEntity> patientGroupReceivingEntityList = new LinkedList<>();//医生群发的消息
 
 
             List<HashMap> groups = JSON.parseArray(doctorGroupSendingEntity.getGroup_names(), HashMap.class);
@@ -482,7 +482,7 @@ public class DoctorController {
             List<HashMap> patients = JSON.parseArray(doctorGroupSendingEntity.getPatient_names(), HashMap.class);
 
             //发送类型级别的患者
-            if (doctorGroupSendingEntity.getKind_names() != null && !doctorGroupSendingEntity.getKind_names().equals("")) {
+            if (doctorGroupSendingEntity.getKind_names() != null && !doctorGroupSendingEntity.getKind_names().equals("[]")) {
                 List<AttentionEntity> attentionEntityList = doctorMapper.findMyPatients(doctorGroupSendingEntity.getPhone());
                 for (Iterator<AttentionEntity> it = attentionEntityList.iterator(); it.hasNext(); ) {
                     PatientEntity patientEntity = doctorMapper.selectPatient(it.next().getWechat_id());
@@ -498,7 +498,7 @@ public class DoctorController {
                 }
             }
             //发送自定义群组的患者
-            if (doctorGroupSendingEntity.getGroup_names() != null && !doctorGroupSendingEntity.getGroup_names().equals("")) {
+            if (doctorGroupSendingEntity.getGroup_names() != null && !doctorGroupSendingEntity.getGroup_names().equals("[]")) {
 //                String[] groups = doctorGroupSendingEntity.getGroup_names().split(",");
                 for (HashMap<String,String> group : groups) {
                     List<String> wechat_idList = doctorMapper.selectPatientByPhoneAndLabel(doctorGroupSendingEntity.getPhone(), group.get("group_name"));
@@ -509,7 +509,7 @@ public class DoctorController {
                 }
             }
             //发送单独的患者
-            if (doctorGroupSendingEntity.getPatient_names() != null && !doctorGroupSendingEntity.getPatient_names().equals("")) {
+            if (doctorGroupSendingEntity.getPatient_names() != null && !doctorGroupSendingEntity.getPatient_names().equals("[]")) {
 //                String[] patients = doctorGroupSendingEntity.getPatient_names().split(",");
                 for (HashMap<String,String> patient : patients) {
                     send_patients.add(patient.get("patient_name"));
@@ -526,11 +526,12 @@ public class DoctorController {
                 patientGroupReceivingEntity.setWechat_id(patient);
                 patientGroupReceivingEntity.setPatient_name(patientEntity.getName());
                 patientGroupReceivingEntity.setContent(doctorGroupSendingEntity.getContent());
-                patientGroupReceivingEntityList.add(patientGroupReceivingEntity);
+//                patientGroupReceivingEntityList.add(patientGroupReceivingEntity);
                 doctorMapper.insertPatientGroupReceiving(doctorGroupSendingEntity.getPhone(),doctorEntity.getName(), patient, patientEntity.getName(),doctorGroupSendingEntity.getContent());
             }
             logger.info("成功发送医生的群发消息");
-            return patientGroupReceivingEntityList;
+            return "success";
+//            return patientGroupReceivingEntityList;
         } catch (Exception e) {
             logger.error("发送医生群发消息失败：",e.getMessage());
             return null;
@@ -542,11 +543,11 @@ public class DoctorController {
     //医生群发消息给所有患者
     @Transactional
     @RequestMapping(value = "/groupsendingall", method = RequestMethod.POST)
-    public List<PatientGroupReceivingEntity> groupSendingAll(@RequestBody DoctorGroupSendingEntity doctorGroupSendingEntity) {
+    public String groupSendingAll(@RequestBody DoctorGroupSendingEntity doctorGroupSendingEntity) {
         try {
             doctorMapper.insertDoctorGroupSending(doctorGroupSendingEntity);
             List<AttentionEntity> attentionEntityList = doctorMapper.findMyPatients(doctorGroupSendingEntity.getPhone());
-            List<PatientGroupReceivingEntity> patientGroupReceivingEntityList = new LinkedList<>();//医生群发的消息
+//            List<PatientGroupReceivingEntity> patientGroupReceivingEntityList = new LinkedList<>();//医生群发的消息
 
             //发送消息
             DoctorEntity doctorEntity = doctorMapper.selectByPhone(doctorGroupSendingEntity.getPhone());
@@ -558,11 +559,12 @@ public class DoctorController {
                 patientGroupReceivingEntity.setWechat_id(attentionEntity.getWechat_id());
                 patientGroupReceivingEntity.setPatient_name(patientEntity.getName());
                 patientGroupReceivingEntity.setContent(doctorGroupSendingEntity.getContent());
-                patientGroupReceivingEntityList.add(patientGroupReceivingEntity);
+//                patientGroupReceivingEntityList.add(patientGroupReceivingEntity);
                 doctorMapper.insertPatientGroupReceiving(doctorGroupSendingEntity.getPhone(),doctorEntity.getName(), attentionEntity.getWechat_id(), patientEntity.getName(),doctorGroupSendingEntity.getContent());
             }
             logger.info("成功发送医生的群发消息给所有患者");
-            return patientGroupReceivingEntityList;
+//            return patientGroupReceivingEntityList;
+            return "success";
         } catch (Exception e) {
             logger.error("发送医生群发消息给所有患者失败：",e.getMessage());
             return null;

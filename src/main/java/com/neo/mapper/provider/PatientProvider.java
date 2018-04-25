@@ -35,7 +35,7 @@ public class PatientProvider {
                 if (patient.getHead_pic() != null) {
                     SET("head_pic = #{head_pic}");
                 }
-                if (patient.getKind() != "") {
+                if (patient.getKind() != null) {
                     SET("kind = #{kind}");
                 }
                 if (patient.getProb() != 0) {
