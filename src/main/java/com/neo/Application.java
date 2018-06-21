@@ -11,13 +11,12 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import javax.annotation.PostConstruct;
 import java.util.Calendar;
 import java.util.TimeZone;
-
-@EnableDiscoveryClient  //该注解能激活Eureka中的DiscoveryClient实现
-@EnableCaching//开启缓存
-@SpringBootApplication  //等同于@Configuration @EnableAutoConfiguration @ComponentScan三个注解
 @ServletComponentScan  //扫描servlet
 @MapperScan("com.neo.mapper")//配置需要扫描的Mapper位置
 @EnableScheduling
+@EnableCaching//开启缓存
+@EnableDiscoveryClient  //该注解能激活Eureka中的DiscoveryClient实现
+@SpringBootApplication  //等同于@Configuration @EnableAutoConfiguration @ComponentScan三个注解
 public class Application {
 
 	@PostConstruct

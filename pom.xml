@@ -10,20 +10,17 @@
 
 	<name>spring-boot-mybatis-annotation</name>
 	<description>project for Spring Boot and mybatis</description>
-
-	<parent> <!--springboot父节点依赖   引入这个之后相关的引入就不需要添加version配置，spring boot会自动选择最合适的版本进行添加。-->
+	<!--springboot父节点依赖   引入这个之后相关的引入就不需要添加version配置，spring boot会自动选择最合适的版本进行添加。-->
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.1.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
-
 	<dependencies>
 		<dependency><!-- Spring Boot的核心启动器，包含了自动配置、日志和YAML -->
 			<groupId>org.springframework.boot</groupId>
@@ -34,13 +31,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency><!-- springcloud的eureka组件 -->
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
 		<dependency> <!-- 支持全栈式Web开发，包括Tomcat和spring-webmvc -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency><!-- springcloud的eureka组件 -->
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency><!-- 整合MyBatis的核心依赖 -->
 			<groupId>org.mybatis.spring.boot</groupId>
